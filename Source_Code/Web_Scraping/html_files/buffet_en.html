@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":48,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/buffett-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/buffett-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Uy9EOD46Jc5TYjEMmaKG/CQ7DKEPNsQRkB6N6NCpLaykuI5I5+JKWoF+o+wUWzpB55pBDUUOi/WNZeF2qBq4eA==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="58ff6720b238e100061eedd9">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">What’s in it for me? Follow the making of a legendary investor.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="58ff674ab238e100061eeddb">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">Warren Buffett grew up in the Midwestern city of Omaha, Nebraska. Money was often on his mind.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="58ff6767b238e100061eeddd">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">At Columbia Business School, Buffett met his mentor and began his investment career.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="58ff6776b238e100061eeddf">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">At the age of 26, Buffett returned to Nebraska and started his own business.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="58ff6795b238e100061eede1">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">Buffett became involved with his now-famous company, Berkshire Hathaway, in 1962.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="58ff67abb238e100061eede3">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">Buffett’s wealth increased dramatically during the 1980s.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="58ff67edb238e100061eede5">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">Despite his immense wealth, Buffett isn’t a stereotypical Wall Street billionaire.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="58ff6807b238e100061eede7">
+      <div class="reader__point-gray-icon" data-chapter-menu=7></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="58ff6720b238e100061eedd9">
+    <h1>What’s in it for me? Follow the making of a legendary investor.</h1>
+    <div class="chapter__content"><p>Besides Bill Gates and Mark Zuckerberg, Warren Buffett is probably one of the best-known billionaires in the world. With his low-key profile and homegrown style – he does his own taxes and wears slightly shabby suits – the “Sage of Omaha” is a beloved man, even among those who tend to have little sympathy for the super wealthy.</p>
+<p>So who is Warren Buffett?</p>
+<p>That’s what you’ll learn in these blinks. We follow Buffett from growing up in Omaha, through his early days in trading, to his years as the richest man in the world. And we get a glimpse of the unique investment sense he showed throughout his business life.</p>
+<p>In these blinks, you’ll find out</p>
+<ul>
+<li>that Buffett made his first stock trade as a child;</li>
+<li>what investment philosophy has influenced all of Buffett’s investments; and</li>
+<li>why Berkshire Hathaway is the company most associated with Buffett.</li>
+</ul></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="58ff674ab238e100061eeddb">
+    <h1>Warren Buffett grew up in the Midwestern city of Omaha, Nebraska. Money was often on his mind.</h1>
+    <div class="chapter__content"><p>Warren Edward Buffett was born to Howard and Leila Buffett on August 30, 1930, at a time when many families were facing an uncertain future.</p>
+<p>As a child of the Great Depression, young Warren learned the value of money.</p>
+<p>In 1932, when the Depression hit Warren’s hometown of Omaha, Nebraska, his father lost his job as a securities salesman for a local bank. But his dad was resourceful and soon began his own company, selling safe and reliable stocks and bonds.</p>
+<p>Earnings were meager. Indeed, they could afford so little food that Warren’s mother would often give her portion to Howard so that he would have a decent meal.</p>
+<p>These difficult times left a lasting impression on Warren Buffett, and fueled his desire for the kind of security and stability that money can buy. Even though his father’s business became successful when Warren was six, he never forgot those early Depression years.</p>
+<p>It wasn’t long before Warren’s interest in investment and entrepreneurship revealed itself.</p>
+<p>He always looked forward to visiting his father’s office, and, when Warren was ten, Howard took him on an exciting business trip to New York, where they visited the Stock Exchange.</p>
+<p>A year later, when he was eleven, Warren made his first profit by buying and selling stocks along with his sister, Doris.</p>
+<p>To afford these stocks, Warren had undertaken many entrepreneurial activities, such as roaming the local golf course to collect lost golf balls and then selling them back to the owner.</p>
+<p>At the age of 14, Warren was in charge of five separate paper routes, which had him getting up early every morning, delivering papers and collecting subscription fees.</p>
+<p>By saving every cent he made, Warren purchased 40 acres of land for $1,200. He wasn’t yet fifteen.</p>
+<p>Warren was no slouch at school, either. He graduated in the top three percent and enrolled at the Wharton School of Finance and Commerce, in Pennsylvania, where his love of money would only grow.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="58ff6767b238e100061eeddd">
+    <h1>At Columbia Business School, Buffett met his mentor and began his investment career.</h1>
+    <div class="chapter__content"><p>With straight A’s as an undergrad, Buffett was surprised when his application for postgraduate studies was rejected by the Harvard Business School. But this rejection might have been for the best, since his professor at Columbia Business School (which accepted him) would have a massive impact on his life.</p>
+<p>That professor was economist Benjamin Graham, a pioneer in stock-market analysis with a unique approach to finding the right investments.</p>
+<p>The cornerstone of Graham’s philosophy was to avoid dealing with risky stocks altogether. He did this by determining a company’s <em>intrinsic value</em> and comparing it against the <em>market value</em>, which is the current price the stocks are being sold at.</p>
+<p>Finding a company’s intrinsic value requires diligent research. One has to add up all of its assets, including its revenue streams and future prospects. But it’s worth the work.</p>
+<p>When the intrinsic value is greater than the market value, you know you have a safe bet, and it’s only a matter of time before the price of that undervalued stock will rise to meet the market value. With this buying strategy, Graham became a legend for purchasing low-risk stocks and netting a high profit.</p>
+<p>Buffett loved Graham’s philosophy, which became the guiding force in his own practice. During and after Buffett’s time at Columbia, his relationship with Graham flourished.</p>
+<p>In Graham’s 22 years of teaching, he’d never had an A+ student. Buffett was his first. After earning his graduate degree, Buffett was eventually hired to work for Ben Graham’s Wall Street investment firm, Graham-Newman Corp.</p>
+<p>Some of his early proposals were turned down as they were considered too risky, but, in the end, Buffett became a star employee.</p>
+<p>One of his more memorable deals involved a chocolate company and realizing a way for everyone to benefit when the price of cocoa suddenly skyrocketed in 1954. A local New York chocolate maker was looking to Graham-Newman for help and Buffett saw that they could liquidate millions of pounds of cocoa and sell the beans to stockholders in their company. Based on the price of cocoa “futures,” this netted the company, and Buffett, a nice reward with every transaction.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="58ff6776b238e100061eeddf">
+    <h1>At the age of 26, Buffett returned to Nebraska and started his own business.</h1>
+    <div class="chapter__content"><p>Buffet was never in love with the hustle and bustle of New York City. Furthermore, he was now a father, and he wanted to raise his kids in the peaceful environment of Omaha.</p>
+<p>Once he returned to his hometown, Buffett began forming his own investment partnership, Buffett Associates, Ltd.</p>
+<p>Within a year, he’d raised $500,000 from friends and family, all of which he put to work by flawlessly applying Graham’s theories and investing in undervalued companies that steadily paid off.</p>
+<p>In that first year, he was so successful that his initial $500,000 portfolio increased in value by 10 percent. By the end of the third year, that value had actually doubled! Remarkably, all the while, this youngster in Nebraska was outperforming the Dow-Jones Industrial Average.</p>
+<p>Finally, in 1961, Buffett took the next big step and purchased controlling interest in a company.</p>
+<p>It was the largest investment he’d made so far – a full million dollars of his partnership’s money, which he put into Dempster Mill Manufacturing, a struggling windmill company that most other investors wouldn’t go near.</p>
+<p>But Buffett knew it had solid intrinsic value, and his investment had made him chairman of the board for the company. He went to work sorting out their troubled finances.</p>
+<p>A year later, the company was on the path to profit, with $2 million worth of stock being traded at twice the price of what Buffett had initially paid.</p>
+<p>By 1963, that price was at three times its initial value and it was time for Buffett to move on, so he sold the company and earned his partners a $2.3 million profit.</p>
+<p>Incredibly, at just 35 years of age, Buffett’s 1965 portfolio had grown to be worth $22 million, and his own net worth was at nearly $4 million.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="58ff6795b238e100061eede1">
+    <h1>Buffett became involved with his now-famous company, Berkshire Hathaway, in 1962.</h1>
+    <div class="chapter__content"><p>In 1964, Buffett purchased controlling interest in Berkshire Hathaway, the company he is most closely associated with today.</p>
+<p>Berkshire Hathaway had started out as a textile manufacturer in 1839. But, in the early 1960s, American textile companies were losing a lot of business to the cheaper manufacturing markets in Asia and Latin America. So when Buffett began buying its stock in 1962, it was selling at only $7.60 per share. The company was in dire straits.</p>
+<p>However, when Buffett did his homework to add up its intrinsic value, he saw that the company should be trading at $16.50 per share. This made Berkshire Hathaway an amazing bargain that he couldn’t pass up, so he bought every stock he could get his hands on and, eventually, became the majority shareholder.</p>
+<p>Though it would always struggle as a textile company, it succeeded as a holding company for Buffett’s more successful companies – such as the insurance company National Indemnity Co., which he purchased in 1967 for $8.6 million.</p>
+<p>So even though textiles only earned Berkshire around $45,000 in profit per year, its holdings of National Indemnity stock earned it about $2.1 million.</p>
+<p>By 1969, Berkshire had become the main focus of his time and energy, and so he decided to dissolve the original Omaha partnership which, over the last 13 years, had increased exponentially in value – from half a million to $104 million.</p>
+<p>As chairman of the board at Berkshire Hathaway, Buffett continued to add new companies to its holding and, as a result, the price of Berkshire’s own shares went through the roof – increasing from $7.60 per share in 1962 to $95 per share in 1976!</p>
+<p>At this point Buffett was making quite a name for himself, and he was able to do something he always wanted to do – own a newspaper.</p>
+<p>In the 1970s, Berkshire became the largest outside shareholder of the<em> Washington Post</em>, the very newspaper Buffett had dropped on people’s doorsteps as a child.</p>
+<p>During this time, Buffett continued to pay himself his standard yearly salary of $50,000.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="58ff67abb238e100061eede3">
+    <h1>Buffett’s wealth increased dramatically during the 1980s.</h1>
+    <div class="chapter__content"><p>In 1979, Buffett was still far outperforming the Dow-Jones Industrial Average; his own net worth was $140 million, and Berkshire was selling at $290 per share.</p>
+<p>As the country and the economy moved into the 1980s, Buffett’s investment philosophy began to move in a new direction, too.</p>
+<p>By the time the 1980s arrived, his longtime mentor Ben Graham had died and Buffett was no longer focusing on small, undervalued companies. He was buying big, recognizable businesses like the<em> Washington Post </em>and the insurance company GEICO.</p>
+<p>But though he’d outgrown Graham’s method, he still used it in principle. Rather than relying on a company’s financial assets to measure its intrinsic value, he now expanded his view to include its entire brand.</p>
+<p>His ability to make major investments, combined with the aggressive market of the 1980s, propelled Buffet to new levels of wealth.</p>
+<p>In 1980, the newly elected president Ronald Reagan made a pledge to turn the struggling economy around. To help with this, Reagan cut interest rates, which the influential economist Henry Kaufman predicted would only continue to decrease. This new environment sent people into a buying spree.</p>
+<p>With low interest rates, stocks become more attractive to buyers, and the Dow jumped 38.81 points, setting a new record high.</p>
+<p>Though none of this changed Buffett’s own patient and methodical investment philosophy, Berkshire Hathaway continued to reap the rewards.</p>
+<p>The Dow was going through the roof, and Berkshire’s stock rose right along with it. By the end of 1983, its shares were selling at $1,310 dollars. Berkshire Hathaway’s holdings were now worth $1.3 billion.</p>
+<p>As for Buffett himself, over the course of four years in the 1980s, his net worth went from $140 million to $620 million. And in 1985, with the markets continuing to boom, Buffett finally made the <em>Forbes</em> magazine annual list of billionaires.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="58ff67edb238e100061eede5">
+    <h1>Despite his immense wealth, Buffett isn’t a stereotypical Wall Street billionaire.</h1>
+    <div class="chapter__content"><p>Throughout his life, Buffett has comfortably stayed in the modest house that he purchased for $31,500 when he was 27 years old. But that’s just the beginning of the many ways Buffett defies the billionaire stereotype.</p>
+<p>To begin with, Buffett has never liked the idea of America having an elite class.</p>
+<p>Even in the early 1960s, when segregation was still widespread, Buffett defied many of his peers when he boycotted the local Rotary Club over its refusal to accept non-white members.</p>
+<p>This also led to his becoming a Democrat, even though his father had been a lifelong Republican who spent eight years as a congressman in Washington. But after his father’s death, Buffett began making frequent donations to Democratic political campaigns.</p>
+<p>And unlike many wealthy citizens, Buffett has spoken out against tax cuts for the rich – or, as he calls it, “welfare for the rich” – despite the fact that such tax cuts would benefit his own finances<em>.</em></p>
+<p>Since his late 20s, Buffett has struggled to figure out what to do with his riches, since he doesn’t live a glamorous lifestyle with expensive cars, homes or clothing.</p>
+<p>Nor does he want his children to rely on his success. Instead, he has always taught them to forge their own paths in life and earn their own livings.</p>
+<p>So, in 2006, after his wife Susan passed away, he finally decided that he would donate most of it to charity.</p>
+<p>One sixth of his fortune has been divided among different Buffett family foundations, and the rest will be allocated over time to the Bill and Melinda Gates Foundation, which helps fight disease in developing nations.</p>
+<p>As of 2015, his net worth was $64 billion, which makes his commitment to the Bill and Melinda Gates Foundation one of history’s greatest charitable donations – a legacy he can surely be proud of.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="7" data-chapterid="58ff6807b238e100061eede7">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p>The key message in this book:</p>
+<p><strong>With the help of his mentor, Benjamin Graham, Warren Buffett learned the important difference between how much a company is really worth and how much it’s selling for. An aptitude for discerning this difference, combined with a steadfast refusal to succumb to trends and a keen understanding of numbers, is what allowed Buffett to accrue a fortune exceeding $66 billion.</strong></p>
+<p><strong>Got feedback?</strong></p>
+<p>We’d sure love to hear what you think about our content! Just drop an email to remember@blinkist.com with the title of this book as the subject line and share your thoughts!</p>
+<p><strong>Suggested further reading: </strong><strong><em>The Snowball </em></strong><strong>by Alice Schroeder</strong></p>
+<p><em>The Snowball</em> (2008) offers a revealing look at the life and times of one of modern America’s most fascinating men: Warren Buffett. Find out how this shy and awkward man earned his first million dollars and how following a few fundamental rules enabled him to become the world’s wealthiest man.</p></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Buffett" data-content-selector=".chapter_visible h1" href="/en/share/insights/58ff6720b238e100061eedd9/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Buffett" data-content-selector=".chapter_visible h1" href="/en/share/insights/58ff6720b238e100061eedd9/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Buffett" data-content-selector=".chapter_visible h1" href="/en/share/insights/58ff6720b238e100061eedd9/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/buffett-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Buffett" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Buffett" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Buffett" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="buffett-en" data-id="58ff670db238e100061eedd5">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/58ff670db238e100061eedd5/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="58ff6807b238e100061eede7" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="58ff6807b238e100061eede7" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="58ff670db238e100061eedd5" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input value="2017-06-20T04:39:05+00:00" type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="5478901464393200082d0000" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+

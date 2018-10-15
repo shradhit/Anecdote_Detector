@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":41,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/the-7-habits-of-highly-effective-people-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/the-7-habits-of-highly-effective-people-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Ep4I/ht4nZ6CnA8hUEYOPAQ0rt4//kwLv2op+wUvBOblCcKOwqDyClCAncHdv7KBx5XjcnXGA++iEUVlfZyRMg==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="58cbda351183250004b4c9f2">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">What’s in it for me? Adopt the habits that distinguish highly effective people from the herd.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="52b89de1373766000c2b0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">In order to change, you have to address your character and not your behavior.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="52b89dfc373766000c2d0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">Working on character involves aligning personal paradigms with universal principles.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="52b89e12373766000c2f0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">“Sharpen the saw” if you want to keep sawing.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="52b89e2b373766000c310000">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">“Be proactive” and take control of your own fate.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="52b89e51373766000c330000">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">“Begin with the end in mind” – if you want to achieve something, you need long-term goals and a mission statement.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="52b89e7137376600122b0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">In order to attain your goals, you need to visualize the outcome of every action as clearly as possible before doing it.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="52b89e89373766000c350000">
+      <div class="reader__point-gray-icon" data-chapter-menu=7></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">If you want to be truly effective, always “put first things first.”</a>
+    </li>
+    <li class="chapters" data-chapterNo="8" data-chapterId="52b89ea937376600122d0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=8></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="8" href="#">“Think win-win” to get your share of the cake and build lasting relationships at the same time.</a>
+    </li>
+    <li class="chapters" data-chapterNo="9" data-chapterId="52b89ec137376600122f0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=9></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="9" href="#">Forming stable relationships with others means investing in emotional bank accounts.</a>
+    </li>
+    <li class="chapters" data-chapterNo="10" data-chapterId="52b89ed93737660008230000">
+      <div class="reader__point-gray-icon" data-chapter-menu=10></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="10" href="#">If you want to be able to influence others, “seek first to understand, then to be understood.”</a>
+    </li>
+    <li class="chapters" data-chapterNo="11" data-chapterId="52b89ef13737660008250000">
+      <div class="reader__point-gray-icon" data-chapter-menu=11></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="11" href="#">“Synergize” by treating others with openness and respect.</a>
+    </li>
+    <li class="chapters" data-chapterNo="12" data-chapterId="52b89f473737660008270000">
+      <div class="reader__point-gray-icon" data-chapter-menu=12></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="12" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="58cbda351183250004b4c9f2">
+    <h1>What’s in it for me? Adopt the habits that distinguish highly effective people from the herd.</h1>
+    <div class="chapter__content"><p>Why do some people seem so adept at leading successful and fulfilling lives while others struggle with failure and a lack of meaning? Simple: the former group has adopted seven key habits that make them highly effective at dealing with life, work and the world around them.</p>
+<p>In these blinks, you’ll learn about all seven of these habits:</p>
+<ul>
+<li><em>Sharpen the saw:</em> Don’t work yourself to death. Strive for a sustainable lifestyle that affords you time to recuperate and recharge, so that you can stay effective in the long-term.</li>
+<li><em>Be proactive:</em> You have a natural need to wield influence on the world around you, so don’t spend your time just reacting to external events and circumstances. Take charge and assume responsibility for your life.</li>
+<li><em>Begin with an end in mind:</em> Don’t spend your life working aimlessly, tackling whatever job is at hand. Have a vision for the future and align your actions accordingly to make it into a reality.</li>
+<li><em>Put first things first: </em>To prioritize your work, focus on what’s important, meaning the things that bring you closer to your vision of the future. Don’t get distracted by urgent but unimportant tasks.</li>
+<li><em>Think win-win:</em> When negotiating with others, don’t try to get the biggest slice of the cake, but rather find a division that is acceptable to all parties. You will still get your fair share, and build strong positive relationships in the process.</li>
+<li><em>Seek first to understand, then to be understood:</em> When someone presents us with a problem, we often jump right to prescribing a solution. This is a mistake. We should first take time to really listen to the other person and only then make recommendations.</li>
+<li><em>Synergize:</em> Adopt the guiding principle that in a group, the contributions of many will far exceed those of any individual. This will help you to achieve goals you could never have reached on your own.</li>
+</ul></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="52b89de1373766000c2b0000">
+    <h1>In order to change, you have to address your character and not your behavior.</h1>
+    <div class="chapter__content"><p>Generally speaking, there are two routes to self-improvement and to changing your own life:</p>
+<p>One way is addressing the <em>skills</em> necessary for a certain desired behavior; that is, by studying communication skills or time-management techniques.</p>
+<p>Alternatively, you can take the long way round by digging a bit deeper and working on your <em>character</em>: the fundamental habits and belief systems which form your view of the world.</p>
+<p>The first approach is effectively an attempt to take a shortcut to success: becoming rich without working for your money, or achieving personal growth without undergoing any real development.</p>
+<p>Yet real personal growth cannot be reached via shortcuts. On the road to true effectiveness, you cannot afford to skip a single step.</p>
+<p>This is true for accomplishments such as playing tennis or the piano, and just as true for the emotional development of a person as well as the development of their character.</p>
+<p>If you really want to change, you need to work from the inside out. Only once you’ve drastically changed yourself can you start to change the world around you. If, for example, you would like to have a happy marriage, you must first become a more positive person yourself.</p>
+<p>If you want to be seen as a trustworthy person, it is no good working on your communication skills – you have to work instead on actually becoming a more trustworthy person.</p>
+<p>Instead of scratching the surface, you have to really address your inner character.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="52b89dfc373766000c2d0000">
+    <h1>Working on character involves aligning personal paradigms with universal principles.</h1>
+    <div class="chapter__content"><p><em>Paradigms</em> are the building blocks of our character. They are our fundamental principles – the glasses through which we see the world.</p>
+<p>Our perception is not an objective reality, but rather a subjective interpretation tinted by the paradigm-glasses we wear.</p>
+<p>The habits which form a large part of our actions are direct results of those paradigms.</p>
+<p>Since they are the core of our character, paradigms are the key to making any change. If we want to change ourselves, we have to change our fundamental principles first. Only in this way can we change our subjective reality, and with it our behavior.</p>
+<p>You also need to be conscious of your own paradigms. If you want to overcome ingrained habits, such as procrastination, self-centeredness or impatience, you first have to recognize the fundamental principle which forms this habit.</p>
+<p>If you want to achieve true effectiveness, it is useful to align your personal paradigms with larger, universal principles – values such as fairness, honesty and integrity.</p>
+<p>Since the majority of people agree upon these principles, we can see them as natural laws of lasting validity, almost as a yardstick by which we can measure our own values.</p>
+<p>It is possible to measure all human behavior against these universal principles. The more we are able to align our behavior with them, the more effectively we will be able to integrate into the world around us.</p>
+<p>The next blinks explain how we can address those fundamental principles, and change our behavior.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="52b89e12373766000c2f0000">
+    <h1>“Sharpen the saw” if you want to keep sawing.</h1>
+    <div class="chapter__content"><p>If you spend the whole day sawing away and yet never find time to actually sharpen your saw, you are doing something fundamentally wrong.</p>
+<p>Taking care of your most vital resources is crucial if you want to be lastingly effective: these resources are your own workforce.</p>
+<p>It is essential to be proactive in this regard, and this applies to all areas of life.</p>
+<p>To stay physically fit, you need to take regular exercise, eat healthily and avoid undue stress.</p>
+<p>To stay mentally healthy, you should, as far as possible, read plenty of good books, make time for your own writing in some form – be it letters or a diary – and actively plan your future according to your long-term goals.</p>
+<p>It is also important to take care of your social and emotional health by forming as many positive relationships as possible and never neglecting your social needs.</p>
+<p>Spiritual health also contributes greatly to lasting effectiveness: this can mean praying or meditating, but it can also mean regularly confronting your own norms and values and reflecting actively upon them.</p>
+<p>Most importantly, you should consciously make time to recuperate and recharge. Most people claim they could never find time to do this. In the long-term, however, time spent in this way will produce numerous rewards with regard to productivity and well-being.</p>
+<p>This way of thinking applies to all those areas of life in which productivity has a role to play: businesses should also think not only of the product they want to produce, but also of the well-being of its producers (in this case, their staff).</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="52b89e2b373766000c310000">
+    <h1>“Be proactive” and take control of your own fate.</h1>
+    <div class="chapter__content"><p>Within each of us exists the basic human need to try to influence the world around us, or, in other words, to be <em>proactive</em>.</p>
+<p>This is what distinguishes us from animals: an animal simply acts according to the way it is programmed. An external stimulus triggers a particular reaction. Humans, by contrast, "program" themselves. We are able to reflect in the time between receiving a stimulus and reacting. The ability to "externally" observe ourselves and our actions allows us to actively decide how we react to outside influences.</p>
+<p>An extreme example of true proactivity was Viktor Frankl, who was able to maintain control over his own feelings during his time in concentration camps, including Auschwitz. He simply decided that he was not going to allow his tormentors to control his innermost feelings.</p>
+<p>Many people, by contrast, are not proactive in life, but rather <em>reactive</em>. They react to external circumstances and their behavior and emotions are dependent on what goes on around them. Hence, for example, they can be in a good mood only if the weather is also good.</p>
+<p>People who are proactive, on the other hand, determine their own weather. They are propelled by their inner values and they assume responsibility for their own lives. Their personal decisions determine their behavior, and they do not allow it to be affected by external conditions.</p>
+<p>This manifests itself most clearly in their use of language: people who are reactive place the responsibility for their fate on external circumstances. They say things like "It wasn’t my fault," or "It’s out of my hands."</p>
+<p>Proactive people take control of their own fate: the decisions they took yesterday have made them what they are today. They say things like "I’ve decided to…" or "Let’s try and find a solution to this problem."</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="52b89e51373766000c330000">
+    <h1>“Begin with the end in mind” – if you want to achieve something, you need long-term goals and a mission statement.</h1>
+    <div class="chapter__content"><p>Many people work towards meaningless goals. They worry about being <em>efficient</em> rather than <em>effective.</em></p>
+<p>Being efficient, i.e., getting the maximum amount done in the shortest amount of time, is pointless if you don’t know why you’re doing it. Not knowing what’s really important to you and what you’re working towards is like climbing a ladder which is set against the wrong wall.</p>
+<p>To avoid this, it is important to first be clear about your long-term goals. To this end, it can be useful to ask yourself the <em>Funeral Question</em>s: What do I want people to say about me at my funeral?; As what sort of person do I want to be remembered?; For what do I want to be remembered?</p>
+<p>A person who is clear about what their major, long-term goals are will be able to align them with everything they do.</p>
+<p>It can therefore be useful to come up with a personal mission statement and write it down. In this mission statement, you set down your personal creed: the basic values and principles you believe in, and the larger goals you want to achieve in your life.</p>
+<p>The mission statement is your personal constitution, an established standard by which everything else can be measured and valued. Having such a compass gives you a sense of direction and security.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="52b89e7137376600122b0000">
+    <h1>In order to attain your goals, you need to visualize the outcome of every action as clearly as possible before doing it.</h1>
+    <div class="chapter__content"><p>All actions are in fact carried out twice: first when we visualize the action as a mental picture, and then when we actually do it.</p>
+<p>The more exact and realistic the mental picture of the action is, the better its execution will be – and, hence, the better the results.</p>
+<p>It is therefore important to keep two things in mind at all times:</p>
+<p>First, you should always be conscious of your long-term goals, your values and norms, so that you can align all your actions with them. You should always know for exactly which target you’re aiming.</p>
+<p>Because if you don’t know what you’re aiming for, you simply become the passive pawn in another person’s game.</p>
+<p>Secondly, you should form as concrete a mental picture of what you’re about to do as possible: one which sets out exactly what should be achieved. You should visualize how you’re going to aim your bow so that you hit the bullseye.</p>
+<p>This kind of visual anticipation works in all possible situations. Most competitive sportsmen, for example, are well-practiced in visualizing how they will leave the starting block, complete a perfect stretchand finish in first place.</p>
+<p>The same principle is true for an office. First you need a clear mental picture, which can then be translated into concrete actions.</p>
+<p>And as the saying goes, "Better to ask twice than to lose your way once." It’s much more productive to devote time to anticipating an action and visualizing the desired outcome than just plowing on too hastily.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="7" data-chapterid="52b89e89373766000c350000">
+    <h1>If you want to be truly effective, always “put first things first.”</h1>
+    <div class="chapter__content"><p>If you want to proactively influence your situation in life, and you have a clear goal in mind, you need good habits which will help you translate these aims into actions.</p>
+<p>A mission or vision can only become a reality if you really live by it from day to day.</p>
+<p>This requires a significant degree of time management. Most time-management techniques work only on increasing efficiency, and not on improving effectiveness. What is more, they very often put strain on relationships, and are actually counterproductive in the long-term.</p>
+<p>Most of the time it is sufficient simply to remember the little maxim: "first things first."</p>
+<p>"First things first" means rigorously prioritizing: the important things are taken care of, the less important things are put to one side and then delegated or dealt with later.</p>
+<p>How can we tell which things are important? The things which are important are those which bring us closer to our final goals, and those which are consistent with our mission statement – our values and our norms.</p>
+<p>This therefore does not include those numerous pressing little tasks we are faced with in everyday life. Rather, the important things are those projects and tasks which might not be temporally pressing, but are part of our larger vision and have a considerable effect in the long-term.</p>
+<p>In order to be able to dedicate yourself to these crucial tasks, you have to learn when to say yes, and when to say no. Even if we have a burning desire to say yes, we should also be able to say no when the thing we’ve been asked to do contributes nothing to the achievement of our long-term goals.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="8" data-chapterid="52b89ea937376600122d0000">
+    <h1>“Think win-win” to get your share of the cake and build lasting relationships at the same time.</h1>
+    <div class="chapter__content"><p>Most people are intrinsically shaped by the "win-lose" paradigm. They see every situation as a competition, and others as competitors in the battle for the biggest slice of the cake.</p>
+<p>The majority of situations in life, however, don’t need to be a competition. There is usually enough cake for everyone, and it is far better when all parties work towards a "win-win" solution.</p>
+<p>Because the major disadvantage of the "win-lose" mentality is that when two people of this mentality come up against each other, the situation more often than not becomes a "lose-lose" one. Both parties lose, whilst meanwhile the dog gets the cake, which has been knocked onto the floor in the argument.</p>
+<p>Furthermore, it is impossible for a positive relationship to form between two people who are constantly in competition with each other. Being able to build lots of positive relationships with different people is, by contrast, one of the major benefits of the "win-win" way of thinking.</p>
+<p>That's because the ability to form good relationships with others is a real asset and the basis of true effectiveness.</p>
+<p>The win-win mentality is one which always strives to find a solution which is desirable to all parties. It requires a change in thinking from "I need to make sure I get my piece of the cake" to "There’s enough cake there for everyone."</p>
+<p>This means that it is necessary to keep negotiating and communicating until a solution is found which is desirable to all parties. This is not an easy task and requires both sensitivity and patience.</p>
+<p>The result, however, is a lasting positive relationship and the creation of mutual trust, from which all parties can profit.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="9" data-chapterid="52b89ec137376600122f0000">
+    <h1>Forming stable relationships with others means investing in emotional bank accounts.</h1>
+    <div class="chapter__content"><p>Each relationship is like a kind of emotional bank account which records exactly how much each person has invested in it.</p>
+<p>The greater the balance, the greater trust exists between the parties.</p>
+<p>To this end, you should aim to make regular payments and withdraw money only rarely from the account.</p>
+<p>A payment can be, for example, finding a win-win solution, sticking to a promise you made, or really listening empathetically to the other person.</p>
+<p>A withdrawal, on the other hand, would be finding a win-lose solution, breaking a promise, or only half-listening to the other person.</p>
+<p>Once you have reached the maximum balance in your account, you should aim to understand the needs and mission statement of the other person, and to invest also in these.</p>
+<p>That's why, in everyday life, it is vitally important to always keep promises, and to be courteous and sensitive even in small matters while, above all, remaining loyal.</p>
+<p>If it happens that you make a withdrawal from the account one time, you should apologize sincerely. People are more than happy to forgive a repentant sinner. Plucking up the courage to admit you were wrong is therefore always worthwhile.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="10" data-chapterid="52b89ed93737660008230000">
+    <h1>If you want to be able to influence others, “seek first to understand, then to be understood.”</h1>
+    <div class="chapter__content"><p>How much would we trust a doctor who very quickly gave a diagnosis without having really listened to us at all?</p>
+<p>How helpful would it be for an optician to merely hand us his own glasses, claiming that since he can see fine with them, they should work for us too?</p>
+<p>Though most of us might be critical of such behavior, we actually behave very similarly in everyday life, particularly in conversation with others. We don’t really listen, and instead formulate our response extremely quickly. We tend to project ourselves onto the other person and look for solutions we can "prescribe" for them.</p>
+<p>In general, such advice is seldom well-received, since we are only likely to trust the judgment of another if we feel they really understand our situation.</p>
+<p>If you want to be good with people, and to be respected as a listener and as an imparter of advice, you need to develop the skill of empathetic listening.</p>
+<p>This in itself necessitates a change of paradigm: not "I’m listening so that I can provide an answer," but rather "I’m listening so that I can really understand the person next to me."</p>
+<p>Empathetic listening means active listening: repeating back to the person what they’ve said in your own words, mirroring their emotions and helping them to structure their own thought processes.</p>
+<p>It takes time and effort to master this skill at the beginning, but the rewards will be numerous later on. If you learn to listen in a truly empathetic way, you will notice that many people are quite prepared to open up and to consider your opinions and advice. They merely require a good, appreciative listener to be able to do so.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="11" data-chapterid="52b89ef13737660008250000">
+    <h1>“Synergize” by treating others with openness and respect.</h1>
+    <div class="chapter__content"><p>Examples of synergy can be seen all around us in nature. The contributions of many add up to a total which far exceeds the contribution of any individual.</p>
+<p>A person who is truly effective will make use of this principle in their personal and work life.</p>
+<p>Synergy with others means valuing differences and being open with one another. Each of us sees the world through an individual perspective. Each of us has particular strengths. And it is possible, through the use of shared resources, to compensate for individual weaknesses.</p>
+<p>Achieving this requires you to see your interactions with others as an adventure. The outcome of that adventure may not be completely under your control, but you should still embrace it with complete openness.</p>
+<p>This requires a significant degree of self-confidence on the part of the individual, as well as the conviction that the combined contribution of each party can lead to something great, something far better than could be produced by an individual.</p>
+<p>When people really synergize, they listen to each other, they put themselves in each other’s shoes and they use the contributions of others as a springboard to create something great.</p>
+<p>For this atmosphere of cooperation and trust to exist, the individuals in a group have to be very mature, prepared to treat each other with respect and to invest in their working relationships.</p>
+<p>The results are almost impossible to predict, and synergetic work can often come close to chaos. But you mustn’t let yourself be discouraged by this. Instead, you must focus on the fact that, by the end, you will have reached a result which would have been unachievable by an individual.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="12" data-chapterid="52b89f473737660008270000">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p>The key message of this book:</p>
+<p><strong>Being truly effective means being clear about what it is you want to achieve, and being proactive in putting your goals into action. This is best achieved by striving to synergize with others, to invest in lasting relationships and to maintain a balanced lifestyle.</strong></p>
+<p>This book in blinks provides the answers to the following questions:</p>
+<p><strong>How can you make lasting changes to yourself and stay productive on a long-term basis?</strong></p>
+<ul>
+<li>In order to change, you have to address your character and not your behavior.</li>
+<li>Working on character involves aligning personal paradigms with universal principles.</li>
+<li>“Sharpen the saw” if you want to keep sawing.</li>
+</ul>
+<p><strong>How can you achieve great things and shape the world around you effectively?</strong></p>
+<ul>
+<li>“Be proactive" and take control of your own fate.</li>
+<li>“Begin with the end in mind" – if you want to achieve something, you need long-term goals and a mission statement.</li>
+<li>In order to attain your goals, you need to visualize the outcome of every action as clearly as possible before doing it.</li>
+<li>If you want to be truly effective, always “put first things first.”</li>
+</ul>
+<p><strong>How can you integrate and synergize successfully with others?</strong></p>
+<ul>
+<li>“Think win-win” to get your share of the cake and build lasting relationships at the same time.</li>
+<li>Forming stable relationships with others means investing in emotional bank accounts.</li>
+<li>If you want to be able to influence others, “seek first to understand, then to be understood.”</li>
+<li>“Synergize” by treating others with openness and respect.</li>
+</ul></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="The 7 Habits of Highly Effective People" data-content-selector=".chapter_visible h1" href="/en/share/insights/58cbda351183250004b4c9f2/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="The 7 Habits of Highly Effective People" data-content-selector=".chapter_visible h1" href="/en/share/insights/58cbda351183250004b4c9f2/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="The 7 Habits of Highly Effective People" data-content-selector=".chapter_visible h1" href="/en/share/insights/58cbda351183250004b4c9f2/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/the-7-habits-of-highly-effective-people-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="The 7 Habits of Highly Effective People" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="The 7 Habits of Highly Effective People" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="The 7 Habits of Highly Effective People" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="the-7-habits-of-highly-effective-people-en" data-id="52b89d18373766000c290000">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/52b89d18373766000c290000/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="52b89f473737660008270000" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="52b89f473737660008270000" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="52b89d18373766000c290000" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input value="2017-07-19T08:19:20+00:00" type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="5478905464393200083f0000" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+

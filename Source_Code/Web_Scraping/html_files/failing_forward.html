@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":63,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>Failing Forward - Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/failing-forward-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/failing-forward-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="yozXQU88F0/CmMNPCFhuzjufvKnGxS8Ovgcbe5aYmvA9Gx0xluR42xCEUa+FodJz+D7xBYz9YOqjfHfl7isPJA==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="58f4a31b1507cf00046b9957">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">What’s in it for me? Learn how to embrace your failures to become successful.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="58f4a3381507cf00046b9959">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">Failure can’t be avoided, so think of it as a critical part of moving forward.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="58f4a3461507cf00046b995b">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">Failure opens up new opportunities.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="58f4a3531507cf00046b995d">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">You might not be to blame for your failures, but you are responsible for your successes.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="58f4a3701507cf00046b995f">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">Turning failure into knowledge is instrumental to success.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="58f4a3841507cf00046b9961">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">Overcoming our fear of failure and taking new risks brings long-term success.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="58f4a3911507cf00046b9963">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">To make the most of opportunities for success, you need clear goals, social skills and a positive mindset.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="58f4a39e1507cf00046b9965">
+      <div class="reader__point-gray-icon" data-chapter-menu=7></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="58f4a31b1507cf00046b9957">
+    <h1>What’s in it for me? Learn how to embrace your failures to become successful.</h1>
+    <div class="chapter__content"><p>The world these days is a competitive place where success is the only currency that counts. Failure, which is usually considered the opposite of success, or even an obstacle on the road to it, is seen as a something to be avoided at all costs.</p>
+<p>But are our failures always such disasters? Not necessarily – and it may well be time to review our opinions about failure as a concept.</p>
+<p>Contrary to popular belief, failure actually isn’t the opposite of success, but rather a necessary part of it. Failure doesn’t need to be avoided. Instead, it should be embraced, because we can learn from it and become stronger in the future as a result.</p>
+<p>In these blinks, you will learn why failure can be a good thing. You will see why failure is an opportunity, what it can teach you and how you can overcome it. Learning to fail today will help you be successful tomorrow.</p>
+<p>You’ll also learn</p>
+<ul>
+<li>how a marketing debacle paved the way for Coca-Cola’s greatest success;</li>
+<li>how the experience of failure led Thomas Edison to develop the world’s first recording device; and</li>
+<li>why <em>Peanuts</em> cartoon character Charlie Brown shouldn’t be a role model.</li>
+</ul></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="58f4a3381507cf00046b9959">
+    <h1>Failure can’t be avoided, so think of it as a critical part of moving forward.</h1>
+    <div class="chapter__content"><p>While most of us do our best to avoid failure, most entrepreneurs know better. The majority of successful businesspeople attribute their success to their ability to persevere after failures. In fact, it takes entrepreneurs an average of 3.8 failed ventures before they manage to start a successful business.</p>
+<p>These entrepreneurs recognize that even if their business eventually fails, they’ll be in a better position than they were when they started. But if their fear of failure had stopped them at the beginning, they wouldn’t have gotten anywhere.</p>
+<p>In the real world, a single failure doesn’t always mean the end of the road. Take Sergio Zyman, a marketing executive for Coca-Cola in the 1980s. When Zyman launched the new Diet Coke range, it was hugely popular.</p>
+<p>This success bolstered Zyman’s standing in the company and gave him more confidence in his daring ideas. So later, when Coca-Cola wanted to introduce a new formula for Coke, Zyman proposed to introduce it under the name “New Coke.” Zyman believed the new idea would sell so well that he convinced Coca-Cola to stop producing the old version.</p>
+<p>To Zyman’s surprise, New Coke was a complete flop. The rebranded bottles failed to sell, costing Coca-Cola approximately $100 million, and Zyman his job. To recover from this blow, Coca-Cola reintroduced their flagship drink under a new name: Coca-Cola Classic.</p>
+<p>As it turned out, Coca-Cola Classic was a huge hit. The drink became more popular than ever, and Zyman’s failure to transform the brand in the first instance ended up leading to a great success for the company in the long run. In 1993, Coca-Cola chairman Roberto Goizueta rehired Zyman, acknowledging that daring thinkers can’t be right every time.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="58f4a3461507cf00046b995b">
+    <h1>Failure opens up new opportunities.</h1>
+    <div class="chapter__content"><p>While we largely assume failure can only lead to negative outcomes, the opposite is often true. Many chance discoveries and new opportunities have emerged from failures. This was certainly the case for legendary inventor Thomas Edison.</p>
+<p>Edison worked for years to improve the telegraph machine, with little success. But along the way, he discovered something else entirely. By making certain adjustments to his failed telegraph machines, he was able to record sound that could be played back again and again.</p>
+<p>Edison used his lack of success in one pursuit as an opportunity to develop something entirely new. Twentieth-century author William Marston referred to experiences like Edison’s as “drawing dividends from failure.” Marston, who was an inventor as well as a psychologist, believed that this ability was crucial to success.</p>
+<p>Beyond opening our eyes to new possibilities, failure can be a powerful incentive to work hard and change our lives. Consider the story of the billionaire founder of Home Depot, Bernie Marcus. In 1978, he was fired from his role as CEO of hardware chain Handy Dan as a result of internal conflicts.</p>
+<p>At the time, Marcus’s parents required his financial support to make ends meet. Marcus was determined never to fall victim to a corporate power struggle again. He enlisted Arthur Blank, a coworker that had also been fired from Handy Dan, and together they opened their own hardware store the following year. Today, their store – Home Depot – is known as one of the most successful retail endeavors in history.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="58f4a3531507cf00046b995d">
+    <h1>You might not be to blame for your failures, but you are responsible for your successes.</h1>
+    <div class="chapter__content"><p>Most of the time, failures occur as a result of factors that we can’t control. When that happens, we don’t need to blame ourselves, we just need to take responsibility for finding new solutions.</p>
+<p>The author recounts the story of his friend, Greg Horn, whose supermarket was destroyed in the 1997 Kentucky floods. Ironically, Horn was insured for almost every type of damage and theft – except flood damage.</p>
+<p>Obviously, the floods were beyond Horn’s control. But he wasn’t deterred by his unfortunate circumstances. Rather than giving up, Horn took responsibility for his situation and resolved to get his store up and running again as quickly as possible.</p>
+<p>While continuing to support all 80 of his employees, Horn got to work on fixing the store. The repairs cost him $1 million, but he was able to reopen the store only 21 days after the flood.</p>
+<p>Horn’s story shows that we can only shape our future by taking responsibility for our circumstances. For another example, think of American tennis player Roger Crawford. Crawford was born without many of his fingers and toes, a condition known as <em>ectrodactylism</em>.</p>
+<p>In spite of his condition, Crawford took the attitude that he was still responsible for his future. He chased his dream of becoming a professional tennis player, eventually receiving certification from the American Professional Tennis Association as the first American tennis professional with a disability.</p>
+<p>Crawford attributes his success to the responsibility he takes for his own life, which ran a very different course to another man he knew with ectrodactylism. Unlike Crawford, the man thought of himself as a victim of unfair circumstances, and he felt bitter about the world – an attitude that prevented him from succeeding.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="58f4a3701507cf00046b995f">
+    <h1>Turning failure into knowledge is instrumental to success.</h1>
+    <div class="chapter__content"><p>Could you imagine starting a new project and aiming to fail? Probably not; most of us prefer to avoid making mistakes. And yet, failure always has the potential to create instructive, even inspiring, learning experiences.</p>
+<p>The power of embracing failure is illustrated poignantly in an anecdote from David Bayles and Ted Orland’s 1993 book <em>Art and Fear</em>: a ceramics teacher divides her class in two and tells one half that they’ll be graded on the quantity of art they make, and so should make as many pieces as they can. The other half are told to focus on creating one piece, the quality of which will determine their grade.</p>
+<p>Though the latter group spent longer crafting a single work of art, they were outshone by the first group, which produced pieces of notably higher quality. Because they were able to learn from their mistakes with each subsequent piece they made, the students in the first group were able to develop both their skills and their creative ideas along the way.</p>
+<p>It’s important to note that we only learn from failure when we’re determined to understand it. One strip from the comic <em>Peanuts </em>reflects on this phenomenon.</p>
+<p>Charlie Brown is building a sand castle at the beach, which gets flattened by a wave. He looks down at the sand castle and knows there’s something to be learned from the situation – but he doesn’t attempt to figure out what the lesson is.</p>
+<p>Like Charlie Brown, in the wake of failure many people tell themselves that they don’t have the time or energy to investigate what went wrong. But this simply puts us at risk of making the same mistake again. Identifying the causes of failure allows us to learn, grow and, in Charlie Brown’s case, build sand castles farther away from the waves.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="58f4a3841507cf00046b9961">
+    <h1>Overcoming our fear of failure and taking new risks brings long-term success.</h1>
+    <div class="chapter__content"><p>When you drive across town, how often do you catch only green lights? Probably never, but that’s alright – it’s just a part of driving. How might life be if we saw our failures as red lights? They might stop us temporarily, but they aren’t a reason to give up on our destination.</p>
+<p>Failure can feel very discouraging, but this doesn’t have to be the case. Fear of failure is debilitating and can damage our chances of achieving success, so it’s crucial that we fight it at every opportunity.</p>
+<p>Just consider pioneering American aviator Amelia Earhart’s story. When attempting to fly around the equator, she crashed her plane on takeoff. Despite this, she wasn’t discouraged and pushed on with her flying career. She eventually achieved no less than six world records, including that of the first solo female pilot to fly across the Atlantic.</p>
+<p>We can also take heart in the fact that we overcome our fear of failure in countless daily activities. Driving a car, for instance, is a dangerous activity, but we do it anyway. In fact, choosing to cycle or stay at home out of fear of having a car crash might even put you at greater risk: a total of 15 and 17 percent of accidents resulting in injuries are linked to cycling and home-based activities, respectively.</p>
+<p>Our professional lives also provide opportunities to overcome our fear of failure and act. Suggesting a daring strategy or proposing to take on more responsibility are great ways to confront your fear of failure and earn the respect of your team, too.</p>
+<p>Refusing to take risks, on the other hand, is more likely to leave your team members feeling like you’re, at best, unambitious, and at worst, lazy. Taking risks inevitably leads to failure some of the time, but by embracing this, you’ll be more likely to win big in the long run.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="58f4a3911507cf00046b9963">
+    <h1>To make the most of opportunities for success, you need clear goals, social skills and a positive mindset.</h1>
+    <div class="chapter__content"><p>Learning to embrace and overcome failure opens up new opportunities for success. But to be able to use these opportunities, you’ll need to practice three things: goal-setting, people skills and a positive mindset.</p>
+<p>American writer Don Marquis noted that while most people don’t truly know what they want, they’re still willing to sweat blood to get it. The trick to success is channeling this desire for change into well-defined objectives. So, rather than simply complaining that you’re tired of working, set goals that’ll allow you to create a better lifestyle. For example, you could invest in property to create a passive income that’ll allow you to retire sooner.</p>
+<p>Along with goal-setting, outstanding people skills can carry you to success. Today, most jobs, projects and goals can only be achieved by mobilizing stakeholders, investors, teams and employees. By spending time working on your communication, negotiation and conversational skills, you’ll be better able to win the support of your peers and open up new opportunities for achieving your ambitions.</p>
+<p>Finally, maintaining a positive mindset gives you an immediate advantage. Learning to see the value in even the most trying of experiences can be the difference between giving up and persevering. American author W. Clement Stone once told the story of a girl who, after moving across America to join her husband, became dissatisfied with her new life.</p>
+<p>In a letter written by her mother, the girl learned of an old anecdote about two men in prison. When one looked up from the prison bars, he saw mud. When the other looked up, he saw stars. The girl realized that while she was unable to change her situation in life, she was able to change her attitude toward it. By adopting a positive outlook, she learned to discover new opportunities that her dissatisfaction had blinded her to.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="7" data-chapterid="58f4a39e1507cf00046b9965">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p>The key message in this book:</p>
+<p><strong>Failure is inevitable, but it can also be beneficial. From revealing new ideas and pushing us to become our best, to helping us learn about our weaknesses, experiences of failure provide us with valuable opportunities. Along with clear goal-setting and a positive mindset, embracing failure is key to unlocking success. </strong></p>
+<p><strong>Actionable Advice</strong></p>
+<p><strong>Seek out stories of failure that inspire you. </strong></p>
+<p>Is there an entrepreneur, leader or dreamer that inspires you, from the past or present? Though their successes might be what makes them a role model to you, try spending some time researching their lives to find out more about their failed ideas as well. Not only will this give you a deeper understanding of their successes, their missteps might also offer an inspiring lesson or two.</p>
+<p><strong>Got feedback?</strong></p>
+<p>We’d sure love to hear what you think about our content! Just drop an email to remember@blinkist.com with the title of this book as the subject line and share your thoughts!</p>
+<p><strong>Suggested</strong> <strong>further</strong> <strong>reading: </strong><strong><em>The 21 Irrefutable Laws of Leadership </em></strong><strong>by John C. Maxwell</strong></p>
+<p><em>The 21 Irrefutable Laws of Leadership </em>(1998) explains what it takes to become a great leader. These blinks highlight many of the traits, skills and characteristics that have given leaders around the world the power to attract loyal followers and lead them toward success. Find out what Ray Kroc, Winston Churchill and Mother Theresa all have in common – and what you can do to become a better leader yourself.</p></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Failing Forward" data-content-selector=".chapter_visible h1" href="/en/share/insights/58f4a3531507cf00046b995d/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Failing Forward" data-content-selector=".chapter_visible h1" href="/en/share/insights/58f4a3531507cf00046b995d/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Failing Forward" data-content-selector=".chapter_visible h1" href="/en/share/insights/58f4a3531507cf00046b995d/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/failing-forward-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Failing Forward" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Failing Forward" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Failing Forward" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="failing-forward-en" data-id="58f4a0821507cf00046b9952">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/58f4a0821507cf00046b9952/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="58f4a3531507cf00046b995d" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="58f4a39e1507cf00046b9965" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="58f4a0821507cf00046b9952" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input value="2017-06-09T02:15:42+00:00" type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="50647d0ee4b08bcecce09449" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+from bs4 import BeautifulSoup
+
+
+def newfunc(name):
+    name2 = name.replace("html", "txt")
+    totxt1(name, name2)
+
+
+f = open("failing_forward.html", "r")
+html = f.read()
+soup = BeautifulSoup(html, 'html.parser')
+470 / 12: from bs4 import BeautifulSoup
+470 / 13: html = f.read()
+470 / 14: cd / home / shirish / BTECHSEM2 / project / scraping / html
+470 / 15: ls
+470 / 16: ls
+470 / 17: newfunc("no_logo_en.html")
+470 / 18: l = $(ls)
+470 / 19: l = ["a_year_with_peter_drucker_en.html", "eat_that_frog_en.html", "essentialism_en.html", "getting_things_done_en.html", "hidden_figures_en.html", "leadership_blindspots_en.html", "no_logo_en.html", "originals_en.html", "start_with_why_en.html", "the_checklist_manifesto_en.html", "the_life_changing_magic_of_tidying_up_en.html", "tools_of_titans_en.html", "what_got_you_here_wont_get_you_there_en.html"]
+470 / 20:
+for i in l:
+    newfunc(i)

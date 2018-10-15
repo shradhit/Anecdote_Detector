@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":56,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>The Art of the Start - Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/the-art-of-the-start-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/the-art-of-the-start-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="KC5GgRjGjBMM0Q1E5Ti7ei78Xh28ay0f2x8QIEvr0aHfuYzxwR7jh97Nn6RowQfH7V0TsfZTYvvGZHy+M1hEdQ==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="53e220526339360007610000">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">What’s in it for me: Get the basics you need to start and run a business.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="53e220656339360007630000">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">Entrepreneurs should strive to make meaning, not money.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="53e220776339360007640000">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">Don&#39;t just wing it when it comes to business: you need to set milestones, test assumptions and define tasks.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="53e220996339360007650000">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">Your company’s positioning should tell the customer what you do in a clear and personal way.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="53e220b86339360007660000">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">Pitching should tell the audience what you do and why it’s important.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="53e220ce6339360007670000">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">Every start-up should prepare a business plan.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="53e220eb6339360007680000">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">If you can’t get external funding for your company, focus on generating cash flow.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="53e220ff6339360007690000">
+      <div class="reader__point-gray-icon" data-chapter-menu=7></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">To build a great team, hire people better than yourself and fire those who don’t perform.</a>
+    </li>
+    <li class="chapters" data-chapterNo="8" data-chapterId="53e2211263393600076a0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=8></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="8" href="#">If you enter into a partnership, make sure it produces a tangible financial benefit.</a>
+    </li>
+    <li class="chapters" data-chapterNo="9" data-chapterId="53e2212f63393600076b0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=9></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="9" href="#">To build a brand, make your product so great it spreads like a virus.</a>
+    </li>
+    <li class="chapters" data-chapterNo="10" data-chapterId="53e2214d63393600076c0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=10></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="10" href="#">Keep your eyes open for unexpected opportunities.</a>
+    </li>
+    <li class="chapters" data-chapterNo="11" data-chapterId="53e2216c63393600076d0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=11></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="11" href="#">Final Summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="53e220526339360007610000">
+    <h1>What’s in it for me: Get the basics you need to start and run a business.</h1>
+    <div class="chapter__content"><p>The Chinese philosopher Lao Zi once said: “A journey of a thousand miles begins with a single step.” But often when we want to start some larger-than-life task, like our own business venture, we get so caught up planning 50 steps that we skip over the very first one.</p>
+<p>That’s why in these blinks, you won’t get in-depth analyses of the management tools you need to start and run a business. Instead, you’ll get just enough to take that first step. Among other things, you’ll learn how to pitch for funding and survive even if you don’t get it. You’ll understand how companies can position themselves successfully and create powerful brands.</p>
+<p>You’ll also discover:</p>
+<ul>
+<li>why you shouldn’t be afraid of hiring someone smarter than you,</li>
+<li>how IBM succeeded in hijacking the computer market from the leading brand, and</li>
+<li>what makes some products so popular they’re contagious.<strong></strong>
+</li>
+</ul></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="53e220656339360007630000">
+    <h1>Entrepreneurs should strive to make meaning, not money.</h1>
+    <div class="chapter__content"><p>Many people dream of starting their own company, and often their motivation stems from the desire to get rich quick.</p>
+<p>But this is the wrong way to go about it: entrepreneurship should be about <em>making</em> <em>meaning,</em> not making money. And you make meaning when you create a service or product that somehow contributes to the world <em>becoming</em> <em>a</em> <em>better</em> <em>place</em>.</p>
+<p>And not only does making meaning help the world, it’s also a critical element in your company’s success. It’s far more difficult to be an A-list entrepreneur if you don’t make meaning. Both you and your employees will be far more motivated if money isn’t your primary goal.</p>
+<p>So how can you create this meaning?</p>
+<p>Formulate a short, powerful <em>mantra</em> that reflects it. A mantra is a simple, frequently repeated statement that reminds the employees why the company exists. For example, Nike’s mantra is “Authentic athletic performance” and Disney’s is “Fun family entertainment.”</p>
+<p>You may think that a company’s mission statement already performs the same function, but a mantra is different in that it is shorter, more direct and more memorable.</p>
+<p>For example, Coca-Cola’s mission statement is “The Coca-Cola Company exists to benefit and refresh everyone it touches.” That’s a mouthful. But if we formulate a hypothetical mantra for the same company, we could come up with something like “Refresh the world,” which is much catchier and easier to keep in mind.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="53e220776339360007640000">
+    <h1>Don't just wing it when it comes to business: you need to set milestones, test assumptions and define tasks.</h1>
+    <div class="chapter__content"><p>Many start-ups operate in a state of constant chaos: no one really knows where the company is going or how much progress it’s making.</p>
+<p>Don’t let this happen to your company. Instead, use the <em>MAT</em> <em>framework</em>: define Milestones, Assumptions and Tasks.</p>
+<p>First, <em>identify</em> <em>your</em> <em>milestones</em> so that you can see how you’re progressing toward them. These milestones should be the most important events on your planned road to success, i.e., finalizing key deliverables or making a crucial decision.</p>
+<p>For example, the first milestone of a start-up could be getting a "proof of concept" for its product or service, which demonstrates that it’s feasible. Then the next milestone might be completing a functioning prototype, and the one after that is raising funding to build the first batch of products. This means every key event is mapped out in advance.</p>
+<p>But of course, it’s not a given that milestones will be reached. You need to be realistic about what business-relevant <em>assumptions</em> you’re making. Therefore you should create a list of assumptions that could affect whether or not you reach your milestones, and then track them regularly to see if they still hold. If not, you need to react.</p>
+<p>For example, let’s say you’re opening a tailoring shop, and assume that the textiles will cost you $1,000 a month. Then your suppliers tell you that they’re raising their prices, and the textiles will actually cost you $2,000 a month. Clearly you need to either find new suppliers or raise your prices.</p>
+<p>Finally, <em>list</em> <em>the</em> <em>tasks</em> that will help you achieve your milestones – tasks that are required to produce, sell, and support your product. These could be something peripheral but nevertheless crucial, like renting office space or paying your employee insurance policies. You need to ensure this is taken care of.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="53e220996339360007650000">
+    <h1>Your company’s positioning should tell the customer what you do in a clear and personal way.</h1>
+    <div class="chapter__content"><p>One area where start-up organizations frequently falter is <em>positioning</em>, which means the way in which customers perceive the company. But positioning need not be complicated. The most important thing is that it clearly answers one question: “What do you do?” Find a great answer to that question and communicate it to the market – giving the customer a reason to buy your product.</p>
+<p>So what do you need to do to achieve great positioning?</p>
+<p>The first stage of positioning is to make sure that your mission is understood and believed by customers. The core of your business should connect to their core needs, so that they see that your company exists precisely in order to fulfill those needs.</p>
+<p>Your positioning should also be formulated so that it speaks specifically to your target group of customers. For example, let’s say your company sells security software for banks. Which one of the following two positioning statements would you rather go with: “Increasing the security of websites,” or “Reducing the risk of online-transaction fraud for commercial banks”?</p>
+<p>Clearly, the latter is far more effective at speaking to the target customer.</p>
+<p>A second factor in successful positioning is that it should feel personally relevant to the individual customer. For example, if you’ve invented an innovative new kind of sunblock, you shouldn’t be saying, “Can reduce global cancer rates by up to three percent,” but instead, “Prevents <em>you</em> from getting melanoma.”</p>
+<p>The latter statement makes it immediately clear to the customer why she needs it.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="53e220b86339360007660000">
+    <h1>Pitching should tell the audience what you do and why it’s important.</h1>
+    <div class="chapter__content"><p>Everyone knows that no entrepreneur can succeed if she’s the only person excited about her idea. This is why a key part of entrepreneurship is <em>pitching</em>: presenting your business idea so that others get excited about it too.</p>
+<p>To pitch properly, you need to keep a few things in mind.</p>
+<p>First, always start by explaining what your company does. It’s the first thing the audience will want to know, and they won’t be able to focus on anything else until they’ve figured it out. Keep the introduction short and to the point, however, so as not to overwhelm the audience. For example: “We sell software,” or “We teach underprivileged kids.”</p>
+<p>Second, always clarify to the audience <em>why</em> what you’re saying is important. Remember, the audience lacks your background and expertise, so the significance of what you’re saying may be lost on them.</p>
+<p>For example, if you’re an expert in audio technology, you might proudly proclaim: “Our hearing aids use digital signal processing,” but this won’t mean anything to an audience of investors.</p>
+<p>To avoid this communication gap, when preparing your pitch always ask yourself “So what?” after everything you want to say. Then prepare to answer that “so what” using a few clarifying, vivid examples.</p>
+<p>So again, if you want to say: “Our hearing aids use digital signal processing,” ask yourself “So what?”</p>
+<p>Your response could be: “Because our hearing aids make sounds clearer.”</p>
+<p>Then use a real life example to really make the matter crystal clear: “So if you’re at a party with a lot of ambient noise, you’ll still be able to hear your conversation partner perfectly.”</p>
+<p>This is a benefit anyone can understand.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="53e220ce6339360007670000">
+    <h1>Every start-up should prepare a business plan.</h1>
+    <div class="chapter__content"><p>There’s more than a grain of truth to the age-old saying, “If you don't plan to succeed you plan to fail.” Traditionally, firms use the <em>business</em> <em>plan</em>: a formal written document outlining goals and the methods for reaching them.</p>
+<p>Because the business plan is such a formal document, writing one may seem like a useless chore for a start-up contending with a ton of unknowns. But in fact, it does have several benefits.</p>
+<p>First and foremost: you will be asked for one by your stakeholders, though they may not read it. Don’t even dream of attracting funding from potential investors without a business plan.</p>
+<p>What’s more, the act of preparing the business plan carries certain benefits too.</p>
+<p>For one, your team has to work together to write it. This can help them become a more cohesive unit, or, on the other hand, may make it clear that you don’t want to work with these people ever again – thus saving you a lot of pain later on.</p>
+<p>What’s more, writing the plan can often highlight problems and future issues that would not come up without formalized planning. You may, for example, find that two people on your team are actually doing the same thing, or that no one has thought about how to deliver customer service.</p>
+<p>So what’s the key to writing a good business plan? Just focus on the <em>executive</em> <em>summary</em>: a four-paragraph précis of the document. This is the first thing people will read, and if it’s not stellar, they won’t go any further.</p>
+<p>A good executive summary clearly and concisely explains what problem you’re solving and how you plan to do it, as well as showcasing your business model and the “magic” in your product or service.</p>
+<p>Once your executive summary is ready, perform this simple test to gauge its quality: print it and read it. If it sparks an interest in you to read on, then it’s in good shape.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="53e220eb6339360007680000">
+    <h1>If you can’t get external funding for your company, focus on generating cash flow.</h1>
+    <div class="chapter__content"><p>Many start-ups owe their existence to investors who fund them in the early stages. But you can also build a start-up by <em>bootstrapping</em>: running it without any external investment.</p>
+<p>To succeed at bootstrapping, you need to focus primarily on generating <em>cash</em> <em>flow</em>, or getting money into your bank account. After all, you need it to pay your bills, rent, salaries, and so forth.</p>
+<p>This means you should prioritize sales and projects according to how quickly you’ll get paid for them. For example, if a customer wants to commission a six-month website design project from you but your company is so strapped for cash it will be bankrupt in eight weeks, you need to either decline or demand part of the payment up front.</p>
+<p>Another way to improve your cash-flow situation is to try to postpone the outflows. To achieve this, negotiate with your suppliers for better payment terms so that you don’t have to immediately pay them in full.</p>
+<p>If you want to generate cash flow, you can’t wait for your product to be perfected before selling it. Otherwise you’ll go bankrupt waiting for all the glitches to be fixed.</p>
+<p>Don’t think, “Fix it, fix it, fix it, ship it,” but instead, “ship it, fix it, ship it, fix it, ship it.”</p>
+<p>You’ll get immediate cash flow from sales and receive feedback on your product from real customers.</p>
+<p>The downside is that the quality of your product will inevitably be suboptimal, and this could damage your company’s image in the market. To negate this effect, try to first sell your product in a small, isolated geographical area or market. This way at least the damage to your reputation will be contained.</p>
+<p>Remember, however, that the one thing you can’t fix after shipping is product safety. This needs to be top-notch before even the first tentative sale, because safety issues can cause irreparable damage to your reputation.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="7" data-chapterid="53e220ff6339360007690000">
+    <h1>To build a great team, hire people better than yourself and fire those who don’t perform.</h1>
+    <div class="chapter__content"><p>No matter what industry you’re in, you can’t run a successful company without a great team of people behind it. So how do you ensure that you build this team?</p>
+<p>First of all, never be afraid of hiring someone who’s better than you. This is essential for success.</p>
+<p>Just think, if everyone in the company is only willing to hire someone less able than themselves, the team will inevitably fill up with poor performers. To paraphrase Steve Jobs, if B players hire C players and C players hire D players, in no time at all you’ll find your company filled with Z players.</p>
+<p>Instead, you have to be humble enough to admit that there are people more capable than you and you must have the self-confidence to hire them anyway.</p>
+<p>Second, you must identify people in your team who aren’t performing and get rid of them.</p>
+<p>This may seem harsh, but you simply can’t afford to keep them around. Every employee comes at a cost in resources like salary, office space and management time, and all these are wasted if you’re directing them at the wrong person. You need to remedy these situations quickly.</p>
+<p>So how can you identify low-performers?</p>
+<p>When you hire a new employee, set personal milestones for them and define a review period during which you’ll assess their performance in relation to these milestones.</p>
+<p>For example, if you hire a new salesperson, her milestones could include successfully completing training, developing a client database and making the first ten sales calls.</p>
+<p>The initial review period should be around 90 days so that both the employee and the company get to know each other well enough to decide whether or not to continue.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="8" data-chapterid="53e2211263393600076a0000">
+    <h1>If you enter into a partnership, make sure it produces a tangible financial benefit.</h1>
+    <div class="chapter__content"><p>Start-ups can’t remain start-ups forever – they either grow or fail. And one of the tactics that can help your start-up grow is making partnerships with other businesses.</p>
+<p>Let’s look at a few factors that make your partnerships successful.</p>
+<p>First, be selective. Only accept partnerships that will positively affect your financial forecast. This means your partner has to enable you to, for example, reduce costs, accelerate product development or enter a new market. In other words, the benefit has to be tangible.</p>
+<p>For example, in its early days, Apple partnered with the Aldus Corporation, which had produced a desktop publishing program called PageMaker. Apple needed a “killer application” that would run on its computers, whereas Aldus needed a channel through which to sell its software. As a result of the partnership, both companies flourished.</p>
+<p>But even if the partnership makes financial sense, getting two organizations to collaborate is no easy task. This is why you need to find a <em>champion</em> within your company who will be solely responsible for making the partnership work. If everyone only feels partially responsible, nothing will ever get done. The champion should be someone who truly believes in the potential of the partnership and has full authority to get all the departments in the company to deliver what is needed.</p>
+<p>Lastly, even though a partnership should be beneficial to both parties, it’s still important that there’s a plan for getting out of it if necessary. Circumstances change and should the time come, both you and your partner need to be clear about how you’ll end the collaboration. Acknowledging this from the start will help both parties to be more at ease over the course of the partnership.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="9" data-chapterid="53e2212f63393600076b0000">
+    <h1>To build a brand, make your product so great it spreads like a virus.</h1>
+    <div class="chapter__content"><p>Every founder dreams of her start-up one day becoming an internationally recognized household name. So how can you brand your product so that it becomes a legend?</p>
+<p>Your main focus should lie in creating products that are <em>contagious</em> – people should be infected with the enthusiasm to try them.</p>
+<p>Creating such products is no easy feat, but there are a few elements that contagious products tend to share.</p>
+<p>First, contagious products are <em>cool</em>. The iPod, for example, was successful partly because it was the first cool Mp3 player.</p>
+<p>Second, contagious products are <em>effective</em>, or excellent at what they do. The TiVo, for example, became an iconic digital video recorder because it allowed you to record your favorite TV shows so effortlessly. If it had been a pain to use, no one would ever have even heard of it.</p>
+<p>Third, contagious products are <em>distinctive</em>, or noticeably different from the competition. Consider the Hummer, for example – you wouldn’t confuse it with any other car.</p>
+<p>But even if you build contagious products or services it won’t be enough to create a recognizable brand. You also need to <em>build</em> <em>a</em> <em>community</em> of users around them. These communities provide support to users and make the experience of using the product or service a more satisfying one.</p>
+<p>For example, Coca-Cola’s loyal fans started a Facebook fan page that gained over one million followers.</p>
+<p>If you’re not lucky enough to have your users spontaneously form a community, you can expedite the process by finding your most enthusiastic customers and asking them to build the community for you. They’ll probably be happy to help, especially if you give them a budget for promotion and community events, and also assign someone from your company to be your representative.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="10" data-chapterid="53e2214d63393600076c0000">
+    <h1>Keep your eyes open for unexpected opportunities.</h1>
+    <div class="chapter__content"><p>You may never have heard of it, but once upon a time, a company called Univac led the computing market. But the company made a crucial error of judgment: it saw its computers as sophisticated tools to be used by scientists only, and therefore only produced machines suitable for complicated scientific calculations. At this time, however, another company realized that businesses were also interested in the potential of computing, and so it began building machines targeted at this new consumer market. Though the name Univac is long forgotten, you may have heard of this second company. It’s IBM.</p>
+<p>So what’s the lesson?</p>
+<p>Always keep an open mind and look for non-obvious customers and uses for your products. When your product is used by customers you didn’t expect or in a way you didn’t think of, don’t panic, but instead take advantage of this new chance to grow. Don’t make the same mistake Univac made.</p>
+<p>Another key asset is a willingness to shift focus if your “obvious” target customers are hard to reach. For example, one obvious target customer for any start-up is a prestigious, name-brand company that could then work as a reference for future sales. The trouble is that such companies tend to only buy from other established companies, and a start-up can wear itself out trying to convince them otherwise.</p>
+<p>If your dream customer doesn’t see why your product is so great, just forget about them and instead target customers who are willing to try your product.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="11" data-chapterid="53e2216c63393600076d0000">
+    <h1>Final Summary</h1>
+    <div class="chapter__content"><p>The key message in this book:</p>
+<p><strong>Companies</strong> <strong>should</strong> <strong>be</strong> <strong>started</strong> <strong>because</strong> <strong>the</strong> <strong>founders</strong> <strong>want</strong> <strong>to</strong> <strong>make</strong> <strong>meaning,</strong> <strong>not</strong> <strong>because</strong> <strong>they</strong> <strong>want</strong> <strong>to</strong> <strong>make</strong> <strong>money.</strong> <strong>Focus</strong> <strong>on</strong> <strong>generating</strong> <strong>cash</strong> <strong>flow</strong> <strong>and</strong> <strong>pursuing</strong> <strong>unexpected</strong> <strong>market</strong> <strong>opportunities,</strong> <strong>and</strong> <strong>you</strong> <strong>can</strong> <strong>thrive</strong> <strong>even</strong> <strong>without</strong> <strong>external</strong> <strong>funding.</strong></p>
+<p>Actionable advice:</p>
+<p><strong>Make</strong> <strong>your</strong> <strong>introductions</strong> <strong>attention</strong> <strong>grabbing.</strong></p>
+<p>In these blinks you found out that the most important part of any business plan is the executive summary, because that’s what people read first. But in fact, the same holds true for many documents and presentations. Whether you’re trying to sell your product or pitch to investors, ensure you come out with your guns blazing from the start, or you’ll lose their attention. This means you should use your most shocking facts and compelling anecdotes at the get-go – they’re no use if no one’s awake to read them.</p></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="The Art of the Start" data-content-selector=".chapter_visible h1" href="/en/share/insights/53e2216c63393600076d0000/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="The Art of the Start" data-content-selector=".chapter_visible h1" href="/en/share/insights/53e2216c63393600076d0000/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="The Art of the Start" data-content-selector=".chapter_visible h1" href="/en/share/insights/53e2216c63393600076d0000/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/the-art-of-the-start-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="The Art of the Start" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="The Art of the Start" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="The Art of the Start" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="the-art-of-the-start-en" data-id="53e220056339360007600000">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/53e220056339360007600000/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="53e2216c63393600076d0000" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="53e2216c63393600076d0000" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="53e220056339360007600000" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input value="2017-06-23T08:52:00+00:00" type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="50647cf9e4b08bcecce09447" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+

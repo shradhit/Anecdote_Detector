@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":39,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/the-lean-startup-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/the-lean-startup-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="DHJYG53NQbYPil2RhTzpc+ikbB4iMxuNu0XLSyykrAr75ZJrRBUuIt2Wz3EIxVXOKwUhsmgLVGmmPqfVVBc53g==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="5294dcb4396433000c000000">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">Start-ups need to be managed differently from established companies.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="5294dcd53964330015010000">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">The purpose of a start-up is to find a sustainable business model.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="5294dd343964330008000000">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">Find your sustainable business model through validated learning.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="5294dd4d396433000c020000">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">The leap-of-faith assumptions: test your value and growth hypotheses.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="5294dd693964330015030000">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">Develop a minimal viable product to test your idea in the market.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="5294dd843964330015050000">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">Build, measure, learn – as fast and as often as possible.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="5294dda1396433000c040000">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">Use split-tests to optimize your product.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="5294ddbe3964330015070000">
+      <div class="reader__point-gray-icon" data-chapter-menu=7></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">To find the right business model for your company, you usually have to pivot.</a>
+    </li>
+    <li class="chapters" data-chapterNo="8" data-chapterId="5294dde43964330008020000">
+      <div class="reader__point-gray-icon" data-chapter-menu=8></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="8" href="#">Every start-up should initially focus on one engine of growth.</a>
+    </li>
+    <li class="chapters" data-chapterNo="9" data-chapterId="5294de1b3964330008040000">
+      <div class="reader__point-gray-icon" data-chapter-menu=9></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="9" href="#">Vanity metrics are often flattering but misleading – they won’t help you find a sustainable business model.</a>
+    </li>
+    <li class="chapters" data-chapterNo="10" data-chapterId="5294de363964330008060000">
+      <div class="reader__point-gray-icon" data-chapter-menu=10></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="10" href="#">Every start-up has to define its core metrics and analyze them properly. </a>
+    </li>
+    <li class="chapters" data-chapterNo="11" data-chapterId="5294de983964330015090000">
+      <div class="reader__point-gray-icon" data-chapter-menu=11></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="11" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="5294dcb4396433000c000000">
+    <h1>Start-ups need to be managed differently from established companies.</h1>
+    <div class="chapter__content"><p>In the first three blinks, you'll discover what the main goal is that a start-up should pursue.</p>
+<p>Traditional management consists of two components: developing plans and overseeing the people executing them.</p>
+<p>A manager creates a plan, sets milestones, and delegates tasks to her employees, guiding them to ensure they hit their milestones on time.</p>
+<p>This management strategy works in established companies that have been around long enough to know what worked in the past and therefore what could work in the future.</p>
+<p>Start-ups are different, though: they can’t predict their own future because they have no past, don’t know what their customers want, and don’t know which approaches are best for finding customers or creating a sustainable business. To find out what could work, they must stay flexible. To adopt fixed plans with set milestones or rely on long-term market forecasts would be to delude themselves.</p>
+<p>Nevertheless, many founders do use corporate-management tools such as milestone plans and long-term market forecasts. They act as if they are preparing a space rocket for liftoff, tinkering with it for years and only launching it when they think it’s perfect. In reality, managing a start-up is more like driving a jeep across unstable and shifting terrain, where the founders must constantly change direction and respond quickly to unexpected obstacles and dead-ends.</p>
+<p>However, start-ups shouldn’t abandon planning completely to adopt a chaotic “just do it” mindset either. Driving chaotically is not going to get you anywhere; someone has to be at the wheel to make intelligent decisions about which way to go.</p>
+<p>A start-up’s management team should try to maintain an overview of their situation and keep their company steered toward its overall goal. Hence, they need to find the right metrics to measure whether their journey is leading them in the right direction.</p>
+<p><strong>Start-ups need to be managed differently from established companies.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="5294dcd53964330015010000">
+    <h1>The purpose of a start-up is to find a sustainable business model.</h1>
+    <div class="chapter__content"><p>The main goal of any start-up is to find a business model that is profitable and sustainable.</p>
+<p>The most intricate and detailed milestone plans, the most efficient execution of those plans or even the undivided and devoted attention of the press won’t help the slightest without a sustainable business model.</p>
+<p>If you want your company to be more than just a temporary pet project that will sooner or later dwindle and die, you must find a way to acquire customers and earn money by serving them. Say you want to build your business around online kilt-knitting instructions. Ask yourself, does anyone want these instructions? Is there any way to make money out of them? If the answer in both cases is no, find something else that people <em>do</em> want and will be willing to pay for.</p>
+<p>Thus, the one and only goal for your start-up is to find a <em>sustainable business</em> <em>model</em>, one that works today and can work in the future as well. In practice, this means finding out which products your potential customers want and how to turn their desires into constant revenues.</p>
+<p>The main responsibility of any start-up’s management should be to focus the whole company, including everything being done on a day-to-day basis, on reaching this one main goal. The faster a start-up finds its way to a sustainable business model, the likelier it is to succeed.</p>
+<p><strong>The purpose of a start-up is to find a sustainable business model.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="5294dd343964330008000000">
+    <h1>Find your sustainable business model through validated learning.</h1>
+    <div class="chapter__content"><p>In order to find a sustainable business model, start-ups have to discover what their customers want and how to make money from it. They have to find the right product for the right people and understand how to sell it to them.</p>
+<p>This doesn’t mean coming up with a great plan from the start. Rather, it requires a process of constant learning: ideally <em>validated learning, </em>meaning learning through a scientific approach.</p>
+<p>To begin the process of validated learning, you must come up with hypotheses about whether and how certain products will be successful in a given market. For example, “US customers will be willing to purchase shoes online.”</p>
+<p>Such fundamental hypotheses have to be tested, and only if they are validated by talking to customers can the start-up know it’s on the right track toward finding a sustainable business model.</p>
+<p>Don’t use questionnaires or fictional customers though; instead, talk to real customers in a realistic environment. The most reliable way to find out whether people will buy your product is to offer it to them and see how they respond.</p>
+<p>Take the success story of Zappos: it started with the simple hypothesis that people would be willing to buy shoes online. To test this idea, the company took photographs of shoes in shoe stores and displayed the photographs in a fake web shop. When people actually tried to buy the shoes online, Zappos saw that their hypothesis was valid.</p>
+<p>Through this approach, the foundation was laid for one of the most successful business models of the last decade.</p>
+<p><strong>Find your sustainable business model through validated learning.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="5294dd4d396433000c020000">
+    <h1>The leap-of-faith assumptions: test your value and growth hypotheses.</h1>
+    <div class="chapter__content"><p>Part of developing a product is the <em>leap of faith</em>: a founder believes in the future success of the product she wants to create, even though there’s no proof for this yet.</p>
+<p>To quickly close the gap between believing and knowing, every founder should formulate and test two fundamental assumptions:</p>
+<p>The <em>value hypothesis </em>assumes that a product will deliver value to its customers, that is, that <em>early adopters</em> will find and embrace the product.</p>
+<p>The <em>growth hypothesis </em>states that the product will not only appeal to the small group of early adopters but will also find a bigger market later.</p>
+<p>Both assumptions must be tested as soon as possible. Only if they can be validated is it worth investing the time and effort into developing the product.</p>
+<p>Take a look at Facebook: they managed to validate both the value and growth hypothesis at a very early stage when the social network had only a few users.</p>
+<p>First of all, the registered users were very active in the network. More than half logged in at least once a day – impressive proof for the value hypothesis.</p>
+<p>Second, Facebook had sensational user-activation rates, meaning it gained market penetration very quickly. In colleges where Facebook had been introduced, three quarters of all students signed up within one month – without the company having spent a penny on marketing. Thus, the growth hypothesis was proven as well.</p>
+<p>Such impressive data made investors strong believers in the future success of this new social network, leading them to invest millions at a very early stage.</p>
+<p><strong>The leap-of-faith assumptions: test your value and growth hypotheses.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="5294dd693964330015030000">
+    <h1>Develop a minimal viable product to test your idea in the market.</h1>
+    <div class="chapter__content"><p>Many founders spend too much time working on a product in isolation, without knowing whether there are actually any real customers for the product.</p>
+<p>If you want to create a sustainable business, you must find out as quickly as possible whether there is any demand for your product.</p>
+<p>The quickest and easiest way to get real-world customer feedback on your idea is to create a minimal version of the product. This <em>minimal viable product (MVP) </em>should be as simple as possible and should contain only what is needed to give the customers a realistic experience of how your product would work – just enough to draw useful feedback from them.</p>
+<p>The MVP can be a simple bare-bones prototype of your product, or even a <em>smoke test</em>: pretend to sell a fake product. Uploading pictures of shoes to a web shop, even though you cannot yet sell any, is a prime example.</p>
+<p>Take the founders of <em>Dropbox</em>. They knew that developing their idea into a product would take a lot of time, so they chose a simple and creative way to validate their hypothesis that there was demand for a new and user-friendly data-synchronising service: they created a video presenting their idea.</p>
+<p>The founders had assumed there was a demand for such a product, and they were right: within one night, 75,000 people had signed up to their waiting list, and the Dropbox team concluded they were on the right track. Thus, they could confidently start developing the actual product.</p>
+<p>Similarly, every start-up should first find out whether there’s an actual demand for their product before they start building it.</p>
+<p><strong>Develop a minimal viable product to test your idea in the market.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="5294dd843964330015050000">
+    <h1>Build, measure, learn – as fast and as often as possible.</h1>
+    <div class="chapter__content"><p>In the search for a sustainable business model, the top priority is learning: every start-up has to learn which products to build and how to earn money from them.</p>
+<p>This can’t happen if you’re out of touch with the real world. You need to get out there, show your product to customers, gather their feedback and then learn from it.</p>
+<p>To facilitate this, set up so-called <em>BML </em>loops. BML signifies the cycle <em>build-measure-learn:</em></p>
+<p>First you <em>build </em>a simple version of your product, like a prototype or a smoke-test.</p>
+<p>Second, you take this product to its actual market and gather customer feedback. By collecting quantitative data from this experiment, you <em>measure</em> interest in the product; for instance, how many people clicked the purchase button and tried to buy shoes from your fake web shop.</p>
+<p>When measuring, make sure you don’t just look at the numbers but also talk to your customers. If you want to understand your data, you should learn about the individual impressions and opinions of your customers as well.</p>
+<p>What you <em>learn </em>in one cycle should then be used to conceptualize and build a new, optimized product, which brings you into the next BML cycle. This process is then repeated until you find a sustainable business model.</p>
+<p>It’s important to be fast here. Each BML loop helps you improve your product and gives you valuable insights about what your customers want. The more loops you can go through, the more likely it is you will find your sustainable business model.</p>
+<p><strong>Build, measure, learn – as fast and as often as possible.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="5294dda1396433000c040000">
+    <h1>Use split-tests to optimize your product.</h1>
+    <div class="chapter__content"><p>When developing and improving a product, start-ups have to distinguish between <em>value </em>and <em>waste</em>: they must find out which features are valuable for their customers and which aren’t.</p>
+<p>Valuable features are those that help the company attract more customers or increase its revenue.</p>
+<p>Features that don’t do either are wasteful – even if the founders or engineers think they’re the greatest thing ever.</p>
+<p>A clever way of distinguishing between value and waste is <em>split-testing</em>. Whenever you consider adding a feature or changing an existing one, create two versions of your product: one with the new feature and one without it. By testing both versions, you’ll soon see which one is more appealing to customers.</p>
+<p>The first companies that used this technique were mail-order businesses. For example, to find out whether a new catalogue layout would increase orders, they printed two versions of it: 50 percent of their customers got the old design, and 50 percent got a new one. The catalogues were identical in every other way and the customers were split randomly, so the companies simply had to compare how many orders were placed by each group. This data answered the question of whether the new design was an improvement or not.</p>
+<p>In the same spirit, any start-up can test every possible change before actually implementing it. Want to know whether your website works better in red than in blue? Why not create two test versions of it and track customer click-rates for a couple of days?</p>
+<p>Any change you wish to make to your product should be tested with this semi-scientific approach before you actually implement it.</p>
+<p><strong>Use split-tests to optimize your product.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="7" data-chapterid="5294ddbe3964330015070000">
+    <h1>To find the right business model for your company, you usually have to pivot.</h1>
+    <div class="chapter__content"><p>Many start-ups believe in the popular myth that the key to founding a successful company is perseverance and an iron will: a heroic founder has a brilliant idea and fights through lots of setbacks until the idea finally becomes a hit.</p>
+<p>But this way of thinking leads most start-ups into the so-called <em>land of the living dead</em>. Like mindless zombies, they just can’t take a hint and will keep working hard to sell a product that the market simply doesn’t want.</p>
+<p>To avoid this, you should keep asking yourself how you need to change your product to improve it and help it find its market.</p>
+<p>Also, you should periodically ask yourself whether a <em>pivot </em>might be in order – a fundamental change of course.</p>
+<p>A pivot can take many shapes, such as: redefining the core value or your product; choosing to pursue a different <em>customer segment </em>and; changing your main <em>sales channel</em>.</p>
+<p>A main characteristic of a pivot is that the core assumptions behind the start-up have changed, and therefore new hypotheses must be tested.</p>
+<p>Deciding to pivot can be tough, and hence start-ups will often avoid and postpone making this decision. This is why it can be beneficial to hold <em>pivot meetings</em> once per month. In these meetings, you take an honest look at the data you’ve gathered and ask yourself whether you might be a zombie in need of a pivot.</p>
+<p>Many start-ups had to pivot a couple of times before finally becoming successful businesses. Take Groupon: they started as a platform for activism and fundraising, and only later turned into the daily deals platform they’re known as today.</p>
+<p><strong>To find the right business model for your company, you usually have to pivot.</strong></p>
+<p> </p></div>
+</div>
+<div class="chapter chapter" data-chapterno="8" data-chapterid="5294dde43964330008020000">
+    <h1>Every start-up should initially focus on one engine of growth.</h1>
+    <div class="chapter__content"><p>A fundamental part of any business model is an <em>engine of growth</em> that ensures the company does not stagnate.</p>
+<p>There are three different kinds of growth engines:</p>
+<p>The <em>sticky engine </em>works by retaining existing customers who already generate a constant stream of revenue. The focus is not to win new customers by investing in marketing but rather to make current customers use the product even more often by offering new features or great service.</p>
+<p>The <em>viral engine</em> works by getting existing customers to take care of the company’s marketing. Awareness of the product spreads among your target customers by word-of-mouth. This can save you a lot of marketing expenditure, so you should make it as easy as possible for customers to engage in this kind of viral marketing.</p>
+<p>A famous example of a viral engine of growth is Hotmail’s automatic email signature: “P.S. Get your free e-mail at Hotmail.”</p>
+<p>Finally, a <em>paid engine</em> works by investing into marketing, for example through paid online advertising. Of course, this is only sustainable if existing customers bring in enough revenues to ensure the costs per user acquisition are lower than <em>user lifetime value</em>.</p>
+<p>In general, you can engage all three engines of growth at the same time, but it’s often wise to focus on only one of them at first so that it picks up speed as quickly as possible.</p>
+<p>Focusing on one engine of growth also makes it easier to assess the success of new features: if they help the growth engine gain speed, they’re valuable; if not, they’re waste.</p>
+<p><strong>Every start-up should initially focus on one engine of growth.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="9" data-chapterid="5294de1b3964330008040000">
+    <h1>Vanity metrics are often flattering but misleading – they won’t help you find a sustainable business model.</h1>
+    <div class="chapter__content"><p>No start-up can find a sustainable business model without occasionally pausing to get directions, and these directions are derived from examining the right metrics.</p>
+<p>To gauge whether you’ve made any progress toward your long-term goals, you need to examine the data you’ve gathered along the way.</p>
+<p>Unfortunately, many start-ups give in to the temptation of using <em>vanity metrics: </em>flattering but useless or even harmful metrics that make a company look good but don’t help bring it closer to its goals.</p>
+<p>Start-ups relying on vanity metrics are effectively looking into the business equivalent of a slimming mirror, which makes it hard to face actual problems and fix them.</p>
+<p>For instance, it may be flattering to get a lot of media attention and Facebook fans, but never make the mistake of interpreting these signs as success. They don’t pay the bills, and you should not waste your energy trying to impact such meaningless metrics.</p>
+<p>Other vanity metrics could be the hours of work you’ve already put into a product or the number of milestones you’ve accomplished. These numbers can (but don’t necessarily) have anything to do with the success of your start-up. Hence, the goal should never be to maximize them. Even if someone works 100-hour weeks, it’s still possible that those hours are wasted on something that’s useless from the point of view of long-term success.</p>
+<p>To be successful, you must find a sustainable business model and grow a base of customers who use your product – and you can do neither if you’re fixated on the wrong metrics.</p>
+<p><strong>Vanity metrics are often flattering but misleading – they won’t help you find a sustainable business model.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="10" data-chapterid="5294de363964330008060000">
+    <h1>Every start-up has to define its core metrics and analyze them properly. </h1>
+    <div class="chapter__content"><p>Defining the right metrics to track and continuously evaluating them is crucial for any start-up. Only by seeing the metrics improve will you know you’re on the way towards your long-term goal of finding a sustainable business model.</p>
+<p>The right core metrics differ from start-up to start-up, but often they’re things like increases in number of paying customers, average session length per customer, and number of recommendations generated per, say, one thousand customers.</p>
+<p>Each start-up has to find its own right metrics to give it direction and a realistic view of its progress.</p>
+<p>When analyzing data, it can be helpful to use the so-called <em>cohort analysis</em>. Instead of simply looking at how the revenues or user base have grown in general, compare how new customers behave compared to old ones.</p>
+<p>Say one of your core metrics is your <em>recommendation rate</em>. To understand how it advances, you should examine the following factors: On average, how often did customers who signed up six months ago recommend your product to their friends?; What about customers who signed up four months ago?; Two months ago?</p>
+<p>By comparing cohorts (in this case, groups of users who signed up at different times) and their respective <em>recommendation rates</em>, you can see whether you’re advancing towards your goal. Only if the metric is improving are you progressing; otherwise, you’re stagnating.</p>
+<p><strong>Every start-up has to define its core metrics and analyze them properly. </strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="11" data-chapterid="5294de983964330015090000">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p>The key message in this book is:</p>
+<p><strong>Start-ups should use a semi-scientific approach to test their core assumptions and then build a sustainable business model on the validated hypotheses. They should develop product prototypes quickly and then continuously refine them by gathering customer feedback and going through <em>build-measure-learn </em>loops.</strong></p>
+<p>The questions this book answered:</p>
+<p><strong>Which main goal should a start-up pursue and how?</strong></p>
+<ul>
+<li>Start-ups need to be managed differently from established companies.</li>
+<li>The purpose of a start-up is to find a sustainable business model.</li>
+<li>Find your sustainable business model through validated learning.</li>
+</ul>
+<p><strong>How can start-ups find the right product and business model?</strong></p>
+<ul>
+<li>The leap-of-faith assumptions: test your value and growth hypotheses.</li>
+<li>Develop a minimal viable product to test your idea in the market.</li>
+<li>Build, measure, learn – as fast and as often as possible.</li>
+<li>To find the right business model for you company, you usually have to pivot.</li>
+</ul>
+<p><strong>How can start-ups find their engine of growth and how can they analyze the right metrics?</strong></p>
+<ul>
+<li>Every start-up should initially focus on one engine of growth.</li>
+<li>Vanity metrics are often flattering but misleading– they won’t help you find a sustainable business model.</li>
+<li>Every start-up has to define its core metrics and analyze them properly.</li>
+</ul></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="The Lean Startup" data-content-selector=".chapter_visible h1" href="/en/share/insights/5294dcb4396433000c000000/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="The Lean Startup" data-content-selector=".chapter_visible h1" href="/en/share/insights/5294dcb4396433000c000000/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="The Lean Startup" data-content-selector=".chapter_visible h1" href="/en/share/insights/5294dcb4396433000c000000/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/the-lean-startup-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="The Lean Startup" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="The Lean Startup" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="The Lean Startup" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="the-lean-startup-en" data-id="5294dbca3964330015000000">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/5294dbca3964330015000000/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="5294de983964330015090000" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="5294de983964330015090000" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="5294dbca3964330015000000" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input value="2017-06-26T06:44:39+00:00" type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="50647cf9e4b08bcecce09447" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+

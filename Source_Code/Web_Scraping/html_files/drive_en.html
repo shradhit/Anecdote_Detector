@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":40,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/drive-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/drive-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="QV9xz/VRWLlLLUUdJ4DbDhMVBqoW+bfCKZrAfBkADey2yLu/LIk3LZkx1/2qeWez0LRLBlzB+CY04aziYbOYOA==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="529c9346626433000c140000">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">Motivation 1.0 and motivation 2.0: basic needs and the stick and the carrot.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="529c935d6264330011030000">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">There is another way: Motivation 3.0 – intrinsic motivation in place of exterior incentives.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="529c93856264330011050000">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">Missing the target: the stick and the carrot can have harmful consequences.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="529c939b6264330011070000">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">Extrinsic promises destroy intrinsic motivation.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="529c93b7626433000c160000">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">Get into the flow: the inner drive for perfection leads to passion and dedication.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="529c93ce6264330011090000">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">The pursuit of meaningfulness: a fundamental intrinsic impetus.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="529c93e46264330008060000">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">My task, my time, my team! Self-determination promotes intrinsic motivation.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="529c9402626433000c180000">
+      <div class="reader__point-gray-icon" data-chapter-menu=7></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">The effective company: upgrading to 3.0.</a>
+    </li>
+    <li class="chapters" data-chapterNo="8" data-chapterId="529c944f6264330008080000">
+      <div class="reader__point-gray-icon" data-chapter-menu=8></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="8" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="529c9346626433000c140000">
+    <h1>Motivation 1.0 and motivation 2.0: basic needs and the stick and the carrot.</h1>
+    <div class="chapter__content"><p>Around 50,000 years ago, man was preoccupied solely with his own survival – he was driven by motivation 1.0: the search for food and drink, a safe place to rest at night, and the desire to reproduce and pass on his genes.</p>
+<p>Up until a few centuries ago, these basic needs were the main driving force of humanity. By no later than the age of industrialization, however, this had begun to change. Production cycles became more complex, and man started to rely increasingly on a new impetus for production: extrinsic motivation 2.0, which is based on the two incentives of reward and punishment by a third party – also known as the stick and the carrot.</p>
+<p>The strategy behind this is that rewards reinforce <em>desirable</em> behavior. With the prospect of higher wages in mind, laborers haul more coal, and modern employees are quicker to respond to emails.</p>
+<p>Punishment, by contrast, is intended to prevent <em>undesirable</em> behavior. Someone rebuked in front of the whole team will be late less often, and a person threatened with dismissal for stealing materials is not likely to purloin anything from the workplace.</p>
+<p>Employers who rely on extrinsic motivation work on the premise that their workers, if not driven by the consequences of the stick and the carrot, fundamentally have no enthusiasm for their work and will try to shirk any responsibility; therefore, those in a management position must invariably direct and supervise them.</p>
+<p>Though it might be that some modern companies have relaxed the dress code or working hours for the sake of keeping their workers happy, Motivation 2.0 continues to dominate the working world. The managing parties of the majority of firms are convinced that when it comes to motivating their employees, the only important factor other than basic human needs is the use of rewards and sanctions – and they manage their workers accordingly.</p>
+<p><strong>Motivation 1.0 and motivation 2.0: basic needs and the stick and the carrot.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="529c935d6264330011030000">
+    <h1>There is another way: Motivation 3.0 – intrinsic motivation in place of exterior incentives.</h1>
+    <div class="chapter__content"><p>Until 1949, it was assumed that human and animal behavior was controlled by inner drives and exterior motivations. Then professor of psychology Harry Harlowe made a discovery that disproved this theory:</p>
+<p>He gave eight Rhesus monkeys a mechanical puzzle. Since the primates would receive neither food nor praise if they solved the puzzle, he was convinced they would not concern themselves with it.</p>
+<p>However, the monkeys gave it a go, recognized how it worked, and, without any exterior incentives, solved it with great enjoyment. Such behavior is also typical for us humans.</p>
+<p>The development of the online encyclopedia <em>Wikipedia</em>, for example, is just as intriguing. Tens of thousands of people write and edit articles for <em>Wikipedia</em> voluntarily, out of pure enjoyment. They invest valuable working time in this endeavor and receive not even the lowest material reward in return. Although the growth of <em>Wikipedia</em> was dependent on voluntary writers, the project became an enormous success. In contrast, its rival product, <em>Microsoft Encarta</em>, whose development was in the hands of well-paid professional authors and editors, was closed down some years ago.</p>
+<p>In both the Rhesus monkeys and the <em>Wikipedia</em> example, motivation is not driven by basic needs, rewards or sanctions. How, then, can it be explained?</p>
+<p>There is another inner force that drives us: the intrinsic Motivation 3.0. When a person finds a job fulfilling, no further reward is necessary. Merely the joy of being able to program an application such as Firefox or to publish recipes on the internet for other people to benefit from is, frequently, motivation enough.</p>
+<p>Intrinsically motivated people want to be able to dictate when they work, what they work on, and what they are responsible for. They do not need to be directed or rewarded, because they enjoy working and do so voluntarily, without demanding anything in return.</p>
+<p><strong>There is another way: Motivation 3.0 – intrinsic motivation in place of exterior incentives.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="529c93856264330011050000">
+    <h1>Missing the target: the stick and the carrot can have harmful consequences.</h1>
+    <div class="chapter__content"><p>In most garages, mechanics are promised a bonus if they carry out a certain number of repairs within a certain time frame. One would expect this external incentive to motivate them to provide results that satisfy their customers.</p>
+<p>Instead, the whole strategy often backfires: the mechanics' main goal is to achieve a target number of repairs and secure their reward, and so they are inclined to carry out unnecessary repairs, something which annoys their customers and damages the company as a result. The target, intended to promote efficient work, instead results in customers losing faith in the garage, despite the fact that the workers are delivering on target.</p>
+<p>The offer of the carrot can also be detrimental, as revealed by an agility test in India. Participants in an experiment were promised various sums of money for hitting targets with tennis balls. Those who were promised the most money performed, contrary to the general expectation, the worst. The financial incentives put a higher pressure on the participants, which not only failed to improve their performance but actually inhibited it.</p>
+<p>In another experiment, participants were asked to find a way to fasten a candle to a wall, a puzzle whose solution necessitated creative thinking. Here, too, some participants were promised money for solving the problem quickly. Instead of inspiring these participants to think creatively, the prospect of this reward clouded their thinking and blunted their resourcefulness. The incentive seemed to blinker them, impeding the wider vision necessary to solve the task, and resulting in notably longer completion times when compared to participants who were not promised a reward.</p>
+<p>Although the stick and the carrot can be effective as incentives in the case of routine tasks, such as packing bags in a supermarket (where rewards drive employees to work more efficiently), if the work is more demanding or requires a greater degree of creativity, stick-and-carrot motivation can lead to immoral behavior and a decline in performance.</p>
+<p><strong>Missing the target: the stick and the carrot can have harmful consequences.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="529c939b6264330011070000">
+    <h1>Extrinsic promises destroy intrinsic motivation.</h1>
+    <div class="chapter__content"><p>Children often demonstrate great dedication in striving towards small goals: they romp about with great curiosity and sample everything possible in an attempt to understand the world. It is with great pleasure that they employ their hands, mouth, eyes and ears to learn about anything, whether observing butterflies or learning to stack cans. They are intrinsically motivated to a high degree.</p>
+<p>Over the years, however, they change: their urge to search for challenges and novelties lessens. Little by little, they cease to further their skills themselves. So what happens to their motivation?</p>
+<p>Intrinsic motivation is gradually lost as a person is confronted with a world in which everything relies on extrinsic motivation – as illustrated in a nursery experiment in which children were asked to produce a drawing. Some children were promised a certificate for completing their drawing, and the others were not. When both groups were set to drawing again (this time with neither group being promised a reward), the children who had previously received a certificate no longer wanted to draw, whereas those who hadn’t received any special recognition did.</p>
+<p>The promised recognition had destroyed their intrinsic motivation: they had learned to draw only for a reward. Following this pattern, so-called <em>if-then</em> rewards gradually eradicate intrinsic motivation for many activities.</p>
+<p>As children, we are driven by our inner desires to learn, to discover and to help others. But as we grow, we are programmed by our society to need extrinsic motivations: if we take out the trash, study hard and work tirelessly, we will be rewarded with friendly praise, high grades and good paychecks. Slowly, we lose more and more of our intrinsic motivation. On the path towards adulthood, our natural dedication decreases with age.</p>
+<p><strong>Extrinsic promises destroy intrinsic motivation.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="529c93b7626433000c160000">
+    <h1>Get into the flow: the inner drive for perfection leads to passion and dedication.</h1>
+    <div class="chapter__content"><p>Basketball players want to shoot more and more hoops, computer scientists want to create increasingly intelligent programs and photographers want to take better and better pictures. They all have the important component of Motivation 3.0 in common: the inner urge to achieve perfection. This allows them to improve in the area which is important to them, and to bring passion and commitment to the pursuit of their goal.</p>
+<p>Nevertheless, 50 percent of employees in the USA report feeling uncommitted to their job. They fulfill their duties but lack passion. This is because many are under-stretched in their work and have few opportunities for personal development. This suffocates their drive for perfection, which is important if one is to give 100 percent commitment.</p>
+<p>Creative people with a drive for perfection often work in a <em>flow</em> state, which means they pursue a task with the highest degree of concentration and passion, forget the world around them and lose themselves entirely in their work. Think of painters who happily work at their pictures for hours on end.</p>
+<p>The flow state cannot last for very extended periods, but it does occur episodically. It goes hand in hand with the drive for perfection, which continually develops and always leads to new states of ‘flow.’ Even tastes of success in an on-going piece of work, and the belief in continual improvement, are enough to motivate us in all different areas of life.</p>
+<p>Some people think that our skills are written in stone at birth, and that no amount of exertion will allow them to someday be better at running or drawing. These people are difficult to motivate. However, the person who believes they are able to develop further will work hard to run faster or paint prettier pictures.</p>
+<p>This also applies to employees, as long as they are entrusted with appropriate orders. If a superior gives her employees a task that encourages them to constantly improve, this can generate the flow experience in the employee, and they will come to work every day with a lot of dedication and passion.</p>
+<p>While perfection is something we can never achieve, it is nevertheless something we should strive for: we must be ambitious in order to come as close to perfection as possible.</p>
+<p><strong>Get into the flow: the inner drive for perfection leads to passion and dedication.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="529c93ce6264330011090000">
+    <h1>The pursuit of meaningfulness: a fundamental intrinsic impetus.</h1>
+    <div class="chapter__content"><p>In old age, people begin to consider what was important in their lives and ask whether they achieved something. But what moves people during the course of their lives and why do they act as they do?</p>
+<p>To answer this question, psychologists investigated the quest for meaning in the lives of young people. They asked graduates of the University of Rochester about their main aim in life. While some named extrinsic profit targets and wanted to become rich and famous, others specified more meaningful intrinsic goals: to develop personally and to help others, for example by working for international aid organizations.</p>
+<p>Some years later, the researchers interviewed the same participants to find out how things had turned out for them. The students with profit goals were no more contented, even having successfully achieved positions as managers in large firms. On the contrary, they suffered from depression and anxiety more frequently than the students who had stated meaningful goals. The latter reported to have achieved a greater happiness in life with their goals, and only rarely suffered from psychological ailments.</p>
+<p>Striving to change something in oneself and in society is a much healthier and satisfying impetus. For more and more people, such meaningful goals have become their main driving force. We are increasingly committing ourselves to voluntary and unpaid activities.</p>
+<p>To have a larger goal in mind is more motivating and activating than money could ever be. Instead of striving for the highest possible profit, people who pursue meaning in their lives want to give something back to society – which, in turn, also gives them personal strength.</p>
+<p>The results of further studies support this: the welfare of workers improves in companies where a proportion of the budget can be donated to charitable causes. And doctors are noticeably less drained if they are able to use one day per week to talk with their patients and do outreach service.</p>
+<p><strong>The pursuit of meaningfulness: a fundamental intrinsic impetus.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="529c93e46264330008060000">
+    <h1>My task, my time, my team! Self-determination promotes intrinsic motivation.</h1>
+    <div class="chapter__content"><p>For some years, there have been companies whose leadership rests on the self-determination of the workers: instead of monitoring their employees and keeping them on a tight rein, they have either relaxed control or completely let go of the reins.</p>
+<p>Google, for example, relies on individual self-organization of working time, and their employees can spend 20 percent of their time on developing their own innovative ideas. The success of this motivation strategy speaks for itself: in these phases, the workers of Google have developed hits such as Google News and Google Mail.</p>
+<p>The company Meddius also uses self-determination as a source of motivation for its workers: everyone’s goal is simply to complete their tasks within a certain time frame – the management has done away with set office hours. The workers are now much more motivated, since in the afternoons they can still make it to their children’s football games.</p>
+<p>Another example is Zappos. A typical call-center has an annual staff turnover of 35 percent, because making telephone calls for hours on end is not just boring but also stressful – it offers little room for self-determination and hence provides no intrinsic motivation. Zappos, however, does things differently: the employees are allowed to work from home with no managerial pressure, and can lead conversations in their own style. They are highly motivated, thus remaining with the company longer, and their customer service is also notably better than average.</p>
+<p>The team you work with also has a significant impact on your motivation: at Whole Foods, the workers, as well as the personnel managers, decide on new employees; and at W.L Gore &amp; Partner, those who want to lead a team have to find people willing to work under them themselves.</p>
+<p>Regardless of whether we are scientists, cashiers or mechanics, we are far more dedicated to our work when allowed self-determination. Some people wish to have more of a say in their working hours, others in the way in which the team is composed. If an employee is allowed these freedoms, they develop a greater potential for achievement, are more contented in their job, and are less inclined to burn out. In short, self-determination contributes positively to motivation.</p>
+<p><strong>My task, my time, my team! Self-determination promotes intrinsic motivation.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="7" data-chapterid="529c9402626433000c180000">
+    <h1>The effective company: upgrading to 3.0.</h1>
+    <div class="chapter__content"><p>Intrinsic motivation 3.0 is no secret, and yet many businesses do not take advantage of the opportunities it offers.</p>
+<p>The motivation of workers in most companies continues to be based on extrinsic factors: to motivate them, rewards and bonuses are dangled before their noses like carrots before donkeys. The conservative management, through an if-then system of reward, generates passivity and lethargy.</p>
+<p>It has been proved that creative workers are at their most productive when intrinsically motivated, and high productivity benefits the whole company. Such a change can be achieved through small measures, such as unexpected attention: more than anything else, spontaneous praise and constructive feedback channels the focus of the workers on the joy of their work, and so their natural intrinsic motivation increases.</p>
+<p>Workers who are given a voice in the decision-making of their company become more intrinsically motivated. More importantly, if it is made clear how important each individual’s contribution is for the performance of the whole company, each person feels their actions to be meaningful, and hence they become more committed.</p>
+<p>The drive for perfection is satisfied through the balanced allocation of tasks: each employee is given a task at a level of difficulty that challenges their abilities and stimulates them without being too complicated and, hence, demotivating.</p>
+<p>In order to give employees the sense that they are working towards something communally beneficial, their work can be linked to donations and social involvement. So employees work with the good feeling that they are having a positive effect on others, and that they are fighting for a higher purpose.</p>
+<p>A management that is up to date on the forms of motivation will modify its rewards and promote self-determination, perfection and meaningful goals. As a result, the employees will demonstrate a higher commitment and more dedication, instead of simply serving their time in work without the ambition to achieve.</p>
+<p><strong>The effective company: upgrading to 3.0.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="8" data-chapterid="529c944f6264330008080000">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p>The key message in this book is:</p>
+<p><strong>Rewards and sanctions are effective on a short-term basis as performance incentives. In the long run, however, they lead to harmful behavior and destroy the inner impetus. Passion and dedication on the part of workers are better achieved through self-determination, possibilities for perfection and meaningful goals.</strong></p>
+<p>The following questions are answered in the book:</p>
+<p><strong>What types of motivation are there, and how do they work?</strong></p>
+<ul>
+<li>Motivation 1.0 and Motivation 2.0: basic needs and the stick and the carrot.</li>
+<li>There is another way: Motivation 3.0 – intrinsic motivation in place of exterior incentives.</li>
+<li>Missing the target: the stick and the carrot can have harmful consequences.</li>
+</ul>
+<p><strong>How does intrinsic motivation work, and what influences it?</strong></p>
+<ul>
+<li>Extrinsic promises destroy intrinsic motivation.</li>
+<li>Get into the flow: the inner drive for perfection leads to passion and dedication.</li>
+<li>The pursuit of meaningfulness: a fundamental inner impetus.</li>
+</ul>
+<p><strong>How can intrinsic motivation be increased in everyday work?</strong></p>
+<ul>
+<li>My task, my time, my team! Self-determination promotes intrinsic motivation.</li>
+<li>The effective company: upgrading to 3.0.</li>
+</ul>
+<p><strong>Suggested further reading: <em>A Whole New Mind</em> by Daniel Pink</strong></p>
+<p>In an age where computers and well-trained workers from low-paid countries are taking over even white-collar jobs, what can you do to stand out? As we move out of the Information Age and into a new Conceptual Age, the answer is to start embracing the aptitudes associated with the right side of your brain, which were previously thought of as less valuable than analytical left-brain skills. To find these blinks, press “I’m done” at the bottom of the screen.</p></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Drive" data-content-selector=".chapter_visible h1" href="/en/share/insights/529c9346626433000c140000/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Drive" data-content-selector=".chapter_visible h1" href="/en/share/insights/529c9346626433000c140000/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Drive" data-content-selector=".chapter_visible h1" href="/en/share/insights/529c9346626433000c140000/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/drive-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Drive" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Drive" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Drive" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="drive-en" data-id="529c932a626433000c130000">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/529c932a626433000c130000/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="529c93856264330011050000" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="529c93856264330011050000" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="529c932a626433000c130000" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="54788e1066333100094b0000" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+

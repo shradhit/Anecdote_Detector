@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":40,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>Wait - Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/wait-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/wait-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="tZm8546/JY2OzD8KgQhXmP/7+wU8qX9sbUaso0G7L7RCDnaXV2dKGVzQreoM8eslPFq2qXaRMIhwPcA9OQi6YA==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="57000ae4840c420007000029">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">What’s in it for me? Discover the power of great timing.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="57000b02840c42000700002b">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">In fast-paced sports such as tennis, timing is everything.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="57000b2d840c42000700002d">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">High-frequency trading dominates modern stock exchanges, but it comes with serious risks.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="57000b4d840c42000700002f">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">Subliminal messages can have a profound effect, changing the way you act and think.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="57000b7c840c420007000031">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">When making decisions under pressure remember to ask yourself whether you’re an expert or a novice.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="57000b91840c420007000033">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">Thinking too quickly or going with your gut can lead to unintentional discrimination.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="57000bb0840c420007000035">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">Managing your time wisely and taking time to think can help you find a life partner.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="57000bc6840c420007000037">
+      <div class="reader__point-gray-icon" data-chapter-menu=7></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">People are prone to procrastination because of the tendency to overrate short-term benefits.</a>
+    </li>
+    <li class="chapters" data-chapterNo="8" data-chapterId="57000bde840c420007000039">
+      <div class="reader__point-gray-icon" data-chapter-menu=8></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="8" href="#">Some procrastination can be useful, but measuring it out is a matter of experience.</a>
+    </li>
+    <li class="chapters" data-chapterNo="9" data-chapterId="57000bf0840c42000700003b">
+      <div class="reader__point-gray-icon" data-chapter-menu=9></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="9" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="57000ae4840c420007000029">
+    <h1>What’s in it for me? Discover the power of great timing.</h1>
+    <div class="chapter__content"><p>Cats know this instinctively: You won’t catch a mouse if you rush things. You need to sit on the lookout for ages, waiting for the perfect moment to pounce.</p>
+<p>As you’ll learn in these blinks, it’s no different for humans. If you want to succeed, you need impeccable timing. This entails the ability to wait patiently for opportunity just as much as the ability to act quickly when it finally comes along.</p>
+<p>Waiting, even procrastinating, can help you become a better athlete, a savvier stock trader and a more successful marketing executive. What’s more, learning how to slow down will allow you to make better judgments in your personal life.</p>
+<p>In these blinks, you’ll find out</p>
+<ul>
+<li>why subliminal messages can make you crave more popcorn;</li>
+<li>how fast computers contributed to a global financial market crisis; and</li>
+<li>why a majority of doctors may be racist but not consciously know it.</li>
+</ul></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="57000b02840c42000700002b">
+    <h1>In fast-paced sports such as tennis, timing is everything.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">During a gripping tennis match, have you ever stopped to contemplate the ridiculousness of watching two people hit a ball, back and forth? This simple act, nonetheless, is mesmerizing; and it has everything to do with the rhythm and timing of this popular game. </span></p>
+<p><span style="font-weight: 400;">Being a skilled tennis player isn’t just about good eyes and quick reactions. People tend to think that a tennis player’s talent is a product of his ability to rapidly ascertain the speed and trajectory of a ball. But the amount of time it takes for any person to visually register an action is more or less universal – around 200 milliseconds. </span></p>
+<p><span style="font-weight: 400;">Another misconception is that tennis talent is tied to reaction speed – that is, the faster you can react, the better you should play. This is only partially correct. The best tennis players in the world have the ability to wait that essential extra split-second before returning a volley. </span></p>
+<p><span style="font-weight: 400;">Once a player sees that his opponent is serving the ball, he has approximately 300 milliseconds to make a move. Most people move as quickly as they can, only to miss the ball altogether! </span></p>
+<p><span style="font-weight: 400;">Skilled players are different. They can and will wait up to 200 milliseconds, taking in as much visual information as possible, before hitting the ball. </span></p>
+<p><span style="font-weight: 400;">Many popular sports are in fact designed with this timing challenge in mind. If the space between a player and the net was greater, for example, a player would have more time to react. Conversely, if the distance was smaller, a player could only react in a knee-jerk fashion.</span></p>
+<p><span style="font-weight: 400;">Tennis is a great example of the human capacity for </span><em><span style="font-weight: 400;">preconscious preparatory skills</span></em><span style="font-weight: 400;">. A player has just enough time to pause, letting his unconscious mind formulate the best response but not enough time to consciously plan a move. </span></p>
+<p><span style="font-weight: 400;">This sort of reaction isn’t exclusive to tennis champions, either. Split-second timing plays an essential role in business and finance, too. </span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="57000b2d840c42000700002d">
+    <h1>High-frequency trading dominates modern stock exchanges, but it comes with serious risks.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">Many of the things you do every day are made more efficient with computers. At the extreme end, markets are now dominated by </span><em><span style="font-weight: 400;">high-frequency trading</span></em><span style="font-weight: 400;">, the buying and selling of financial products at digital speeds. </span></p>
+<p><span style="font-weight: 400;">High-frequency trading now accounts for 70 percent of all stock transactions in the United States. But even in the fast-paced world of Wall Street, stock traders realized at a certain point that going faster doesn't necessarily mean higher profits. </span></p>
+<p><span style="font-weight: 400;">Let’s look at one example. Early on, the high-frequency trading firm UNX saw its profits rise when it increased the speed of its transactions. To further boost profits, the firm moved its headquarters from California to New York, reducing the distance electronic transactions would have to travel. In doing so, UNX cut transaction times from 65 milliseconds to 30 milliseconds. </span></p>
+<p><span style="font-weight: 400;">Yet the decision came with an unintended side-effect. Suddenly the company’s profits started dropping. Unable to figure out why, the firm decided to return transaction speeds to the slower pace of 65 milliseconds. And as a result, profits also returned to positive levels. </span></p>
+<p><span style="font-weight: 400;">So how can we explain what happened?</span></p>
+<p><span style="font-weight: 400;">Yale professor Frank Zhang examined a stock market crash on May 6, 2010 that lasted just 18 minutes but resulted in losses of trillions of dollars. He found that the rapid pace of trading had drastically increased the volatility of the market, leading to extreme swings in the value of financial products. </span></p>
+<p><span style="font-weight: 400;">So it turns out that when trading happens too fast, traders can get caught in wide price swings, potentially leading to serious losses especially in moments of crisis. Yet there is a “sweet” speed, that provides just enough delay for a trader to avoid expensive mistakes. </span></p>
+<p><span style="font-weight: 400;">Knowing this, financial experts are constantly seeking that “sweet” speed to optimize high-frequency trades.</span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="57000b4d840c42000700002f">
+    <h1>Subliminal messages can have a profound effect, changing the way you act and think.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">Have you ever watched the cult classic, </span><em><span style="font-weight: 400;">Fight Club</span></em><span style="font-weight: 400;">? Did you know that the film also has a single frame showing a full-frontal nude male? A shocking move for an American blockbuster, for sure! </span></p>
+<p><span style="font-weight: 400;">While the only way the human eye can consciously “see” such an image is to watch the movie one frame at a time, the image can and does enter our subconscious, if even just for a millisecond. In fact, consumers have been wary of such “subliminal messages” for decades. </span></p>
+<p><span style="font-weight: 400;">In 1957, James Vicary was purported to have flashed subliminal messages on the screen of a New Jersey movie theater using a high-speed tachistoscope, a tool that projects images for a set duration. The images, which flashed too quickly for moviegoers to consciously perceive, supposedly urged them to eat popcorn and drink Coca-Cola. </span></p>
+<p><span style="font-weight: 400;">And guess what?</span></p>
+<p><span style="font-weight: 400;">According to Vicary, that theater saw popcorn sales rise by 58 percent and Coca-Cola sales jump by 18 percent. Once Vicary’s experiment went public, however, it caused a big scandal, with the public expressing hostility toward advertising agencies. </span></p>
+<p><span style="font-weight: 400;">Yet later Vicary said he lied about the experiment; decades afterward study after study failed to prove with certainty the effect of subliminal images on human behavior. </span></p>
+<p><span style="font-weight: 400;">Recently, however, new evidence has come to light suggesting that subliminal images can, in fact, produce a long-term effect on human behavior. In 2008, a study found that repeatedly flashing the Apple logo to people without their knowledge increased creativity, more than for those who were subliminally shown the IBM logo. </span></p>
+<p><span style="font-weight: 400;">Even prior to this, another study showed that people who were exposed to messages or words related to old age or aging actually changed their behavior, and began to walk more slowly, perform worse in memory tests and even became more politically conservative!</span></p>
+<p><span style="font-weight: 400;">These experiments show that if you want to deliver a message, one strategy is to display it just long enough to have an effect, but still short enough so that people cannot consciously perceive it. </span></p>
+<p><span style="font-weight: 400;">So now we know that timing plays a serious role in how we live and think. Yet how can you use timing to achieve your personal goals?</span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="57000b7c840c420007000031">
+    <h1>When making decisions under pressure remember to ask yourself whether you’re an expert or a novice.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">Imagine you’re the captain of a football team. There’s 30 seconds left on the clock, and it’s up to you to make a game-changing decision. In such high-stakes moments, you need to know what you’re doing – and if you’re the captain, you probably do. </span></p>
+<p><span style="font-weight: 400;">Experts don’t need to think before making a decision. In 1985, psychologist Gary Klein interviewed fireground commanders, the people in charge of firefighting operations, to determine how they made decisions in emergency situations. </span></p>
+<p><span style="font-weight: 400;">Their answers were unanimous, in that they said they knew what to do, without deliberation, based on their experience. If a fire had spread, they would focus on rescuing people; if the fire was just beginning to spread, they would direct efforts toward putting it out. </span></p>
+<p><span style="font-weight: 400;">Yet novices </span><em><span style="font-weight: 400;">can’t </span></em><span style="font-weight: 400;">trust gut instincts, because they don’t necessarily have them yet. Klein performed another study in which paramedics and medical students watched videos of six people performing cardiopulmonary resuscitation (CPR). </span></p>
+<p><span style="font-weight: 400;">The participants didn’t know that only one of the six people in the videos was an actual paramedic. When asked which person they’d trust most to resuscitate them in an emergency, 90 percent of the paramedics instinctively chose the most qualified person, the paramedic. Yet just 30 percent of the students were able to identify the professional from the rest.</span></p>
+<p><span style="font-weight: 400;">Remember that no one can be an expert in every situation. This means when a scenario presents something new, you become a novice and should take your time making decisions. </span></p>
+<p><span style="font-weight: 400;">US Navy Captain William Rogers could quickly discern enemy planes from civilian ones, but only when he had access to information provided by the ship’s controls. On one fateful day in 1988, the ship’s controls failed, and with this, Rogers ceased to function at an expert level. </span></p>
+<p><span style="font-weight: 400;">Under pressure, he made a wrong decision, shooting down a suspicious-looking plane that turned out to be a civilian airliner. His mistake resulted in the deaths of 290 civilians. </span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="57000b91840c420007000033">
+    <h1>Thinking too quickly or going with your gut can lead to unintentional discrimination.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">If you had to pick out a racist in a crowd, what markers would you look for? Someone with a shaved head, or with racist-themed tattoos, or someone who resembles your doctor?</span></p>
+<p><span style="font-weight: 400;">Interestingly, many physicians without consciously realizing it give better care to white people than to black people. Over a hundred scientific studies have confirmed this troubling fact.</span></p>
+<p><span style="font-weight: 400;">If a white patient is suffering from chronic kidney failure, for instance, a doctor will be likely to recommend a transplant – the best, most expensive treatment option. The same holds for prescribing thrombolytic drugs to prevent heart attacks. But the same doctors will hesitate to offer equivalent care if the patient is black. </span></p>
+<p><span style="font-weight: 400;">So when judging people, it’s better to question your initial response. While you can certainly make an instantaneous judgment about a person, know that your first impression can prove inaccurate when discerning certain characteristics. </span></p>
+<p><span style="font-weight: 400;">A 2007 study led by psychologist Dana Carney found that when assessing complex human features like sociability and open-mindedness, a person’s estimates are more on point if a person takes at least five minutes to think about it. </span></p>
+<p><span style="font-weight: 400;">Waiting before you make up your mind about someone allows you the chance to change or modify your gut reaction. So while the unconscious racism of doctors might be troubling, the good news is that such patterns can be changed. </span></p>
+<p><span style="font-weight: 400;">In fact, when doctors had their attention drawn to this implicit bias, they started prescribing more medication to their black patients than to their white patients.</span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="57000bb0840c420007000035">
+    <h1>Managing your time wisely and taking time to think can help you find a life partner.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">Have you ever attended a speed-dating event, in which you quickly move from one potential partner to the next? Such methods may be misguided, as experience has shown that taking your time to find love is generally a more successful strategy. </span></p>
+<p><span style="font-weight: 400;">When it comes to finding a partner, instant decisions can work against you. Online dating sites place an emphasis on photos, allowing a user to flip through and rapidly approve or disapprove of a person’s looks. This kind of superficial judgement can be counterproductive. </span></p>
+<p><span style="font-weight: 400;">Irene LaCota, president of the dating service It’s Just Lunch, refuses on principle to let people see photos of a potential match. She thinks the quick reactions people make based on physical appearance are flawed. After all, such assumptions have nothing to do with whether two people are actually compatible. </span></p>
+<p><span style="font-weight: 400;">When it comes to first dates, of course, timing is key. The goal of any first date is to decide whether you want to meet for a second! Thus, you need to get enough information about the other person to be able to trust your instincts. Yet it’s also important to stop before things get too personal, otherwise, you might feel obliged to accept a second date, regardless of how you feel. </span></p>
+<p><span style="font-weight: 400;">So how can you accomplish both goals? By scheduling your first date at lunch. Doing lunch gives you enough time to meet, but keeps things short – after all, you’ve got to get back to work. The hour or so you’ve spent with the person gives you ample material to form a first impression; and now you’ve the freedom to think things over before agreeing to a second meeting. </span></p>
+<p><span style="font-weight: 400;">Sure, sometimes you might want to make a snap decision, but it’s better to wait and think about your choice – even if things take a little longer. While you can decide whether someone is attractive in a heartbeat, it takes time to figure out how you really feel inside. By investing that time, you can increase your chances of finding a partner for life!</span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="7" data-chapterid="57000bc6840c420007000037">
+    <h1>People are prone to procrastination because of the tendency to overrate short-term benefits.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">Do you ever put off a task you hate, like doing your taxes? Of course you do. Here’s why. </span></p>
+<p><span style="font-weight: 400;">Humans aren’t great at comparing short-term and long-term benefits. Psychiatrist George Ainslie found that, when offered a choice between $50 now and $100 in the future, most people chose the $50 up front. </span></p>
+<p><span style="font-weight: 400;">But he also found that the same people would rather receive $100 dollars in six years than $50 in five years – which is essentially the same offer, just five years in the future. </span></p>
+<p><span style="font-weight: 400;">The decision is skewed by short-term benefits in the first instance, but not in the second. And it’s for this same reason that people tend to choose being happy </span><em><span style="font-weight: 400;">now</span></em><span style="font-weight: 400;"> over being happy </span><em><span style="font-weight: 400;">later</span></em><span style="font-weight: 400;">. This is what causes us to postpone things that might diminish our current pleasure, like filing our taxes. </span></p>
+<p><span style="font-weight: 400;">In fact, procrastination is only a bad thing if you falsely discount the future effects of your actions. Not just that, but one benefit of procrastination is that it can make your life better in the short term. </span></p>
+<p><span style="font-weight: 400;">For instance, say you’re driving home from work and hear your engine rattling. Would you stop at a repair shop to check it out, or go home and see if the sound disappears on its own?</span></p>
+<p><span style="font-weight: 400;">After a long day at the office, the second choice has profound short-term benefits. You’ll get to return to a warm house, a nourishing meal and a relaxing night. </span></p>
+<p><span style="font-weight: 400;">Furthermore, a little procrastination also helps you think things over before rushing to a decision. For example, in the moment, your only option along the route home might be the most expensive repair shop in town. </span></p>
+<p><span style="font-weight: 400;">However, if you stick to this pattern for too long, it will lead to problems. In this case, your car will eventually break down. Then you’ll have to wait for a tow truck and face a bigger repair bill than if you had addressed the issue earlier. </span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="8" data-chapterid="57000bde840c420007000039">
+    <h1>Some procrastination can be useful, but measuring it out is a matter of experience.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">Do the people you admire the most rush around frantically, or are they composed, persistent and always watching for opportunity?</span></p>
+<p><span style="font-weight: 400;">When it comes to the positive side of procrastination, there’s a lot to be learned from successful people. For instance, investor Warren Buffett is a huge proponent of delaying decisions. In fact, for him, a solid investment strategy is to wait patiently. </span></p>
+<p><span style="font-weight: 400;">But that doesn’t mean you should be lazy. In fact, Buffett works hard every day, following financial news and business developments. This means he’s always poised to act whenever the next investment opportunity rears its head. </span></p>
+<p><span style="font-weight: 400;">President Barack Obama also deftly uses delay to his advantage, especially when diplomatically side-stepping tough interview questions. When Osama bin Laden was captured by US forces on May 2, 2011, Obama gave a 35-minute interview to CBS correspondent Steve Kroft. </span></p>
+<p><span style="font-weight: 400;">In what turned out to be a highly dynamic interview, Kroft asked the president out of the blue if this event was the first time he had ordered someone to be killed. </span></p>
+<p><span style="font-weight: 400;">Obama, however, didn’t jump to answer. He bided his time, avoiding the pointed question about illegal government assassinations, and instead carefully composed a statement about sending troops into combat with the awareness that lives would be lost. </span></p>
+<p><span style="font-weight: 400;">So delay can be useful in all aspects of life. These blinks have provided you with the knowledge of experts, showing you how to avoid the mistake of acting too quickly. So wait!</span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="9" data-chapterid="57000bf0840c42000700003b">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">The key message in this book:</span></p>
+<p><strong>Despite what most of us have been taught, procrastination and delaying action are not necessarily bad. In fact, there are many instances in which taking your time is instrumental to success. That’s because waiting, when used with critical awareness, can help you achieve amazing things. </strong></p>
+<p><span style="font-weight: 400;">Actionable advice:</span></p>
+<p><strong>Revamp your dating profile.</strong></p>
+<p><span style="font-weight: 400;">Are you one of those people who is always saying you wish the world was less superficial? Here’s your chance to do something. Remove all the photos from your online dating profiles and write something thoughtful and honest about yourself instead. And if a first date isn’t immediately attractive to you, take the time to listen to what he or she is saying, and think before you write them off. </span></p>
+<p><strong>Got feedback?</strong></p>
+<p><span style="font-weight: 400;">We’d sure love to hear what you think about our content! Just drop an email to remember@blinkist.com with the title of this book as the subject line and share your thoughts!</span></p>
+<p><strong>Suggested further reading: </strong><strong><em>Thinking, Fast and Slow </em></strong><strong>by Daniel Kahneman</strong></p>
+<p><span style="font-weight: 400;">Daniel Kahneman’s </span><em><span style="font-weight: 400;">Thinking,</span></em> <em><span style="font-weight: 400;">Fast</span></em> <em><span style="font-weight: 400;">and</span></em> <em><span style="font-weight: 400;">Slow</span></em><span style="font-weight: 400;"> – a recapitulation of the decades of research that led to his winning the Nobel Prize – explains his contributions to our current understanding of psychology and behavioral economics. Over the years, Kahneman and his colleagues, whose work the book discusses at length, have significantly contributed to a new understanding of the human mind. We now have a better understanding of how decisions are made, why certain judgment errors are so common and how we can improve ourselves. </span></p></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Wait" data-content-selector=".chapter_visible h1" href="/en/share/insights/57000b02840c42000700002b/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Wait" data-content-selector=".chapter_visible h1" href="/en/share/insights/57000b02840c42000700002b/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Wait" data-content-selector=".chapter_visible h1" href="/en/share/insights/57000b02840c42000700002b/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/wait-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Wait" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Wait" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Wait" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="wait-en" data-id="57000ac7840c420007000027">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/57000ac7840c420007000027/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="57000b02840c42000700002b" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="57000bf0840c42000700003b" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="57000ac7840c420007000027" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input value="2017-06-19T04:56:39+00:00" type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="5478905464393200083f0000" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+

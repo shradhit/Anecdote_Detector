@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":61,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/the-48-laws-of-power-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/the-48-laws-of-power-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="uYQlDEufdIABL30X519ROxNA2hNi8YksztOhyN2BGnBOE+98kkcbFNMz7/dqpu2G0OGXvyjJxsjTqM1WpTKPpA==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="560943508a14e6000900009e">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">What’s in it for me? Discover the history, secrets and inner workings of power.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="5609436b8a14e600090000a0">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">Flaunting your brilliance won’t win you your boss’s favor, but making him or her shine will.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="560943838a14e600090000a2">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">Take credit for other people’s work and be sure to protect your own.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="5609439f8a14e600090000a4">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">Gaining power over somebody means getting to know them – and posing as their friend is the best way to do so.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="560943b88a14e600090000a6">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">Act unpredictably to confuse the competition.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="560943d38a14e600090000a8">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">Surrendering to a stronger opponent will help you gather power down the line.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="560943e98a14e600090000aa">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">If you want to be treated like a superior, you’ve got to act like one.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="560943fa8a14e600090000ac">
+      <div class="reader__point-gray-icon" data-chapter-menu=7></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">To gain power over others, seduction works better than coercion.</a>
+    </li>
+    <li class="chapters" data-chapterNo="8" data-chapterId="5609440d8a14e600090000ae">
+      <div class="reader__point-gray-icon" data-chapter-menu=8></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="8" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="560943508a14e6000900009e">
+    <h1>What’s in it for me? Discover the history, secrets and inner workings of power.</h1>
+    <div class="chapter__content"><p>As a child, entering primary school can be a bit of a shock. If you were raised by conscientious parents and believed everything they told you about honesty and fairness, chances are there was a steep learning curve ahead of you when lumped in with your new classmates. Suddenly it became clear that fairness is for suckers and wimps!</p>
+<p>The reality is, always trying to be fair can seriously hamper your success. Of course, if you’re a top-level business manager or politician, you already knew that. But there is hope even if you’re not.</p>
+<p>Robert Greene was once just like you, but decided to look deep into the history and machinations of power to learn all about how to gain it, use it and defend against abuse of it. He came up with a whopping 48 laws of power, and these blinks will focus on the seven most illuminating ones.</p>
+<p>In these blinks, you’ll learn</p>
+<ul>
+<li>how a beginner’s mistake can help you win a chess tournament;</li>
+<li>why a minister was thrown into a dungeon for throwing a party for his king;</li>
+<li>and how, sometimes, your best chance of winning a battle is to surrender.</li>
+</ul></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="5609436b8a14e600090000a0">
+    <h1>Flaunting your brilliance won’t win you your boss’s favor, but making him or her shine will.</h1>
+    <div class="chapter__content"><p>Have you ever tried to impress your boss, only to fall flat on your face? Well, if you’ve ever failed to impress someone in a position of power, it could actually be the result of outshining them. After all, powerful people want to be the center of attention; trying too hard to impress them can shift attention away from them and onto you, hurting their pride in the process.</p>
+<p>But what’s even worse is acting superior to them, a move that could lead your boss to think of you as a threat to their position and, consequently, to let you go from the company.</p>
+<p>Take the relationship between King Louis XIV of France and Nicolas Fouquet, the king’s finance minister. A smart and loyal advisor, Fouquet became indispensable to his ruler, but this didn’t guarantee him the position of prime minister when the incumbent minister died. To gain the king’s favor, Fouquet threw a lavish party at his extravagantly furnished chateau to show the king how well-connected and influential he was.</p>
+<p>The next day, Fouquet was arrested by order of the king, who felt overshadowed and dubiously accused the minister of stealing to amass such extravagant wealth. Poor Fouquet was bound to live out his days in a prison cell.</p>
+<p>So, you know how <em>not </em>to impress your boss, but how <em>can</em> you gain her favor? A better strategy is to always make the person in charge look smarter than everyone else, including you.</p>
+<p>For example, the astronomer and mathematician Galileo Galilei desperately wanted funding for his research, and found an ingenious way to get it. When he discovered the four moons of Jupiter in 1610, he made sure to link his discovery to the enthronement of Cosimo II de’ Medici.</p>
+<p>How?</p>
+<p>In an act of cunning, Galileo said that the four moons represented Cosimo II and his three brothers, while Jupiter itself was comparable to Cosimo I, the four brothers’ father. Thanks to playing to his ruler’s ego, Galileo was named the official philosopher and mathematician of Cosimo II.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="560943838a14e600090000a2">
+    <h1>Take credit for other people’s work and be sure to protect your own.</h1>
+    <div class="chapter__content"><p>Would you ever consider claiming parts of another person’s work as your own by plagiarizing a few clever snippets? Did you ever slyly steal answers from a classmate during a math test? Maybe you did or maybe you didn’t, but the truth is that attaining power often means using the work of others to your advantage.</p>
+<p>Why would you waste your energy doing things for yourself if somebody else can do them for you? For instance, did you know that the Serbian scientist Nikola Tesla worked for the famous inventor Thomas Edison? And it was actually Tesla, not Edison, who was key in creating Edison’s famed dynamo by improving what was at the time Edison’s rather primitive design.</p>
+<p>To make this discovery, Tesla worked tirelessly for an entire year, often clocking 18-hour days in the lab. But today, it’s Edison’s name that is attributed to the dynamo.</p>
+<p>Little has changed since Edison’s day. Just think about how few politicians write their own speeches and how famous novelists “borrow” from other writers.</p>
+<p>But reaping the benefits of work done by others isn’t enough – you’ll also need to take credit for it. For example, Edison and his company claimed all the credit for Tesla’s work on the dynamo. Edison didn’t so much as share a penny of his profits with Tesla, even though he had promised him $50,000!</p>
+<p>So, keeping Tesla’s experience in mind, remember that the credit given for an invention or creation of any kind is just as essential as the invention itself. If you don’t claim credit, someone else will jump in, steal your idea and all the credit that comes with it.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="5609439f8a14e600090000a4">
+    <h1>Gaining power over somebody means getting to know them – and posing as their friend is the best way to do so.</h1>
+    <div class="chapter__content"><p>Maybe you’ve encountered this problem before: you’re striving to outmaneuver the competition but can’t quite manage to accurately predict your competitors’ strategies. How can you get around this?</p>
+<p>Well, another trick to gaining power is to gather important information about the people you want to control. And to get something from someone, you need to know about them. After all, knowing a person’s plans, weaknesses and desires will help you both win their favor and guide their actions.</p>
+<p>Take the art dealer Joseph Duveen, who in 1920 resolved to win over the industrialist Andrew Mellon as a client. But Mellon was not easily convinced, so Duveen decided to bribe Mellon’s staff to pass him secret information about their employer.</p>
+<p>When the industrialist traveled to London, Duveen made sure to follow him. The dealer showed up at the same art gallery Mellon was visiting, supposedly by chance, and engaged him in a vibrant conversation.</p>
+<p>Since Duveen knew so much about what Mellon liked, he easily gained his favor by making him believe that they shared common tastes in art, among other things. As a result, the encounter ended on good terms and Mellon soon became Duveen’s best client.</p>
+<p>So how can you accomplish what Duveen did?</p>
+<p>You can hire informants or, even better, act as a spy yourself by posing as a person’s friend. While most people opt for hired spies like Duveen did, this strategy is risky. After all, how can you be sure that your spies are being honest with you?</p>
+<p>To be sure your information is accurate, it’s best to do the spying yourself. This is no easy task, as people generally hesitate to share private information with strangers.</p>
+<p>However, they’re not as secretive when in the company of someone they consider a friend, which makes posing as a companion a highly effective strategy.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="560943b88a14e600090000a6">
+    <h1>Act unpredictably to confuse the competition.</h1>
+    <div class="chapter__content"><p>You probably know that most people don’t like sudden changes, but did you know that you can use unpredictability to your competitive advantage? Acting unpredictably can keep your competition off balance, and here’s how:</p>
+<p>In competitive scenarios, your opponents will likely try hard to figure you out by monitoring your habits and decision making, and they won’t hesitate to use this information against you. In this situation, your best move is to act erratically – being unpredictable will protect you from being understood by your opponents, which will intimidate and unnerve them.</p>
+<p>Take the famous 1972 chess match between Bobby Fischer and the Russian champion Boris Spassky. Fischer knew that Spassky’s technique was to target the routines and predictability of his opponent, and Fischer used this information to his advantage by playing as unpredictably as possible.</p>
+<p>Even in the days leading up to the match, Fischer made it seem unclear whether or not he would be able to make it to Reykjavik, where the pair was set to play. And when he did arrive, it was moments before the match was set to be cancelled due to his absence. After this stunt, Fischer proceeded to complain about everything from the lighting to the chairs and noise in the room.</p>
+<p>When they finally began the tournament’s first match, Fischer made careless mistakes before giving up, an odd move since he was known for his persistence. Spassky couldn’t tell if he was actually making mistakes or just bluffing.</p>
+<p>At this point, Fischer had Spassky just where he wanted him: when your competitor is sufficiently confused, you’re in a perfect position to win.</p>
+<p>Why?</p>
+<p>Doing things that perplex your opponent will cause him to try to explain your behavior and distract him from the task at hand, giving you the chance to strike.</p>
+<p>So, after two games of chess, Fischer began winning game after game with bold moves. When all was said and done, Spassky conceded and Fischer was named world champion.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="560943d38a14e600090000a8">
+    <h1>Surrendering to a stronger opponent will help you gather power down the line.</h1>
+    <div class="chapter__content"><p>Have you ever gone up against someone knowing that you’d never win? While it’s common for people to fight for glory against all odds, it’s not the route to power. So what should you do when faced with an opponent more powerful than you?</p>
+<p>Give up.</p>
+<p>This may seem an odd strategy, especially since humans instinctively fight their enemies to protect themselves. But when a competitor acts with aggression, he will expect you to respond in the same way. In cases when you know that the competition has you beat, your best move is to do just the opposite and surrender.</p>
+<p>Why?</p>
+<p>If you give up, or at least convince your enemy that you’ve done so, you can ensure that he won’t deliver substantial damage. Not only that, but your opponent, thinking he has won, will also let down his guard. When he does, you’ll have a golden opportunity to regain your strength and plan your next move.</p>
+<p>Take the case of Bertolt Brecht, a writer of revolutionary, communist ideas who immigrated to the United States in 1941 to join other intellectuals exiled from Europe. After World War II, Brecht and his peers were summoned before the US Congress, which was investigating a supposed communist infiltration of Hollywood.</p>
+<p>While his fellow radicals caused a commotion and challenged the authority of Congress by yelling and being uncooperative, Brecht was calm and politely answered the questions he was asked.</p>
+<p>Because of his good behavior, Brecht was released by the government, which even offered to help him with his immigration procedure – in the end, their offer was irrelevant because he left the country and continued writing about his firm beliefs.</p>
+<p>And his stubborn friends?</p>
+<p>They were blacklisted, unable to publish for years!</p>
+<p>So, do as Brecht did and make surrender a tool of self-empowerment. Build long-term strength instead of making major sacrifices for short-lived bouts of glory.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="560943e98a14e600090000aa">
+    <h1>If you want to be treated like a superior, you’ve got to act like one.</h1>
+    <div class="chapter__content"><p>Are you higher up the ladder than someone else? If so, it’s essential to act the part – unless, of course, you prefer to be seen as their equal. But a word of warning: acting as if you’re equal to others while holding a superior position to them will only inspire contempt.</p>
+<p>Take Louis-Philippe, king of France during the 1830s and 40s. He despised royal ceremonies, as well as all the symbols associated with the throne. In defiance of the formalities of his position, he was infamous for wearing a gray hat and holding an umbrella in place of his crown and scepter. In fact, he didn’t even keep the company of royalty, mostly befriending bankers instead.</p>
+<p>But the king’s behavior didn’t do him any good – he was soon hated by both the rich <em>and </em>the poor. Wealthy people disapproved of the unlikely king, while the poor disliked a king who acted like the lower classes but didn’t look out for them. Even his banker friends turned on him when they found they could insult him without the fear of being reprimanded.</p>
+<p>All of this hatred mounted until the people rose up against him and he was forced to abdicate the throne.</p>
+<p>In general, people are suspicious of higher-ups who act like their equals; doing so leads people to thinking you’re dishonest, as they’ll assume your modest ways are a sly trick to cloud your privileges.</p>
+<p>Then what’s a better tactic?</p>
+<p>You should instead use the <em>strategy of the crown</em> to make people treat you like royalty. Simply put, if you believe you’re above others and act in this way, other people will begin to believe you’re superior, too. When people see you acting superiorly, they’ll assume there is good reason for you to do so.</p>
+<p>For instance, Christopher Columbus behaved like royalty and, consequently, most people viewed him as such. In fact, it was his confident socializing with the Spanish royal family that eventually convinced the Spanish throne to finance his voyages.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="7" data-chapterid="560943fa8a14e600090000ac">
+    <h1>To gain power over others, seduction works better than coercion.</h1>
+    <div class="chapter__content"><p>Picture yourself as Chuko Liang, head strategist for the ancient Chinese state of Shu: War has just been declared on China by King Menghuo from the south and stopping him and saving the country lies in your hands.</p>
+<p>But before learning what you <em>should</em> do, it’s essential to know what <em>not</em> to do.</p>
+<p>First of all, using force and coercive tactics is never wise, even when they’re the easiest choice. In fact, if you <em>do</em> exercise your strength, people will secretly resent you because force breeds resistance. Liang knew this and didn’t attack with force, even though he probably would have defeated the invading army.</p>
+<p>However, if he had, Menghuo would have resented both China and Liang and the country would have to continuously protect itself. This would have exhausted everyone involved and bred paranoia.</p>
+<p>A better strategy is seduction. People tend to be controlled by their emotions, and by playing on their feelings, you can make them do what you want – of their own free will.</p>
+<p>You can do this by threatening your opponent so that they expect pain, and then suddenly treating them kindly. For example, when Menghuo attacked China, Liang captured him and his entire army. Menghuo was separated from his soldiers and expected the worst, but to his great surprise he was offered delicious food and wine instead.</p>
+<p>While Liang released his enemy’s soldiers, he would only let Menghuo go when the enemy king promised that if he was ever captured again, he would bow to the Chinese king.</p>
+<p>And while Liang captured Menghuo several more times, he always let him go. Then, on the seventh capture, Menghuo dropped to Liang’s feet, surrendering himself and his kingdom.</p>
+<p>Even though Liang could have killed Menghuo when he captured him, a fact that the enemy king was aware of, he gave him plenty of chances and treated him well each time. As a result, Menghuo grew increasingly grateful and indebted to the Chinese king, until he finally surrendered of his own volition.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="8" data-chapterid="5609440d8a14e600090000ae">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p>The key message in this book:</p>
+<p><strong>The world has historically been ruled by power and conquest. Of course, much has changed in the modern era, but the importance of control and dominance has remained. By learning from the failures and victories of historical power struggles, you too can become a force to be reckoned with. </strong></p>
+<p><strong>Suggested</strong> <strong>further</strong> <strong>reading: </strong><strong><em>Mastery </em></strong><strong>by Robert Greene</strong></p>
+<p><em>Mastery</em> is a #1 New York Times bestseller. In it, author Robert Greene argues and illustrates that everybody can achieve mastery of a skill or field if they just follow the established steps of historical and present-day masters. Based on interviews and studies of some of the best in their respective fields, Greene provides a diverse array of tips and strategies on how to become a master.</p>
+<p><strong>Got feedback?</strong></p>
+<p>We’d sure love to hear what you think about our content! Just drop an email to remember@blinkist.com with the title of this book as the subject line and share your thoughts!</p></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="The 48 Laws of Power" data-content-selector=".chapter_visible h1" href="/en/share/insights/560943508a14e6000900009e/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="The 48 Laws of Power" data-content-selector=".chapter_visible h1" href="/en/share/insights/560943508a14e6000900009e/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="The 48 Laws of Power" data-content-selector=".chapter_visible h1" href="/en/share/insights/560943508a14e6000900009e/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/the-48-laws-of-power-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="The 48 Laws of Power" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="The 48 Laws of Power" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="The 48 Laws of Power" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="the-48-laws-of-power-en" data-id="5609432c8a14e6000900009d">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/5609432c8a14e6000900009d/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="5609436b8a14e600090000a0" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="5609436b8a14e600090000a0" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="5609432c8a14e6000900009d" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="50647d0ee4b08bcecce09449" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+

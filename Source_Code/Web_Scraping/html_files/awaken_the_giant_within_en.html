@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":43,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/awaken-the-giant-within-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/awaken-the-giant-within-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="O6bIG1OR5AaMcydk+PTwCA/igazOghxTJPlgMZTh4+nMMQJrikmLkl5vtYR1DUy1zEPMAIS6U7c5ggyv7FJ2PQ==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="544528106161330008750000">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">What’s in it for me? Find out how to take control of your life and live up to your potential.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="544528406161330008770000">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">To change your life, focus on making and committing to the right decisions.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="5445285e6161330008790000">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">Make new habits by associating unwanted ones with pain and desired ones with pleasure.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="5445288361613300087b0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">To change who you are, change your beliefs.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="544528a661613300087d0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">Changing your vocabulary can transform your attitudes and emotions.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="544528cb61613300087f0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">To find the best solution to any problem, ask the right questions.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="544528e76161330008810000">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">Discover your own life values to find out if you’re living up to your full potential.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="5445290d6161330008830000">
+      <div class="reader__point-gray-icon" data-chapter-menu=7></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">Come up with life rules that make you happy, and tell others about them.</a>
+    </li>
+    <li class="chapters" data-chapterNo="8" data-chapterId="544529306161330008850000">
+      <div class="reader__point-gray-icon" data-chapter-menu=8></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="8" href="#">By understanding what’s behind your emotions, you can gain control over them.</a>
+    </li>
+    <li class="chapters" data-chapterNo="9" data-chapterId="544529546161330008870000">
+      <div class="reader__point-gray-icon" data-chapter-menu=9></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="9" href="#">Contribute to society to discover what you can accomplish as an individual.</a>
+    </li>
+    <li class="chapters" data-chapterNo="10" data-chapterId="5445299d6161330008890000">
+      <div class="reader__point-gray-icon" data-chapter-menu=10></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="10" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="544528106161330008750000">
+    <h1>What’s in it for me? Find out how to take control of your life and live up to your potential.</h1>
+    <div class="chapter__content"><p>Do you want to change your life but find it hard to commit to your decisions? As you go through life, do you tend to believe that the cards are somehow stacked against you?</p>
+<p>In <em>Awaken The Giant Within</em>, you’ll learn just how important decisions and beliefs are to bringing about positive change and becoming the person you want to be. With characteristic insight and clarity, motivational speaker Anthony Robbins demonstrates the control that each of us holds over our experience of the world, and therefore over our happiness.</p>
+<p>In the following blinks you will</p>
+<ul>
+<li>find out why singing can help you quit eating chocolate;</li>
+<li>learn that the words you use to describe your situation can define your attitude toward life; and</li>
+<li>discover that you have the power to change society, simply by making the right dinner choice.</li>
+</ul></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="544528406161330008770000">
+    <h1>To change your life, focus on making and committing to the right decisions.</h1>
+    <div class="chapter__content"><p>When was the last time you thought about changing your life?</p>
+<p>Perhaps it was New Year's Eve and you resolved to quit smoking. Or maybe you wanted to lose weight and seriously considered going on a new diet.</p>
+<p>But did you actually manage to bring about those changes to your life?</p>
+<p>If you didn’t, the problem was likely in how you framed your desire to change: “I’d <em>like</em> to stop eating junk food” instead of “I <em>will</em> start eating more healthily.”</p>
+<p>To change anything about your life, you first have to make a clear decision. Then, no matter what challenges you may face, you have to stick to that decision.</p>
+<p>This necessitates that you must be willing to adapt your approach as you meet obstacles.</p>
+<p>Take, for example, Soichiro Honda, founder of the Honda corporation. As a schoolboy, he decided that he wanted to create effective piston rings for automobiles. History shows that he succeeded in that goal, yet on the path to success he encountered many problems that could’ve stopped him in his tracks.</p>
+<p>For example, during World War II, the Japanese government wouldn’t provide Honda with the concrete he needed to build the factories to manufacture his product.</p>
+<p>How did he overcome that obstacle?</p>
+<p>Honda’s solution was to invent his own way of making concrete, thus enabling himself to begin building his empire.</p>
+<p>And while committing to major decisions may be challenging, the more you do it, the easier it becomes. So, when you inevitably fail as you try to enact a change in your life, don’t be discouraged. Instead, think about what you could learn from the failure.</p>
+<p>For example, smokers are rarely successful on their first attempts to quit. But if they use that failure as an opportunity to reflect on the obstacles to quitting (for example, the temptation to smoke is too strong around other smokers), and how they might overcome them in the future (stay away from places where smokers reside), then they can accomplish their goal.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="5445285e6161330008790000">
+    <h1>Make new habits by associating unwanted ones with pain and desired ones with pleasure.</h1>
+    <div class="chapter__content"><p>We’ve seen that to accomplish our goals and bring about change we must fully commit to our decisions. But even with the best of intentions, changing our established behavior can sometimes be extremely difficult.</p>
+<p>Why? Because everything we do is in the service of either getting pleasure or avoiding pain.</p>
+<p>Once you make yourself aware of this dynamic, you can begin to use it to your advantage. So, if you want to break a particular habit, an effective method for doing so is to associate that behavior with pain.</p>
+<p>Let’s say you want to stop eating chocolate. One way to accomplish that goal would be to connect eating chocolate to mental anguish.</p>
+<p>You could, for instance, decide on a rule that whenever you eat chocolate you have to sing a song that you loathe. Soon your brain will associate the act of eating chocolate with the uncomfortable feeling you have while singing that song. But remember: you need to commit to your decision, so you’ll have to sing out loud even when you eat chocolate cake at a dinner party!</p>
+<p>However, to ensure that you change your behavior over the long term, it’s crucial that you find a new, more desirable habit that gives you an equal amount of pleasure to the old one.</p>
+<p>So, to successfully cut chocolate out of your diet, you must create an alternative habit that you’ll enjoy as much as feasting on that Snickers bar. This could be a healthier treat, such as your favorite fruit, or an activity, like a new sport. You’ll also benefit from imagining the great things that are in store for you once you break the habit. For example, by giving up chocolate, you’ll soon be able to fit into your old jeans again.</p>
+<p>This technique has a proven track record for helping people break even quite extreme habits. In one study on the effectiveness of replacing unhealthy behaviors with healthier ones, researchers examined the rehabilitation of drug addicts. They found that those addicts who found an alternative, healthier habit that could bring them equal pleasure – such as entering a new relationship, or starting a hobby – were far less likely to revert.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="5445288361613300087b0000">
+    <h1>To change who you are, change your beliefs.</h1>
+    <div class="chapter__content"><p>Imagine two people that just turned 60. One of them might think his life is coming to an end, now that his best years are gone. The other, however, might be truly thrilled for everything that’s still in store for her.</p>
+<p>What could account for such a striking difference in outlook?</p>
+<p>The way that we see the world and ourselves is shaped by our beliefs.</p>
+<p>But what exactly is a belief?</p>
+<p>A belief is an idea that’s supported by<em> evidence.</em> You might, for example, have the idea that you’re an excellent chess player. But that idea will become a belief only if it’s supported by certain evidence, for example, you win the majority of the time.</p>
+<p>For most of us, <em>any </em>events in our lives can act as a reference and inform our beliefs. Unfortunately, this also means that whenever something awful happens – for example, you lose a loved one – many people use it as support for their belief that life is terrible.</p>
+<p>But we don’t have to think that way: if we manage to interpret the reference more positively, we can direct our lives in a more optimistic way. So, if you’re grieving, you could use that experience as a resource to make you stronger as a person. Perhaps you’ll even emerge from the grieving period with a strong desire to help others in mourning.</p>
+<p>As this suggests, to bring about a change in your life, you must first change your beliefs.</p>
+<p>The problem, however, is that many of us tend to already have strong beliefs that hold us back from changing anything.</p>
+<p>Habitual beliefs, like all habits, can be broken. As with any other habit, to change an existing belief, you need to associate pain with the old one and pleasure with the new.</p>
+<p>An easy way to accomplish that is to find a role model who has already been successful in changing her beliefs, and adapt her way of doing it to your own purposes.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="544528a661613300087d0000">
+    <h1>Changing your vocabulary can transform your attitudes and emotions.</h1>
+    <div class="chapter__content"><p>Did you know that in the English language there are approximately 3000 words that describe emotions?</p>
+<p>Surprisingly, however, there are nearly twice as many words for negative emotions as for positive ones – which could be a reason why many people tend to experience negative emotions more frequently.</p>
+<p>It’s therefore crucial that you pay close attention to the words you use in your daily life, as they will shape your thinking and perception.</p>
+<p>To think differently about a situation, you need to <em>describe </em>it differently.</p>
+<p>Imagine you’re on a road trip and your car breaks down in the middle of nowhere. In this situation, you could allow yourself to become furious and complain about how “annoying” it is and how “angry” you feel. But you could also say something like, “that’s inconvenient.” Describing what we usually experience as a frustrating situation in more neutral words can stop you from entering a more negative emotional state.</p>
+<p>This example gets to the heart of what the author calls <em>Transformational Vocabulary</em>: the words we employ to describe our experience of the world actually <em>define </em>that experience.</p>
+<p>So how can you change your vocabulary in a way that helps you to manage your emotions?</p>
+<p>The secret is to use strong words for positive emotions and less intense words for negative ones. For example, instead of saying that you’re “happy,” you could use the stronger description, “totally blissed.” Or, if you’re on the verge of experiencing intense negative emotions, you should describe your experience with words and phrases that are less intense, such as “I’m a little concerned” instead of “I’m extremely anxious.”</p>
+<p>A final tip: try to use unusual words to express negative emotions. Doing this is likely to amuse you, and will instantly lift your mood – even delighting those around you. For example, when you’re extremely annoyed, you could say: “I must say, I feel quite peeved.” This uncommon word has an old-fashioned, genteel quality to it that can instantly improve your mood.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="544528cb61613300087f0000">
+    <h1>To find the best solution to any problem, ask the right questions.</h1>
+    <div class="chapter__content"><p>As you’ve learned, changing your life requires changing the way you think. In this blink we’ll venture a little deeper to ask, what exactly <em>is </em>thinking?</p>
+<p>In basic terms, our thoughts are a series of questions and answers. Thus, the questions we ask determine the way that we think, which means that those questions are essential to our experience of life.</p>
+<p>It follows, then, that the <em>quality</em> of our questions has a massive impact on the quality of our lives. Every time you ask a question, its quality will determine the focus of your thoughts. If you ask a negative question, you'll get a negative answer; ask a positive question, and you’ll get a positive answer.</p>
+<p>For example, if you repeatedly find yourself in an unpleasant situation, asking yourself, “why does this always happen to me?” will instantly focus your thoughts on your life’s failures. The result? Your mood will sink, and your experience of life will be framed by this negativity.</p>
+<p>Therefore, it’s crucial that whenever you face a problem, you ask yourself the right questions.</p>
+<p>This is easier said than done. We tend to feel overwhelmed in difficult situations, so we often ask the wrong questions, for example, “why me?,” and then get discouraged by the answers.</p>
+<p>The solution is to come up with a list of questions <em>beforehand</em>. Make it a habit to ask questions like: “What’s good about this situation?” and “what can I do to enjoy the process of solving this problem?”</p>
+<p>Asking such questions while in the thick of an ordeal will lift your mood and enable you to arrive at an effective solution for it, or at least to cope better with the consequences.</p>
+<p>If you truly want to create a general positive attitude towards life, you could take this training even further and every morning ask yourself questions that empower you. For example, you could ask “what’s great about my life?” or “what accomplishments am I proud of?”</p>
+<p>By getting yourself in a great mood at the start of each day, you’ll gradually find it easier to access that positive state during the day as well, resulting in a better, more successful life.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="544528e76161330008810000">
+    <h1>Discover your own life values to find out if you’re living up to your full potential.</h1>
+    <div class="chapter__content"><p>Can you say with certainty what you believe is most important to your life? Is it love? Your health?</p>
+<p>If you’re not sure, you should endeavor to find out, as the most successful, happiest people are those who understand their own values and live their lives accordingly.</p>
+<p>So if you don’t feel fulfilled in your life but don’t know exactly why that is, it could be that you’re not living in accordance with your beliefs.</p>
+<p>Imagine you’re offered an exciting new job in a different country. Accepting that offer means you’ll have to uproot your life and move your family thousands of miles. Would you be willing?</p>
+<p>If you can’t decide, the reason is that you’re uncertain of your values. In this particular case, to make a decision that will bring you happiness you first need to find out whether personal growth is more important to you than financial security.</p>
+<p>Make time to reflect on and list your most important values in order of priority, and elaborate on your reasons for including those values. In making this list, you might notice that some of the values you currently hold are not well-suited to accomplishing your goals.</p>
+<p>Perhaps your ultimate value in life is <em>passion </em>– everything you do, you want to do it with a lot of passion. But, as you reflect on the alignment of your values and goals, you might realize that approaching everything with passion causes your health to suffer. This is an unsuitable value, because if you’re unwell, you won’t be able to approach <em>anything </em>with passion.</p>
+<p>The solution here is to change your values. You could decide that, from now on, you should prioritize your health over your passion. By putting health first you will be able to be passionate without the drawbacks.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="7" data-chapterid="5445290d6161330008830000">
+    <h1>Come up with life rules that make you happy, and tell others about them.</h1>
+    <div class="chapter__content"><p>All of us have rules we follow in our lives. These rules, like, “I’ll be happy once I get to eat that Snickers,” play a large part in determining both our actions and how we feel because they decide what will and won’t make us happy.</p>
+<p>However, such rules can actually <em>limit</em> our experience, and thus the odds of us achieving true happiness.</p>
+<p>Think about yourself for a moment: What do <em>you</em> need to happen for you to be happy? Do you need to win the lottery? Do you want your friends to appreciate you more?</p>
+<p>While you may be correct that such things will bring you happiness, those things are beyond your control. Therefore, it’s important to establish life rules that you <em>can </em>control.</p>
+<p>For example, instead of the rule “I’ll feel great only if someone congratulates me on my work,” try employing a rule that makes your happiness dependent on accomplishing personal goals.</p>
+<p>Because many of our rules are dependent on other people’s actions, we’re likely to get frustrated or upset when those people act in a way that doesn’t fit with our rules. In fact, if you’re upset with someone, that’s because that person is unconsciously challenging your rules.</p>
+<p>But you cannot expect your personal rules to be the same as other people’s. So, if you want a happy existence, it’s crucial that you communicate your rules and ensure that others know what’s important to you.</p>
+<p>Let’s say that the person you consider to be your closest friend never calls you. Because you believe that close friends should call each other regularly, you feel she’s no longer your friend.</p>
+<p>However, she might think differently about friendship – for instance, that it’s more about being there for the other person in moments of crisis, and not about calling each other on the phone every week.</p>
+<p>But, by communicating your rules concerning friendship, your friend will understand why you were upset with her, and, on that basis, the two of you can establish a more solid foundation for your relationship.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="8" data-chapterid="544529306161330008850000">
+    <h1>By understanding what’s behind your emotions, you can gain control over them.</h1>
+    <div class="chapter__content"><p>We’ve seen that by being less stringent about your own rules, you can decide what will make you happy. But it’s not just happiness you can gain mastery over; you can, in fact, choose your entire range of emotions.</p>
+<p>But in order to gain that control, we need to first identify our <em>true </em>emotions.</p>
+<p>We tend to get easily overwhelmed by our negative emotions, usually because we generalize them or fail to identify them correctly. For instance, you might be feeling angry about something, but, if you reflect on the true cause of your emotional pain, you might realize there’s something else behind that anger, maybe exhaustion.</p>
+<p>As soon as you’ve identified this cause, you can use <em>Transformational Vocabulary </em>(influencing your emotions by describing them differently) and express your exhaustion by saying “I’m feeling a little droopy.” This will diminish any negativity you feel, and make the emotion easier to overcome.</p>
+<p>It’s also important to ensure that you don’t view your more difficult emotions in a negative way. All emotions can help you to enact positive change in your life, as they indicate that something’s not quite right, prompting you to examine them to find the true cause of your difficulties. Only by identifying that cause can you begin to change.</p>
+<p>But understanding the cause of a particular emotion is just the first step. The next step is a bigger challenge: you have to take action to deal with the emotion and change whatever it is that’s causing it.</p>
+<p>So, if you successfully identified the cause of your unhappy emotion as loneliness, you can begin to search for the reasons that you’re lonely. For instance, it may be that you haven’t reached out to any of your friends lately. If that’s the case, the solution is clear: take action and call them.</p>
+<p>Sometimes, though, you’ll feel that you simply cannot deal with a particular emotion. When that happens, try to recall a time when you dealt successfully with it. Doing this will give you confidence in your ability to handle difficult feelings, because if you’ve managed to deal with it once, you can certainly do it again.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="9" data-chapterid="544529546161330008870000">
+    <h1>Contribute to society to discover what you can accomplish as an individual.</h1>
+    <div class="chapter__content"><p>In the previous blinks, we discussed how to take control of your life, achieve success and find happiness. At this point, however, you may be thinking that no matter the change you can make in your individual life, you’re never going to have the power to change anything in society.</p>
+<p>Fortunately, that’s not the case. Even the smallest decisions you make in your own life can have a major social influence.</p>
+<p>While most people believe they’re not influential enough to bring about such widespread change, and therefore don’t even try to do so, the truth is that the decisions which are the key to changing your own life are also the key to transforming society.</p>
+<p>Take, for example, what might seem like a trivial life decision: choosing what to eat for dinner. Let’s say you’ve decided, for personal health reasons, to cut beef out of your diet.</p>
+<p>Although it may seem that this change will benefit only yourself, the fact is that stopping eating beef could make a difference on a much larger scale.</p>
+<p>For instance, to produce 250 pounds of beef requires as many acres of land as that needed to grow 40,000 pounds of potatoes. In other words, we could get greater use out of the land we currently use for raising cattle, thus greatly diminishing the problem of widespread hunger.</p>
+<p>Your decision to cut out beef contributes to a reduction in the demand for that product, and thus towards the possibility of using that land for better purposes.</p>
+<p>There’s another way you can bring about positive social change. Now that you’ve learned how to control and reflect on your own emotions, you could start helping others with theirs.</p>
+<p>Imagine you’re at the grocery store and you notice a fellow shopper who appears sad. Instead of minding your own business, you could pay him a genuine compliment. Perhaps you could tell him that you admire him for choosing to buy free range eggs.</p>
+<p>And perhaps if you go through the world smiling at the people you meet, there’s a chance that you’ll lift their mood, which they can then share with others as well!</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="10" data-chapterid="5445299d6161330008890000">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p>The key message in this book:</p>
+<p><strong>Even small decisions and changes in your behavior can have a huge influence on how you live your own life, and on society in general.</strong></p>
+<p><strong>Suggested</strong> <strong>further</strong> <strong>reading: </strong><strong><em>Think and Grow Rich</em></strong><strong> by Napoleon Hill</strong></p>
+<p>As a young man, Napoleon Hill was asked by industry magnate Andrew Carnegie to investigate the methods of the 500 most successful people of his time, including the world’s richest men, top politicians, famous inventors, writers and captains of industry. <em>Think and Grow Rich</em> details what he found.</p></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Awaken The Giant Within" data-content-selector=".chapter_visible h1" href="/en/share/insights/544528406161330008770000/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Awaken The Giant Within" data-content-selector=".chapter_visible h1" href="/en/share/insights/544528406161330008770000/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Awaken The Giant Within" data-content-selector=".chapter_visible h1" href="/en/share/insights/544528406161330008770000/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/awaken-the-giant-within-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Awaken The Giant Within" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Awaken The Giant Within" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Awaken The Giant Within" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="awaken-the-giant-within-en" data-id="5445278861613300086b0000">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/5445278861613300086b0000/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="544528406161330008770000" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="544528406161330008770000" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="5445278861613300086b0000" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="50647d0ee4b08bcecce09449" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+

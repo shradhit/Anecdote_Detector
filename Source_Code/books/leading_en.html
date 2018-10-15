@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":55,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>Leading - Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/leading-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/leading-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="/YTpjIsHqzExUtuULtzIPmZOvnRjoNzAdVOMtTiuJjEKEyP8Ut/EpeNOSXSjJXSDpe/z2CmYkyRoKOArQB2z5Q==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="566ebd1eddd17a0007000013">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">What’s in it for me? Get an inside look at what made Sir Alex Ferguson’s teams so great.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="566ebd31ddd17a0007000014">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">Coaches must constantly listen and observe.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="566ebd42ddd17a0007000015">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">Success is not possible without discipline and determination.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="566ebd6cddd17a0007000016">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">Great managers (and coaches!) think several steps ahead to lead players on their journey to success.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="566ebd88ddd17a0007000017">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">Balance your players&#39; strengths and weaknesses, and stay down-to-earth.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="566ebd98ddd17a0007000018">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">Presence and praise are powerful tools to get the best out of your players.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="566ebdb4ddd17a0007000019">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="566ebd1eddd17a0007000013">
+    <h1>What’s in it for me? Get an inside look at what made Sir Alex Ferguson’s teams so great.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">When you can’t stop winning, eventually people will want to know your secrets. And when one of the greatest soccer managers of all time starts talking about what made his teams great, you want to hear it. </span></p>
+<p><span style="font-weight: 400;">Enter Sir Alex Ferguson, who won dozens of trophies with Manchester United during his 27 years in charge, who led teams that slayed clubs across England and Europe, and who has come to symbolize what it means to be a winner. His teams could play with flair and style or unsmiling discipline. They were comprised of pretty boys and hard workers alike. But, no matter who they were or what their playing style, they just about always seemed to win.</span></p>
+<p><span style="font-weight: 400;">How? Why? What made them so good? Obviously it didn’t hurt to have world-class players like David Beckham, Cristiano Ronaldo and Wayne Rooney on board. But, even as players came and went over the years, Ferguson kept on winning. These blinks go into his leadership secrets and what he believes ensures top-level performance.</span></p>
+<p><span style="font-weight: 400;">In these blinks, you’ll find out</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">why your presence alone is such a powerful motivational tool;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">what makes Cristiano Ronaldo so great; and</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">how to set the right expectations for your team.</span></li>
+</ul></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="566ebd31ddd17a0007000014">
+    <h1>Coaches must constantly listen and observe.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">We’ve got two ears and two eyes – but just one mouth. Is it a coincidence, or should we be listening and observing twice as much as we talk?</span></p>
+<p><span style="font-weight: 400;">The truth is that listening always pays off. It is a great opportunity to learn new and useful things – coach Alex Ferguson can attest to this. Ferguson knows the value of listening and knows it well. Just by listening, he picked up some tips and tricks that have served him for a lifetime. </span></p>
+<p><span style="font-weight: 400;">For example, Notts County manager Jimmy Sirrel once mentioned to Ferguson that he was always careful to make sure that player’s contracts never expired around the same time. This helped prevent collusion against the manager and the club. Ferguson has kept that gem of wisdom to this day. </span></p>
+<p><span style="font-weight: 400;">Like listening, learning to observe well will also give you an edge. This is something Ferguson discovered when his assistant manager Archie Knox suggested that, rather than running his training sessions, he should sit back and watch them. </span></p>
+<p><span style="font-weight: 400;">This turned out to be a turning point in Ferguson’s coaching career. When coaching right alongside his players, Ferguson’s focus would be on the ball. By stepping back and observing his players train from a distance, the details of their performance were less visible. However, the overall patterns of their behavior, attitudes and energy levels suddenly became clear. </span></p>
+<p><span style="font-weight: 400;">Still, focusing on the details can be helpful, too. As the saying goes: </span><em><span style="font-weight: 400;">know your enemy</span></em><span style="font-weight: 400;">. Ferguson developed a system of closely watching and analyzing footage of opposing teams before a match. </span></p>
+<p><span style="font-weight: 400;">This strategy is what helped Ferguson’s team win the 1999 Champions League Final against Bayern Munich. Based on the analysis and information he’d gleaned from the footage, he was able to predict Munich’s two substitutions late in the game. He zoomed in on the details and zoomed out to the broader picture, demonstrating that flexible observational skills are indispensable for any manager. </span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="566ebd42ddd17a0007000015">
+    <h1>Success is not possible without discipline and determination.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">Most of us assume that the world’s best soccer players are simply gifted from birth with skills we should never dream of having. But is that really the key to their success? Not quite. </span></p>
+<p><span style="font-weight: 400;">There are a lot of talented soccer players out there, which means a lot of competition. If you want to stay in the game, you need to sustain yourself. This is why discipline is so instrumental in achieving success. </span></p>
+<p><span style="font-weight: 400;">Ferguson is one of the toughest disciplinarians in soccer. When he began his career as manager at Manchester United, he first tackled particular problem areas. </span></p>
+<p><span style="font-weight: 400;">Players used to wear clothes of any company that sponsored them, giving the team a rather unprofessional, money-grabbing look. Ferguson swiftly implemented a proper dress code to eliminate this. Rules regarding haircuts and jewelry were also introduced, signaling to players that a lax attitude would not be tolerated. </span></p>
+<p><span style="font-weight: 400;">Discipline and determination go hand in hand, another attitude that players learned under Sir Alex. Take Cristiano Ronaldo, for example. When Ferguson brought him to United, Ronaldo’s determination to become the world’s greatest soccer player was clear as day. </span></p>
+<p><span style="font-weight: 400;">This determination is what allowed him to maintain such incredible discipline. Even today Ronaldo takes ice baths after every match and keeps his weight seven pounds below his optimal weight. Strict measures such as these allow him to keep playing football at an incredibly high level despite his age. </span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="566ebd6cddd17a0007000016">
+    <h1>Great managers (and coaches!) think several steps ahead to lead players on their journey to success.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">Like discipline and determination, preparation is another key factor ensuring top athletic performance. At Manchester United, the players who performed the best during a match were always the ones who had prepared the most. David Beckham, Cristiano Ronaldo and Wayne Rooney were all known to stay late after training to perfect their free kicks. </span></p>
+<p><span style="font-weight: 400;">In 1996, David Beckham scored his now-infamous goal in a match against Wimbledon all the way from the halfway line. Viewers thought it was a miracle, but for Beckham it was nothing more than a prepared piece! He’d practiced the shot so many times after hours that he was able to seize the opportunity during the match. </span></p>
+<p><span style="font-weight: 400;">But it’s not just players that have to think ahead – sporting organizations do, too. Fostering young talent is a long-term project. </span></p>
+<p><span style="font-weight: 400;">In the same way that young people begin as trainees at a corporation with the aim of working their way up to vice-president or CEO, a young player at Manchester United works their way up from the youth academy to the B team. From there, they can graduate to the A team, then to the reserve team, and ultimately, to the first-team squad. </span></p>
+<p><span style="font-weight: 400;">FC Barcelona takes a similar approach to training their young players. Here, the benefits of allowing young players to grow together over years are particularly clear. Think of the great trio of Lionel Messi, Andrés Iniesta and Xavi Hernández. Having trained together for so long, these players know each other extremely well and have an incredibly advanced and unpredictable passing game that stuns defenders!</span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="566ebd88ddd17a0007000017">
+    <h1>Balance your players' strengths and weaknesses, and stay down-to-earth.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">One great rule of thumb when it comes to managing a team is </span><em><span style="font-weight: 400;">avoiding extremes</span></em><span style="font-weight: 400;">. Whether from unrealistic expectations or big personalities, extremes can damage the close bonds of a team. Keeping your team balanced prevent extremes from creating tension. </span></p>
+<p><span style="font-weight: 400;">A balanced team must have diversity and unity. Take Ferguson’s approach to the age of his team members. He didn’t want to have only young and inexperienced members, but also didn’t want only older, slightly less fit players. An equal mix of both was the best solution. </span></p>
+<p><span style="font-weight: 400;">Ferguson was also careful to ensure his team had a balanced amount of </span><em><span style="font-weight: 400;">creative </span></em><span style="font-weight: 400;">players and </span><em><span style="font-weight: 400;">dependable </span></em><span style="font-weight: 400;">players. Of course, creative players are what makes a team’s attacking side so thrilling. Think of players that can overwhelm the opponent’s defense or make a sudden unbelievable sprint down the field like Cristiano Ronaldo. But a team wouldn’t survive if it didn’t have the right amount of steady, reliable defenders, too! </span></p>
+<p><span style="font-weight: 400;">Team managers must also keep their expectations balanced. Ferguson learned this lesson early on in his career. After an eight-game winning streak, he declared to the press that his team wouldn’t lose a single game that season. Yet, just after this bold announcement, his team went on to lose all but one game, finishing in sixth place. Ferguson then recognized that high expectations only serve to put pressure on players. Instead of being encouraging, high expectations usually lead to a weaker performance.</span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="566ebd98ddd17a0007000018">
+    <h1>Presence and praise are powerful tools to get the best out of your players.</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">Whether it’s that great high school basketball coach you had or an inspiring activist, the best leaders have a special something that inspires their teams. So what’s it made of?</span></p>
+<p><span style="font-weight: 400;">First off, great leaders make their presence felt. Sometimes without even realizing it! Ferguson had no idea that his presence was so important to his team until he missed a few training sessions. </span></p>
+<p><span style="font-weight: 400;">Rio Ferdinand, one of his players, revealed that the sessions simply didn’t have the same energy as when Ferguson was coaching. Ferguson recognized that his presence itself was a motivating factor. Over his 27 years of management, Ferguson was present at all but three of 1,500 United games. </span></p>
+<p><span style="font-weight: 400;">Secondly, great leaders know that support is more effective than criticism when change is needed. Ferguson always provided criticism to help players improve their technical skills, but did so tactfully. </span></p>
+<p><span style="font-weight: 400;">For instance, he’d always wait until players had calmed down after a game, rather than criticizing them immediately afterwards. And, he always presented his criticism as a form of encouragement, letting players know that he believed they were capable of better performance. </span></p>
+<p><span style="font-weight: 400;">Finally, good leaders are understanding. When David Beckham was criticized harshly in the press for receiving a red card in a 1998 World Cup match against Argentina, Ferguson knew the least helpful thing he could do was to criticize Beckham like everyone else.</span></p>
+<p><span style="font-weight: 400;">Instead, he spoke with Beckham to let him know that he was there for him, that these things happen and that he shouldn’t let it hurt his confidence. Ultimately, Ferguson believes that the two words “well done” are the most powerful tools a coach has to help players reach their full potential.</span></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="566ebdb4ddd17a0007000019">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p><span style="font-weight: 400;">The key message in this book:</span></p>
+<p><strong>Great coaches are always observing, seeking out new ways to understand and overcome challenges their players face. By encouraging discipline and determination, and taking on calculated preparation, coaches can give players their shot at success. Top performance is maintained by keeping the team balanced and supporting players with presence and praise. </strong></p>
+<p><span style="font-weight: 400;">Actionable advice:</span></p>
+<p><strong>Deal with failure and don’t be a quitter!</strong><span style="font-weight: 400;"><br></span><span style="font-weight: 400;"><br></span><span style="font-weight: 400;">When you do fail, take responsibility for your failures without blaming others. Instead, figure out what you did wrong and learn from it. This is why, in general, team members that are winners take great pride and look forward to avenging defeats. Don’t forget, it’s useless to get lost in self pity. </span></p>
+<p><strong>Got feedback?</strong></p>
+<p><span style="font-weight: 400;">We’d sure love to hear what you think about our content! Just drop an email to remember@blinkist.com with the title of this book as the subject line and share your thoughts!</span></p></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Leading" data-content-selector=".chapter_visible h1" href="/en/share/insights/566ebd98ddd17a0007000018/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Leading" data-content-selector=".chapter_visible h1" href="/en/share/insights/566ebd98ddd17a0007000018/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Leading" data-content-selector=".chapter_visible h1" href="/en/share/insights/566ebd98ddd17a0007000018/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/leading-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Leading" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Leading" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Leading" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="leading-en" data-id="566ebd0addd17a0007000011">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/566ebd0addd17a0007000011/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="566ebd98ddd17a0007000018" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="566ebdb4ddd17a0007000019" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="566ebd0addd17a0007000011" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="54788e1066333100094b0000" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+

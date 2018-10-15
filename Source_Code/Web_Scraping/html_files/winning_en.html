@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":39,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>Winning - Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/winning-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/winning-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hbtLVilaZcUcZF4wC1gcEiZu/9gTZ5g7GgsDiPYe9B1yLIEm8IIKUc54zNCGoaCv5c+ydFlf198HcG8Wjq1hyQ==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="52b87e96373766000c050000">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">Let ideas and opinions flow freely: encourage candor and give everyone a voice.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="52b87eaf3737660012010000">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">Evaluate and differentiate your people with the 20-70-10 method, and make managing them a priority.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="52b87eca373766000c070000">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">Be selective and meticulous when hiring, transparent and fair when firing.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="52b87ee33737660008000000">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">To be a good leader, focus on your people, lead by example and don’t worry about being popular.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="52b87efd373766000c090000">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">Your mission says how you intend to win, and your values demonstrate the behaviors that will get you there.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="52b87f163737660012030000">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">Strategy is simple: choose a winning move, and then get the right people and practices to implement it.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="52b87f2d373766000c0b0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">Forget rigid annual budgeting – planning should be flexible and motivating.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="52b87f443737660012050000">
+      <div class="reader__point-gray-icon" data-chapter-menu=7></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">Get enthusiastic with new ventures but be cautious with acquisitions.</a>
+    </li>
+    <li class="chapters" data-chapterNo="8" data-chapterId="52b87f593737660008020000">
+      <div class="reader__point-gray-icon" data-chapter-menu=8></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="8" href="#">Make a case for change, and then focus on those who follow you and ferret out those who don’t.</a>
+    </li>
+    <li class="chapters" data-chapterNo="9" data-chapterId="52b87f703737660008040000">
+      <div class="reader__point-gray-icon" data-chapter-menu=9></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="9" href="#">Crises will happen – always assume the worst and try to learn from them.</a>
+    </li>
+    <li class="chapters" data-chapterNo="10" data-chapterId="52b87f853737660012070000">
+      <div class="reader__point-gray-icon" data-chapter-menu=10></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="10" href="#">Try different jobs till you find one that excites you.</a>
+    </li>
+    <li class="chapters" data-chapterNo="11" data-chapterId="52b87f99373766000c0d0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=11></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="11" href="#">To advance your career, deliver phenomenal results and don’t be a thorn in your boss’s backside.</a>
+    </li>
+    <li class="chapters" data-chapterNo="12" data-chapterId="52b88020373766000c0f0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=12></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="12" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="52b87e96373766000c050000">
+    <h1>Let ideas and opinions flow freely: encourage candor and give everyone a voice.</h1>
+    <div class="chapter__content"><p>We are all taught that in certain situations it’s polite to bend the truth: you don’t badmouth your mother’s cooking or call your best friend fat, for example. But this lack of candor becomes troublesome when it seeps into organizational culture.</p>
+<p>It is all too common that in business, people simply do not express themselves frankly enough. They withhold criticism and new ideas for fear of upsetting others or causing conflict. They want to seem like team players, not jerks.</p>
+<p>But honest and open communication carries many benefits. A frank environment allows everyone to contribute ideas as well as improve on them. When honest opinions are voiced loudly and quickly, proposals can be evaluated and, if necessary, shot down much faster.</p>
+<p>Likely, the majority of people at your company don't contribute their ideas or opinions, probably because they feel they can't. This is an immense waste of brainpower.</p>
+<p>Of course, introducing candor into an ingrained “make nice” culture is very difficult, and doing so can even hurt your career if you’re seen as a troublemaker. It certainly helps if you’re the boss, but it’s still no picnic. You must talk about candor, reward it and demonstrate it yourself.</p>
+<p>Ask people for their input, and help them feel comfortable giving it. At General Electric (GE), this was achieved by intermittently gathering groups of 30 to 100 employees together to discuss better ways of doing things, without their bosses present. This allowed the employees to talk anonymously and form proposals that their bosses were obliged to address – and quickly. These <em>Work-Out sessions</em> were so successful they became an integral part of GE’s problem-solving process.</p>
+<p><strong>Let ideas and opinions flow freely: encourage candor and give everyone a voice.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="52b87eaf3737660012010000">
+    <h1>Evaluate and differentiate your people with the 20-70-10 method, and make managing them a priority.</h1>
+    <div class="chapter__content"><p>Managers often relegate the task of <em>people management</em> – that is, keeping your staff motivated and helping them to develop and work together – to the sidelines while they focus on strategy, products, sourcing, and pretty much everything else. But good people management is one of the best ways a manager can help their company.</p>
+<p>Hence, make it a priority. Start by elevating the status of human resources (HR) management. The head of HR should have at least as important a role in the company as the chief financial officer. Populate the HR department with individuals you think can help your employees to advance their careers and develop as leaders.</p>
+<p>The most important part of people management is having a simple, fair and rigorously enforced <em>employee evaluation system</em> in place. This system tells you who your top performers are and helps you to reward them accordingly.</p>
+<p>Use the 20-70-10 mix to <em>differentiate </em>among your employees. The top 20 percent – the stars – deserve praise, recognition and training, and of course monetary rewards too (the backbone of any effective incentive).</p>
+<p>The bottom 10 percent simply must go – there is no sugar-coating this. Comfort yourself with the fact that these employees often find more suitable companies and roles later on.</p>
+<p>The tricky part is managing the mid-performing 70 percent. They comprise the majority of your staff; hence, you must keep them motivated and engaged. Your emphasis should be on setting bold goals for them and trying to coach and lift them into the top 20 percent.</p>
+<p><strong>Evaluate and differentiate your people with the 20-70-10 method, and make managing them a priority.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="52b87eca373766000c070000">
+    <h1>Be selective and meticulous when hiring, transparent and fair when firing.</h1>
+    <div class="chapter__content"><p>Great people are everywhere, but finding them is difficult. Before you even consider hiring someone, ensure they pass three acid tests:</p>
+<p>First, they must have <em>integrity</em>, meaning they are candid, honest and reputable.</p>
+<p>Second, they must be <em>intelligent</em> so that they can work effectively with other smart people. This does not mean they must be Ivy League graduates; some great GE executives have graduated from the obscurest places like the University of Dubuque, Iowa.</p>
+<p>Finally, candidates must demonstrate <em>maturity</em>, meaning they can deal with stress and setbacks, and exhibit that certain mixture of confidence and humility that experience brings.</p>
+<p>In evaluating candidates, your only solid tools are interviews and background checks; but do not ignore your gut instincts, especially for hard-to-verify traits like integrity.</p>
+<p>If the acid tests are passed, you can move on to the actual selection phase. Choose people who exude positive energy and who are generally optimistic and sociable. They should be genuinely excited about work and be able to inspire and energize those around them.</p>
+<p>Successful candidates must also be effective, meaning that they can make tough decisions even when they don’t have all the information and then execute those decisions to get the job done.</p>
+<p>Though hiring the right people is difficult, firing the wrong ones can be messy. However, as long as your performance-evaluation system is candid and transparent, it should come as no surprise to someone that they are about to be let go. Just ensure there is no humiliation for the person in question, and don’t ostracize them from your organization. Instead, rebuild their self-confidence to help them have a soft landing at their next job.</p>
+<p><strong>Be selective and meticulous when hiring, transparent and fair when firing.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="52b87ee33737660008000000">
+    <h1>To be a good leader, focus on your people, lead by example and don’t worry about being popular.</h1>
+    <div class="chapter__content"><p>Leadership is all about developing your people. Evaluate them, coach them and inspire them every chance you get. Tell them about your vision for the company, encourage them to live and breathe your vision, and reward those who do.</p>
+<p>Sometimes leadership is about being a shining beacon of inspiration. Negativity, distrust and fear can paralyze any organization; hence, you must exude a contagious positive energy that helps everyone stay optimistic and confident in the face of challenges.</p>
+<p>It is your responsibility to bring out the best in your team, and you need their trust to do so. First of all, show them that you are trustworthy: be honest, give credit fairly, and never “steal” ideas for yourself or hog all the glory.</p>
+<p>You should also show your team that failure is acceptable as long as lessons are learned from it. Demonstrate this by taking risks yourself and openly discussing your mistakes. This will encourage your staff to boldly pursue opportunities.</p>
+<p>Sometimes being a leader means you have to make tough, unpopular calls. Don’t shy away from them – you’re not a politician up for election. It’s also your job to rock the boat when no-one else wants to. If you’re concerned about something, you must relentlessly hound the person responsible with questions until they act.</p>
+<p>Finally, as a leader, make sure everyone celebrates when it is merited, and make a big deal out of your team’s every achievement.</p>
+<p><strong>To be a good leader, focus on your people, lead by example and don’t worry about being popular.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="52b87efd373766000c090000">
+    <h1>Your mission says how you intend to win, and your values demonstrate the behaviors that will get you there.</h1>
+    <div class="chapter__content"><p>“Mission statement” and “values” are surely two of the most overused and misunderstood concepts in business. Too often, senior management will debate these topics for days, only to come up with platitudes like “Our mission is to be a customer-driven company” and “We value quality and integrity.” Is there a company on earth that wouldn’t espouse these vague statements? Good mission statements and values are so tangible you can almost hit someone in the face with them.</p>
+<p>An effective mission statement basically just answers the question “How do we intend to win in this business?” GE, for example, decided they would be number one or number two in every market they operated in, fixing or getting rid of every one of their businesses where this was not the case. This is an effective mission: specific, descriptive, ambitious.</p>
+<p>If the mission statement is the goal, then values are the way to achieve that goal. Hence, the two must be mutually reinforcing. Values are clearly-defined behaviors you want your employees to exhibit. Some real-life examples from GE include instructions like “Be intolerant of bureaucracy” and “See change for the growth opportunity it brings.”</p>
+<p>Defining values is an iterative process, where everyone in the company participates in an open discussion. Whatever values you eventually land on, you must reinforce them vigorously. Publicly reward people who live by them and punish those who don’t. The employees will see and appreciate the fact that the company truly lives its values.</p>
+<p><strong>Your mission says how you intend to win, and your values demonstrate the behaviors that will get you there.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="52b87f163737660012030000">
+    <h1>Strategy is simple: choose a winning move, and then get the right people and practices to implement it.</h1>
+    <div class="chapter__content"><p>Strategy is not rocket science, nor complicated academics. The core of any strategy is a so-called <em>big aha</em>: a smart way to gain a sustainable competitive advantage.</p>
+<p>You find the big aha by assembling your senior management to analyze and discuss your business. Start by examining your current playing field. Who are your customers and competitors? What’s the market like? This discussion alone can be surprisingly enlightening, as a variety of viewpoints emerges.</p>
+<p>Next, you look at what the competitors have been up to and contrast this with what you’ve done recently. This comparison might well tell you that you are standing still while your competitors are innovating.</p>
+<p>Next, consider the future of the industry. What scares you? What new products might your competitors launch? Always assume they are smart – at least as smart as you – and willing to move much faster.</p>
+<p>Finally, commit to action. What exactly are you going to do to win? As a senior manager, answering this question – coming up with the big aha – is your responsibility.</p>
+<p>To implement your big aha, you need the right people in the right jobs. For example, to innovate you need dreamers and visionaries, whereas to cut costs you need efficiency experts.</p>
+<p>Finally, you must find and implement <em>best practices</em> from wherever you can. When GE wanted to improve its inventory turnover, it began visiting the factories of American Standard, a toilet bowl manufacturer that boasted excellent inventory turnover.</p>
+<p>But don’t rest on your laurels. Ensure everyone constantly works to improve these best practices – make it your company’s religion.</p>
+<p><strong>Strategy is simple: choose a winning move, and then get the right people and practices to implement it.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="52b87f2d373766000c0b0000">
+    <h1>Forget rigid annual budgeting – planning should be flexible and motivating.</h1>
+    <div class="chapter__content"><p>The traditional budgeting process – the battle of numbers between headquarters and field managers ­– is one of the most ineffective exercises in all of business.</p>
+<p>Say headquarters wants a division to deliver 12 percent growth the next year, whereas the division manager insists 6 percent is far more realistic. Headquarters wants to set the goals high, but the division manager wants to set easy goals to ensure his performance bonus.</p>
+<p>In the end, they compromise on 9 percent. When the target is hit, both sides are fairly happy. The problem? No-one stops to wonder if they could have achieved 12 percent, 15 percent or even 20 percent growth.</p>
+<p>Or what about the field manager who is passionate about a genuinely lucrative project and fights to get an investment from headquarters to pursue it. The trouble is, headquarters decided on their investment allocation long before the budgeting process; hence, they smile politely and decline, leaving the field manager frustrated at this squandered chance.</p>
+<p>Changing this age-old game is difficult. Instead of budgets, you need flexible <em>operating plans</em>; and instead of annual goals set in stone, you need <em>stretch targets</em> that can be revised as the situation develops. Field managers and headquarters should discuss these openly with the mutual goal of first maximizing earnings growth and then allocating investments and setting targets accordingly.</p>
+<p>GE no longer compares performance to budgets at all but rather to the prior year’s performance and to that of competitors. Thus, even seemingly great results might not merit praise if the year has been easy and competitors have fared even better. Conversely, even if a division performed very poorly, it may be excused if its competitors did even worse.</p>
+<p><strong>Forget rigid annual budgeting – planning should be flexible and motivating.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="7" data-chapterid="52b87f443737660012050000">
+    <h1>Get enthusiastic with new ventures but be cautious with acquisitions.</h1>
+    <div class="chapter__content"><p>Starting something new in business, whether launching a new product or entering a new market, is very exciting; but for any new venture to succeed, you need to give it lots of love and special treatment. Don’t make the all too common mistake of under-doing and under-spending; no venture can survive with poor resources and lackluster people.</p>
+<p>Instead, put your smartest and most passionate people on the new business and grant them a lot of freedom and autonomy – they are, after all, like entrepreneurs! Make a big hoopla about them, give them plenty of resources and act as their cheerleader every chance you have; they need all the support they can get! You’ll look like an idiot if they fail, but that is a risk you must take.</p>
+<p>On the other hand, when you’re acquiring a company, you should avoid getting overly excited, because so-called <em>deal heat</em> can blur your judgment.</p>
+<p>In deal heat, managers might, for example, ignore the complete mismatch between the cultures of the acquirer and the target, which will greatly complicate integration. Or they might be so hungry for the target they agree to absurd terms or to such a ridiculously high price it can never be recouped. Stop to at least calmly consider these potential pitfalls before getting excited.</p>
+<p>The only part of an acquisition to charge forward with enthusiastically is the integration phase: it should take 90 days at the most. Don’t pretend that two equals have merged; ultimately there is always an acquirer and a target, and the acquirer must take the lead in post-merger actions. Get rid of the resisters and promote the people who are on board with the integration.</p>
+<p><strong>Get enthusiastic with new ventures but be cautious with acquisitions.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="8" data-chapterid="52b87f593737660008020000">
+    <h1>Make a case for change, and then focus on those who follow you and ferret out those who don’t.</h1>
+    <div class="chapter__content"><p>Most people acknowledge that change is a critical part of any business, but they hate it nonetheless. When <em>The Times</em> of London changed to tabloid format, the editor got an email asking how it felt to be the person responsible for the fall of Western civilization.</p>
+<p>One reason employees hate change initiatives is because they often don’t understand the reasons behind the change. This makes every initiative seem like just another flavor of the month, to be ignored till it goes away.</p>
+<p>To avoid this, you should attach every change initiative to a clear purpose: argue your case with data and relentless communication. Sometimes this is easy, like when your industry is in trouble, but at other times you need to present a solid business-case for change.</p>
+<p>Change resistance can kill even the best initiatives, so you need to get rid of the resisters early on. Put change in the hands of people who will get behind it. Hire and promote true believers to act as change agents, and surround them with people who seem eager to get on with the new way of doing business.</p>
+<p>As an employee, resisting change – whether a strategic shift, new best practices or post-merger integration – is <em>always</em> bad for your career. Managers like people who are on their team and who help rather than hinder their initiatives. Do yourself a favor and get on board.</p>
+<p><strong>Make a case for change, and then focus on those who follow you and ferret out those who don’t.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="9" data-chapterid="52b87f703737660008040000">
+    <h1>Crises will happen – always assume the worst and try to learn from them.</h1>
+    <div class="chapter__content"><p>As long as companies are made up of human beings, mistakes, controversies and integrity violations will happen. They are inevitable and often spin out of control into full-blown crises.</p>
+<p>For example, one of GE’s sales managers was caught bribing a general in the Israeli Air Force, which embroiled GE in a huge scandal. Another time, GE was accused of defrauding the US government by filing inaccurate timecards at a plant that made missile cones.</p>
+<p>As a leader, it is your job to navigate crises in such a way that your company emerges from them stronger than ever.</p>
+<p>Start with prevention: take steps to avoid as many crises as possible, and use rigorous processes and controls to evaluate your people carefully and impose strict financial discipline in your company. Make your culture one of integrity, and enforce this vigorously. If someone breaks the rules, do not allow them to leave quietly due to “personal reasons.” Instead, make an example of them and fire them publicly.</p>
+<p>Nevertheless, crises will happen, and they will usually take you by surprise. Do yourself a favor and skip the usual denial phase. Immediately assume that the problem is probably far worse than it initially seems, that all your dirty secrets will come out, and that the media will portray everything in the worst possible light. And yes, probably blood will be spilt and people will be fired.</p>
+<p>Facing these facts helps you take ownership; <em>you</em> should expose and define the problem before anyone else does.</p>
+<p>Most importantly, remember the lessons you learn from each crisis; the next one might be just around the corner.</p>
+<p><strong>Crises will happen – always assume the worst and try to learn from them.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="10" data-chapterid="52b87f853737660012070000">
+    <h1>Try different jobs till you find one that excites you.</h1>
+    <div class="chapter__content"><p>People rarely know exactly what they want to do at the start of their career. For example, the CEO of Procter &amp; Gamble, A.G. Lafley, originally wanted to be a professor of Renaissance history.</p>
+<p>The fact is, finding a great job makes your life much more rewarding and exciting. Consider the man Jack Welch once met on holiday who gushed with pride as he proclaimed he was the “first mercury-free dentist in Quechee, Vermont!” Only genuine excitement in what you do can produce such enthusiasm.</p>
+<p>So how do you find the right job? Simple: through iteration. You need to think about what things are important to you and what tradeoffs you are willing to make (for example, between money and spare time), and then try a job you think suits you. Even if that job isn’t right for you, at least it will teach you more about what you’re looking for and help you choose your next endeavor.</p>
+<p>Just don’t stop until you find something that you, personally, feel excited about. Of course you should also consider how you fit in with the people at work and what kind of growth and career opportunities the job provides, but at the end of the day, you need to feel your job has personal meaning to you. Don’t embody the sad tale of a young Harvard graduate who loved cars so much he constantly doodled them in his notebook but still ended up working 80-hour weeks in banking just to please his father. Life is too short to live someone else’s dreams.</p>
+<p><strong>Try different jobs till you find one that excites you.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="11" data-chapterid="52b87f99373766000c0d0000">
+    <h1>To advance your career, deliver phenomenal results and don’t be a thorn in your boss’s backside.</h1>
+    <div class="chapter__content"><p>While careers are never entirely predictable and always involve an element of chance, there are certain behaviors that certainly help you become successful.</p>
+<p>Start by exceeding everyone’s expectations; everyone loves positive surprises. Be upbeat and enthusiastic, perform phenomenally, and actively expand the horizons of your job. Take the lead in championing new projects and initiatives at your company, especially the ones that others seem too busy to take on.</p>
+<p>Also, be sure you enlist the help of others, both above and below you in the organization. Seek guidance and mentorship from many different sources, and try to learn from each one. Your subordinates can also help you advance if you treat them fairly; their opinion is important when promotion is discussed.</p>
+<p>Whatever you do, don’t make life difficult for your boss by forcing him to constantly defend your actions or bail you out trouble. For example, if you resist management initiatives or violate your company’s values, not even a solid performance will save you from your boss’s ire.</p>
+<p>Another way you might get on your boss’s nerves is by making work-life balance a huge problem. Of course, no boss wants to deny you time with your hobbies or family, but the fact is that the company’s competitiveness is more important. Ultimately, any career demands trade-offs, and as an employee it is up to you to decide which trade-offs you wish to make. Above all, don’t let your boss think you’re unmotivated or entitled by making demands before you’ve earned your stripes; demonstrate a solid performance before asking for any work-life considerations.</p>
+<p><strong>To advance your career, deliver phenomenal results and don’t be a thorn in your boss’s backside.</strong></p></div>
+</div>
+<div class="chapter chapter" data-chapterno="12" data-chapterid="52b88020373766000c0f0000">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p>The questions this book answered:</p>
+<p><strong>Successful leaders are great at managing people: they evaluate them through a transparent and fair system, coach them to advance on their careers, and instill such a culture of candor and integrity that everyone wants to share their ideas and improve the way business is done. Get excited about what you’re doing and make sure your people are too.</strong></p>
+<p>The questions this book answered:</p>
+<p><strong>How should you manage your people?</strong></p>
+<ul>
+<li>Let ideas and opinions flow freely: encourage candor and give everyone a voice.</li>
+<li>Evaluate and differentiate your people with the 20-70-10 method, and make managing them a priority.</li>
+<li>Be selective and meticulous when hiring, transparent and fair when firing.</li>
+<li>To be a good leader, focus on your people, lead by example and don’t worry about being popular.</li>
+</ul><p><strong>How should you manage strategy, growth, change and crises?</strong></p>
+<ul>
+<li>Your mission says how you intend to win, and your values demonstrate the behaviors that will get you there.</li>
+<li>Strategy is simple: choose a winning move, and then get the right people and practices to implement it.</li>
+<li>Forget rigid annual budgeting – planning should be flexible and motivating.</li>
+<li>Get enthusiastic with new ventures but be cautious with acquisitions.</li>
+<li>Make a case for change, and then focus on those who follow you and ferret out those who don’t.</li>
+<li>Crises will happen – always assume the worst and try to learn from them.</li>
+</ul><p><strong>How can you have a successful career? </strong></p>
+<ul>
+<li>Try different jobs till you find one that excites you.</li>
+<li>To advance your career, deliver phenomenal results and don’t be a thorn in your boss’s backside.</li>
+</ul></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Winning" data-content-selector=".chapter_visible h1" href="/en/share/insights/52b88020373766000c0f0000/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Winning" data-content-selector=".chapter_visible h1" href="/en/share/insights/52b88020373766000c0f0000/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Winning" data-content-selector=".chapter_visible h1" href="/en/share/insights/52b88020373766000c0f0000/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/winning-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="Winning" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="Winning" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="Winning" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="winning-en" data-id="52b87e133737660012000000">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/52b87e133737660012000000/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="52b88020373766000c0f0000" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="52b88020373766000c0f0000" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="52b87e133737660012000000" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input value="2017-06-26T07:52:24+00:00" type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="54788e1066333100094b0000" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+

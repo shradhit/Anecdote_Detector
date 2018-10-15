@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+
+    <head>
+          <script type="text/javascript">
+!function(a){var b=a.languages?a.languages[0]:a.language||a.userLanguage,b=b.split("-"),b=b[0],c=window.location,d=c.pathname,e=d.split("/"),f=(e.shift(),e[0]),g=document.cookie.search(/internal_session=true/)>-1;if(g&&d.match(/(^\/de$|^\/de\/$|^\/en$|^\/en\/$|^\/$)/))return window.stop(),void(window.location.href="/"+(f||"en")+"/nc/library/");if("de"==b&&"en"!=f&&"de"!=f){window.stop();var h=c.protocol+"//"+c.host,i="/"+b+"/"+e.join("/")+c.hash+c.search,j=h+i;window.location.href=j}}(window.navigator);
+</script>
+
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1530258c6c","applicationID":"41579662","transactionName":"IAkMQkQKXlpcRUtBVwICB0QZF1dXXVIWHEEXBxBC","queueTime":0,"applicationTime":49,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+      <!-- Content descriptions -->
+      <meta http-equiv="language" content="en"/>
+      <meta http-equiv="content-language" content="en">
+      <!-- Device configuration-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+      <meta name="globalsign-domain-verification" content="ROZmPQde14dV2YQ-kOw48SFB-gmyhJvahZFX_YizPy" />
+      <meta property="fb:app_id" content="499403336738590"/>
+      <!-- favicon -->
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+      <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png"/>
+      <meta name="msapplication-TileColor" content="#000000">
+      <meta name="msapplication-TileImage" content="/apple-touch-icon.png">
+      <link rel="icon" href="/favicon.png" sizes="32x32">
+
+
+      <!-- <meta name="apple-itunes-app" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&campaign=SmartBanner"> -->
+      <meta name="apple-itunes-app-blinkist" content="app-id=568839295, app-argument=blinkistapp://?adjust_tracker=qriihq_a1hbf3&amp;campaign=SmartBanner"></meta>
+
+      <!-- Pinterest Identify -->
+      <meta name="p:domain_verify" content="cf5f7177e41e03ac06a6f5551d5b7364"/>
+
+      <!-- SEO optimization -->
+
+
+      <title>Blinkist: Serving curious minds.</title>
+<meta name="description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="keywords" content="knowledge,books" />
+<link rel="alternate" href="android-app://com.blinkslabs.blinkist.android/blinkistapp/" hreflang="en" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.blinkist.com/en/nc/reader/how-to-win-friends-and-influence-people-en/" />
+<meta property="og:title" content="Blinkist: Serving curious minds." />
+<meta property="og:site_name" content="Blinkist" />
+<meta property="og:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta property="og:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta property="al:web:url" content="https://www.blinkist.com/en/nc/reader/how-to-win-friends-and-influence-people-en" />
+<meta property="al:ios:url" content="blinkistapp://" />
+<meta property="al:ios:app_store_id" content="568839295" />
+<meta property="al:android:url" content="blinkistapp://" />
+<meta property="al:android:package" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@blinkist" />
+<meta name="twitter:creator" content="@blinkist" />
+<meta name="twitter:title" content="Blinkist: Serving curious minds." />
+<meta name="twitter:description" content="Blinkist offers summaries of great nonfiction books’ key insights in a made for mobile format. Learn something new every day - on your smartphone, tablet or PC." />
+<meta name="twitter:image" content="https://d35jq63v2pl9km.cloudfront.net/assets/extra/og/default_sharing_image-141932bb7d78ae69cfd44a6dccf50566.jpg" />
+<meta name="twitter:app:id:iphone" content="id568839295" />
+<meta name="twitter:app:id:ipad" content="id568839295" />
+<meta name="twitter:app:id:googleplay" content="com.blinkslabs.blinkist.android" />
+<meta name="twitter:app:name:iphone" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:ipad" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="twitter:app:name:googleplay" content="Blinkist - The essential insights from non-fiction book bestsellers" />
+<meta name="google-play-app" content="app-id=com.blinkslabs.blinkist.android" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="v4enji+M6C40U0mAVPjMlR8EajMNtcEgL/c8Mx5auspIEG3+9lSHuuZP22DZAXAo3KUnn0eNjsQyjFCtZukvHg==" />
+
+<link rel="stylesheet" media="all" href="https://d35jq63v2pl9km.cloudfront.net/assets/reader-2a411d7fbbec6ec46e0c0608aff7aa36.css" data-turbolinks-track="true" />
+
+<!--[if lt IE 9]>
+<script src="https://d35jq63v2pl9km.cloudfront.net/javascripts/html5-3.6-respond-1.1.0.min.js" data-turbolinks-track="true"></script>
+<![endif]-->
+
+<script src="https://d35jq63v2pl9km.cloudfront.net/assets/application-4139c4e6a4b9f6769ede57b17a772bb6.js" data-turbolinks-track="true"></script>
+
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/internal-4eea98e2350d70d7ce774608f54ba063.js" data-turbolinks-track="true"></script>
+    <script src="https://d35jq63v2pl9km.cloudfront.net/assets/reader-b369426bd7dba34831a0192000ba0f41.js" data-turbolinks-track="true"></script>
+
+<script src="https://use.typekit.net/sae3zwv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+
+
+<body class="reader reader__start inside">
+  <script type="text/javascript">
+    window._env = 'production';
+</script>
+
+<div id="fb-root"></div>
+<script>window.facebookAppId = '499403336738590';</script>
+
+<script type="text/javascript">
+    window._config_stripe = {
+        public_key: 'pk_live_FT7Vxi3PZ9ltcuKPlmW45rIS',
+        image_url: 'https://d35jq63v2pl9km.cloudfront.net/assets/extra/stripe/icon-6f8e86bd5bb84ac5cce343088d865bdc.png'
+    };
+</script>
+<script type="text/javascript">
+  window._config_algolia = {
+    app_id: 'P3SCZPAH8S',
+    api_key: '136653a15d7b60068233c26741bfbe5d',
+    index_name: 'books-production'
+  };
+</script>
+
+        <script type="text/javascript">
+            window._config_user_data = {
+                user_id: "59250ac6c9c85f000841a9ed",
+                email: "ramanand@choosetothinq.com",
+                referrer_token: "1f5057a0a3fb"
+            };
+
+            window.bk_fingerprint = "edee94a3-8249-4358-b6b3-d0840bce1423";
+        </script>
+
+
+<script type="text/javascript">
+    window._config_supported_languages = ["en"];
+</script>
+
+<script type="text/javascript">
+  var Routes = {};
+  Routes.api_book_meta_url = function (book_id) {
+    return "https://api.blinkist.com/v4" + "/books/" + book_id + "/meta";
+  };
+</script>
+
+
+
+  <div class="page">
+
+    <main role="main">
+      
+
+
+    <div class="reader__container">
+  <div class="reader__container__font__menu" style="display:none">
+                <div class="reader__container__font__menu__item">
+  <a class="reader__text__small-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__medium-icon" href="#">Aa</a>
+</div>
+<div class="reader__container__font__menu__item">
+  <a class="reader__text__large-icon" href="#">Aa</a>
+</div>
+
+
+  </div>
+  <div class="reader__container__left">
+    <div class="reader__container__chapters__menu">
+      <div class="reader__container__chapters__menu__inside">
+        <ul>
+                          <li class="chapters" data-chapterNo="0" data-chapterId="528222f33461380011230000">
+      <div class="reader__point-gray-icon" data-chapter-menu=0></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="0" href="#">What’s in it for me? Learn the simple rules for being more popular and persuasive.</a>
+    </li>
+    <li class="chapters" data-chapterNo="1" data-chapterId="5282231234613800082d0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=1></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="1" href="#">If you want to make a good first impression, smile.</a>
+    </li>
+    <li class="chapters" data-chapterNo="2" data-chapterId="5282233734613800082f0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=2></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="2" href="#">If you want others to like you, don’t criticize them.</a>
+    </li>
+    <li class="chapters" data-chapterNo="3" data-chapterId="5282235d346138000c320000">
+      <div class="reader__point-gray-icon" data-chapter-menu=3></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="3" href="#">If you want others to gladly do you favors, show your appreciation frequently.</a>
+    </li>
+    <li class="chapters" data-chapterNo="4" data-chapterId="5282237e346138000c340000">
+      <div class="reader__point-gray-icon" data-chapter-menu=4></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="4" href="#">If you want to be interesting yourself, be interested in others.</a>
+    </li>
+    <li class="chapters" data-chapterNo="5" data-chapterId="5282239a3461380008370000">
+      <div class="reader__point-gray-icon" data-chapter-menu=5></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="5" href="#">Show your appreciation for others by talking about what’s important to them.</a>
+    </li>
+    <li class="chapters" data-chapterNo="6" data-chapterId="528223bb346138000c3c0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=6></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="6" href="#">We like people who show their appreciation and remember things about us, like our names.</a>
+    </li>
+    <li class="chapters" data-chapterNo="7" data-chapterId="528223e33461380011270000">
+      <div class="reader__point-gray-icon" data-chapter-menu=7></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="7" href="#">Avoid all arguments – they cannot be won.</a>
+    </li>
+    <li class="chapters" data-chapterNo="8" data-chapterId="528223ff34613800083b0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=8></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="8" href="#">Never tell others they are wrong; they will only resent you.</a>
+    </li>
+    <li class="chapters" data-chapterNo="9" data-chapterId="52822427346138000c3e0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=9></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="9" href="#">Whenever you are wrong, admit it immediately and clearly.</a>
+    </li>
+    <li class="chapters" data-chapterNo="10" data-chapterId="5282245f34613800083f0000">
+      <div class="reader__point-gray-icon" data-chapter-menu=10></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="10" href="#">To be convincing, get others to say “yes” as often as possible.</a>
+    </li>
+    <li class="chapters" data-chapterNo="11" data-chapterId="53f334eb3162620008950000">
+      <div class="reader__point-gray-icon" data-chapter-menu=11></div>
+      <a class="reader__container__chapters__menu__chapter__link" data-no-turbolink="true" data-chapter-link-value="11" href="#">Final summary</a>
+    </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="reader__container__menu_bar">
+                  <span class="close"><a class="reader__close-icon" href="/en/nc/library/"></a></span>
+            <span class="chapters"><a class="reader__chapters-icon" data-no-turbolink="true" href="#"></a></span>
+            <span class="font"><a class="reader__font-icon" data-no-turbolink="true" href="#"></a></span>
+
+    </div>
+  </div>
+  <div class="reader__container__right">
+    <article class="shared__reader__blink reader__container__content" lang="en">
+                  <div class="chapter chapter" data-chapterno="0" data-chapterid="528222f33461380011230000">
+    <h1>What’s in it for me? Learn the simple rules for being more popular and persuasive.</h1>
+    <div class="chapter__content"><p>Since <em>How to Win Friends &amp; Influence People</em> was published in 1936, it has sold over 15 million copies. The advice contained within these blinks is deceptively simple, but remains as effective as ever. Just adhering to simple guidelines like smiling when meeting someone and remembering their first name can help anyone become more likeable and influential.</p>
+<p>In these blinks you’ll learn</p>
+<ul>
+<li>why Theodore Roosevelt was so popular among his staff;</li>
+<li>why being critical almost forced Abraham Lincoln into a sabre duel; and</li>
+<li>what everyone’s favorite conversation topic is.</li>
+</ul></div>
+</div>
+<div class="chapter chapter" data-chapterno="1" data-chapterid="5282231234613800082d0000">
+    <h1>If you want to make a good first impression, smile.</h1>
+    <div class="chapter__content"><p>It is our actions, not our words, that show others what we think of them. Thus, when we meet someone new, the easiest way to say “I like you and am very happy to meet you” is to smile.</p>
+<p>We humans are suckers for people who smile at us. If we meet someone new and see them smile, we tend to automatically like them as well. The smile of a baby, for example, immediately makes us feel warm and fuzzy inside, as does seeing a dog wag his tail like crazy because he’s so happy to see us.</p>
+<p>If you want to make yourself instantly likeable, the first thing to do is to show others how much you enjoy being around them. If you’re happy to see someone, the other person will be happy to see you too.</p>
+<p>Psychologists have also uncovered a positive side-effect of excessive smiling. It seems that the connection between positive emotions and smiling is not a one-way street; consciously smiling can lead to positive emotions, just as positive emotions can lead to (involuntary) smiling.</p>
+<p>This means that by smiling, we not only make other people happier, but ourselves as well.</p>
+<p>Hence it can be said that while a smile costs nothing, it brings a lot of joy for everyone involved.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="2" data-chapterid="5282233734613800082f0000">
+    <h1>If you want others to like you, don’t criticize them.</h1>
+    <div class="chapter__content"><p>Criticizing people and pointing out their mistakes doesn’t encourage them to change their behavior, and it certainly doesn’t help them learn anything. This is because people are not primarily driven by reason but rather by emotion.</p>
+<p>Even when criticism seems warranted, it usually won’t have the intended effect. The person you criticize won’t really listen to what you’re saying, because they will feel attacked and their natural reaction will be to immediately defend their own position by fighting back.</p>
+<p>Hence, criticizing someone might help you blow off steam, but in the long-term it will only make others like you less.</p>
+<p>Many successful individuals actually made it a habit to never openly criticize others. Benjamin Franklin, for instance, claimed that the secret of his success was to “speak ill of no man.”</p>
+<p>Abraham Lincoln learned this lesson as well. He used to publicly criticize his opponents, until one day his criticism almost forced him into a saber duel. From that moment on, he stopped openly criticizing others. During the Civil War, he famously told those who spoke harshly of the Southerners, “Don’t criticize them; they are just what we would be under similar circumstances.”</p>
+<p>Criticizing someone is easy, but it takes character to be understanding and to forgive others for their mistakes and shortcomings.</p>
+<p>If you want others to like you, try to understand what drives them, accept their shortcomings, and make it a rule to never criticize them openly, for this criticism will only come back to harm you.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="3" data-chapterid="5282235d346138000c320000">
+    <h1>If you want others to gladly do you favors, show your appreciation frequently.</h1>
+    <div class="chapter__content"><p>How can you get someone to do you a favor? You must ensure they want to do it. And how is that possible? You must motivate the other person with a simple reward: your sincere appreciation.</p>
+<p>One of the strongest drivers of human behavior is the desire to be appreciated by others. We all like being complimented and hearing we’re doing a good job.</p>
+<p>Some people even claim that all of civilization ultimately rests upon the human desire for appreciation. Our desire for approval and praise makes us climb the highest mountains, write novels and found multimillion-dollar companies.</p>
+<p>So what can we learn from this? The possibility of receiving praise as a reward is a much stronger incentive than the threat of punishment for a bad job. For someone to want to do you favors, they must know you as someone who shows appreciation, not someone who is quick to criticize.</p>
+<p>To show your appreciation and make yourself someone people enjoy working with, use simple phrases such as “Thank you” or “I’m sorry,” and learn to give sincere praise. Don’t shower people with phony flattery, or they will see through it and it won’t work. Your appreciation must be honest.</p>
+<p>To attain this honesty, the right mindset is crucial. Try thinking like Ralph Waldo Emerson, who said that every person he met was superior to him in certain ways, so there was always something to learn from and appreciate in other people.</p>
+<p>If you take others seriously and treat them with respect, you will find it easy to value their work and show them honest and sincere appreciation – and in turn they will like you and enjoy working with you.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="4" data-chapterid="5282237e346138000c340000">
+    <h1>If you want to be interesting yourself, be interested in others.</h1>
+    <div class="chapter__content"><p>We all love a good listener, especially when that person encourages us to speak about ourselves. All humans are naturally interested in themselves, and hence we’re always happy to meet someone who shares this interest.</p>
+<p>So if you want to appear likeable and interesting, don’t talk but listen. Ask others about themselves and encourage them to speak as much as they like. The secret of being interesting is simply to be interested.</p>
+<p>To really listen means giving the other person your full attention. Make a conscious effort to show that you’re genuinely interested in learning about everything they have to say. Don’t interrupt them or let yourself be distracted.</p>
+<p>Sigmund Freud was famous for his listening skills. He excelled at showing others how very interesting he found everything they said, and in return they felt completely comfortable talking to him and would reveal even their most private emotions and experiences to him.</p>
+<p>On the other hand, talking about yourself excessively, failing to listen to others, and constantly interrupting them when they are speaking will make others dislike you instantly. If you only talk about yourself, it indicates you are self-centered and care only for yourself, making you thoroughly unlikeable to others.</p>
+<p>Therefore, to be more likeable, try to be a good listener and encourage others to talk, especially about themselves.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="5" data-chapterid="5282239a3461380008370000">
+    <h1>Show your appreciation for others by talking about what’s important to them.</h1>
+    <div class="chapter__content"><p>People enjoy talking to good listeners, but even more than this they enjoy talking to someone who is knowledgeable about things they’re interested in, such as their jobs or their hobbies. Everyone likes to talk about things that are important to them, so naturally they like other people who share their interests.</p>
+<p>Take Theodore Roosevelt, for example. Whenever he was about to meet someone for the first time, he thoroughly prepared for the meeting by reading everything he could about the other person’s interests. He understood that the route to any person’s good graces is the ability to talk about the things they value the most.</p>
+<p>Of course, there is one topic everybody is interested in: themselves. Every person feels that they are valuable and interesting, and we enjoy others confirming this belief. Benjamin Disraeli was certainly right when he said, “Talk to people about themselves, and they will listen for hours.”</p>
+<p>Whenever you meet someone, find something you admire about them and tell them about it. Regardless of whom you meet, you can always find something to admire in them. Dale Carnegie, for example, once wanted to brighten the day of a bored service employee, so he told him, “I certainly wish I had your head of hair.”</p>
+<p>The easiest way to get into the mind-set of appreciating others is to keep in mind the Golden Rule: treat others as you would like others to treat you.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="6" data-chapterid="528223bb346138000c3c0000">
+    <h1>We like people who show their appreciation and remember things about us, like our names.</h1>
+    <div class="chapter__content"><p>How do dogs manage to win the affections of people within just seconds of meeting them? The answer is simple: unconditional love. A dog is always interested in you, and shows its interest enthusiastically. People respond to this behavior, because we appreciate it when we are shown affection. It promotes our self-esteem and makes us happy.</p>
+<p>So what is the lesson we can apply to our daily interactions? If you want to win others over, show them your full appreciation and be enthusiastic about it. Demonstrate that you’re interested in them and in what they have to say, and try to remember the things they tell you.</p>
+<p>In practice, this means you should always greet others cheerfully, be a good listener, and make sure you remember personal details like names and birthdays. This demands a bit of effort – for example, you may need to take notes after every encounter with a person – but it will pay off in the long run.</p>
+<p>The simplest trick for generating affection is to remember and frequently use another person’s name, since everyone likes to hear their own name. Whenever you meet someone new, remember their name and try to use it as you talk. The other person will like you instantly.</p>
+<p>Theodore Roosevelt was popular among all his staff because he made a habit of greeting them all by their names. He also deliberately made time for listening to them and tried to remember what they said. By doing this, he showed others his appreciation, and he got far more back in return.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="7" data-chapterid="528223e33461380011270000">
+    <h1>Avoid all arguments – they cannot be won.</h1>
+    <div class="chapter__content"><p>Think about it: What’s the point of arguing with others? Nine times out of ten, once the battle is over, both parties will be even more determined in their stance than they were before.</p>
+<p>There is nothing to gain from such arguments. No matter what the result, your opponent won’t agree with you. Rather, they will just resent you and your arguments.</p>
+<p>Therefore, the only solution is to avoid such disputes from the start.</p>
+<p>When you encounter opposition to your ideas, there’s often no need to find an agreement. It’s already valuable to have others challenge your views, without imposing your own ideas on them. Be thankful for their input, and think about their reasoning, instead of automatically arguing to bolster your views.</p>
+<p>If two people always agree on everything, then one of them is dispensable. Nevertheless, if two people constantly argue and yell at each other, there can be no real discussion.</p>
+<p>Hence, avoid arguments, but when they are absolutely necessary and inevitable, keep your emotions out of them. Initially, both parties should maintain a distance to each other so they can first think about the topic in private. They should only meet in person once the initial emotional reaction has dissipated.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="8" data-chapterid="528223ff34613800083b0000">
+    <h1>Never tell others they are wrong; they will only resent you.</h1>
+    <div class="chapter__content"><p>Whenever you tell someone they’re wrong, you’re basically saying, “I’m smarter than you.” This is a direct attack on their self-esteem. Their feelings will be hurt, and they will want to retaliate.</p>
+<p>In general, whenever you want to express your opposition to someone’s opinions, never say things in absolute terms like “It is clear that…” or “Obviously, the case is…,” since this implies “I’m smarter than you.” Even if you do think you’re smarter, never openly display this mentality to other people.</p>
+<p>To get the other person to reevaluate their view, it’s much more effective to be humble and open-minded; for example, “I thought differently but I might be wrong. I’ve been wrong pretty often, so let’s have a look at the facts again together.”</p>
+<p>If you frame your opposition like this, the other person is much less likely to become upset or to resent you before even hearing what you have to say. With a little luck, a soft approach will quickly turn opponents into allies, making it possible for you to change their opinions.</p>
+<p>Benjamin Franklin made it a habit to never openly oppose others. When speaking to others, he even banished certain expressions from his vocabulary such as “certainly” and “undoubtedly.” He felt they were too rigid and reflected an unbending mindset. Rather, he used phrases like “I conceive” or “I imagine.”</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="9" data-chapterid="52822427346138000c3e0000">
+    <h1>Whenever you are wrong, admit it immediately and clearly.</h1>
+    <div class="chapter__content"><p>We all make mistakes. Whenever you do and someone is about to berate you for it, there’s a simple way to steal your opponents’ thunder: admit your mistake quickly and clearly.</p>
+<p>This can have an unexpected effect: just a second ago, the other person was planning to bolster his own self-esteem by criticizing you, but the moment you admitted your “guilt,” the situation completely turned around. If the other person still wants to feel important, they must be generous and forgive you.</p>
+<p>Dale Carnegie experienced this once when a police officer caught him walking his dog without a muzzle. Even before the officer began to talk, Carnegie himself expressed how very, very sorry he was, and how unacceptable his misdeed was. Normally, the officer might have been very critical and preachy, but thanks to this upfront admission of guilt, the officer did the opposite: he accepted Carnegie’s apology and let him go without a fine.</p>
+<p>This approach also has another very positive side-effect: publicly criticizing yourself is much more pleasant than having to listen to others do it.</p>
+<p>Public self-criticism is also likely to make others think more highly of you. Anyone can defend themselves in the face of criticism, but it takes character to openly admit your weaknesses and shortcomings.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="10" data-chapterid="5282245f34613800083f0000">
+    <h1>To be convincing, get others to say “yes” as often as possible.</h1>
+    <div class="chapter__content"><p>If you want to persuade someone to change their opinion, never let them know this is what you mean to do. No one likes having to change their opinion; hence, you must persuade them indirectly.</p>
+<p>First of all, try to win the other person over by being nice, polite and patient with them. If you act aggressively and combatively, your opponent will stop listening and will feel the need to fight back and defend their position.</p>
+<p>To avoid this, always emphasize shared interests. Make it clear that both you and your opponent have the same goals. Never reveal your own views before ensuring the other person believes your interests are shared.</p>
+<p>Once the other person sees your goals as converging, the most effective way to persuade them of your views is to make them agree with you as often as possible. Build your argumentation by asking your opponent lots of small questions that can only be answered with a “yes.”</p>
+<p>The reasoning behind this approach, also known as the Socratic method, is simple: the more yeses you get during a discussion, the greater the probability that you will also get a “yes” when you finally reveal your real position on the subject.</p>
+<p>By using the Socratic method, you can even get people to agree with views they would have fiercely opposed only moments before.</p></div>
+</div>
+<div class="chapter chapter" data-chapterno="11" data-chapterid="53f334eb3162620008950000">
+    <h1>Final summary</h1>
+    <div class="chapter__content"><p>The key message in this book:</p>
+<p><strong>Make sure others like you by smiling, listening and showing your appreciation for them. This will make them more inclined to listen to you and do you favors.</strong> </p>
+<p>Actionable Advice:</p>
+<p><strong>Smile!</strong></p>
+<p>The next time you meet someone new, make a conscious effort to smile at them as you’re shaking hands. This greatly increases the chances you’ll make a good first impression, and as everyone knows, first impressions count for a lot.</p>
+<p><strong>Suggested further reading: <em>Influence</em> by Robert B. Cialdini</strong></p>
+<p><em>Influence: The Psychology of Persuasion </em>explains in detail the fundamental principles of persuasion that get us to say yes, including how they are used against us by compliance professionals like salesmen, advertisers and con artists. Knowing these principles will allow you both to become a skilled persuader yourself and to defend yourself against manipulation attempts. To find these blinks, press “I’m done” at the bottom of the screen.</p></div>
+</div>
+
+
+      <div class="reader__container__buttons">
+        <div class="reader__container__share">
+                              
+<div class="share__buttons reader">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="How to Win Friends &amp; Influence People" data-content-selector=".chapter_visible h1" href="/en/share/insights/528222f33461380011230000/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="How to Win Friends &amp; Influence People" data-content-selector=".chapter_visible h1" href="/en/share/insights/528222f33461380011230000/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="How to Win Friends &amp; Influence People" data-content-selector=".chapter_visible h1" href="/en/share/insights/528222f33461380011230000/"></a>
+</div>
+
+        </div>
+        <div class="reader__container__navigation_control">
+          <div class="reader__container__navigation_control__prev_button" style="display:none">
+                        <a class="reader__prev-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+          <div class="reader__container__navigation_control__next_button">
+                        <a class="reader__next-icon" data-no-turbolink="true" href="#"> </a>
+
+          </div>
+
+          <div class="reader__container__navigation_control__finish_button" style="display:none;" data-finished-url="/en/nc/reader/how-to-win-friends-and-influence-people-en/end/" data-library-url="/en/nc/library/">
+                        <a class="reader__finish-icon" href="#"> </a>
+
+</div>        </div>
+      </div>
+    </article>
+    <div class="reader__container__highlights_popup">
+                  <div class="reader__container__highlights_popup-element_share">
+  
+<div class="share__buttons reader_highlight_pop_up">
+  <a class="share__facebook-icon" data-no-turbolink="true" data-action="share-facebook" data-title="How to Win Friends &amp; Influence People" href="/en/share/highlights/0/"></a>
+  <a class="share__twitter-icon" data-no-turbolink="true" data-action="share-twitter" data-title="How to Win Friends &amp; Influence People" href="/en/share/highlights/0/"></a>
+  <a class="share__mail-icon" data-no-turbolink="true" data-action="share-mail" data-title="How to Win Friends &amp; Influence People" href="/en/share/highlights/0/"></a>
+</div>
+</div>
+<div class="reader__container__highlights_popup-element_create">
+  <i class="reader__container__highlights_popup-element-icon_create"></i>
+</div>
+<div class="reader__container__highlights_popup-element_remove">
+  <i class="reader__container__highlights_popup-element-icon_remove"></i>
+</div>
+
+
+    </div>
+  </div>
+  <div class="reader__container__full__bottom_bar">
+    <div class="reader__pin-icon" style="display:none">
+      <div class="reader__pin-icon__text">
+                    1
+
+      </div>
+    </div>
+  </div>
+  <div class="reader__container__partial__bottom_bar">
+  </div>
+  <div class='reader__overlay'></div>
+
+  <input type="hidden" data-action="blinks-pack-data" data-slug="how-to-win-friends-and-influence-people-en" data-id="528222a234613800082c0000">
+</div>
+
+
+
+
+    <form id="metadata" action="/api/library/528222a234613800082c0000/?locale=en" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="PUT" />
+        <input value="53f334eb3162620008950000" type="hidden" name="meta_data[current_chapter_id]" id="meta_data_current_chapter_id" />
+        <input value="53f334eb3162620008950000" type="hidden" name="meta_data[last_chapter_id]" id="meta_data_last_chapter_id" />
+        <input value="528222a234613800082c0000" type="hidden" name="meta_data[blinksPackId]" id="meta_data_blinksPackId" />
+        <input value="2017-06-19T06:49:39+00:00" type="hidden" name="meta_data[is_finished]" id="meta_data_is_finished" />
+        <input value="54788f416439320008020000" disabled="disabled" type="hidden" name="meta_data[category_id]" id="meta_data_category_id" />
+</form>
+
+    </main>
+
+    <div class="layout-footer"></div>
+  </div>
+
+  <div class="errors_cookies">Please test your cookie settings and activate them for Blinkist</div>
+  <script type="text/javascript">
+  var _paq = _paq || [];
+
+  var _bk_paq = _bk_paq || {
+    events: [],
+    trackEvent: function(paramsArray) {
+      paramsArray = ["trackEvent"].concat(paramsArray);
+
+      if(this.proxyOn) {
+        _paq.push(paramsArray);
+      } else {
+        this.events.push(paramsArray);
+      }
+    },
+    proxyOn: false,
+    turnProxyOn: function() {
+      this.proxyOn = true;
+      this.events.forEach(function(event) {
+        _paq.push(event);
+      });
+    }
+  };
+
+  _paq.push(["enableLinkTracking"]);
+  _paq.push(["enableHeartBeatTimer"]);
+  _paq.push(["setTrackerUrl", "//p.aws.blinkist.com/t"]);
+  _paq.push(["setSiteId", "1"]);
+  _paq.push(["setCookieDomain", ".blinkist.com"]);
+  _paq.push(["setDomains", ".blinkist.com"]);
+
+  var abtests = [];
+
+
+  (function(w,d,s,u,e,p){
+      e=d.createElement(s);
+      e.src=u;e.async=1;
+      p=d.getElementsByTagName(s)[0];
+      p.parentNode.insertBefore(e,p);})(window,document,'script', 'https://static-cdn.blinkist.com/scripts/pw_v2.js.gz');
+</script>
+
+  <noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PHZR5SB" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<script type="text/javascript">
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', "GTM-PHZR5SB");
+</script>
+
+</body>
+</html>
+
