@@ -11,9 +11,9 @@ To do this, we :
 - Used a Machine Learning based approach to identify potential regions of stories in unstructured text sources
 - Build an application to do this.
 
-The application that we build to
+The application that we build 
 - automatically identifies regions of anecdotes (think of it as putting a <anecdote> </anecdote> tag around such regions of text)
-- classifed them by certain labels (such as sports, films, business etc.) - these labels will be provided by us. 
+- classifes them by certain labels (such as sports, films, business etc.) - these labels will be provided by us. 
 
 Technology for this project:
 - Machine learning: A field of computer science that gives computers the ability to learn without being explicitly programmed. Our proposed application will use ML to train the application to search for anecdotes from a given text.  We will use supervised learning techniques.
